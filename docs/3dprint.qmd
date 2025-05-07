@@ -1,0 +1,13 @@
+---
+title: "3D printing"
+toc: true
+number-sections: true
+---
+
+For info related to 3D printing
+
+## Maps
+[Instructables 3D map](https://www.instructables.com/Create-3D-Printed-Terrain-Maps-Using-Terrain2STL/)
+
+
+Hardangervidda vest: X=30% Y=30% Z=70%
