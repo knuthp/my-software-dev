@@ -7,8 +7,13 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
       - 3dprint.qmd
+      - about.qmd
+      - resources/adsb.qmd
+      - resources/ais.qmd
+      - resources/akseiere.qmd
+      - resources/arduino.qmd
+      - resources/gtfs.qmd
 
 format:
   html:

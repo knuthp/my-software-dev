@@ -2,6 +2,4 @@
 title: "My Software Dev"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Notes related to software development, and other thinkering.

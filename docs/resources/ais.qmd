@@ -1,0 +1,255 @@
+---
+title: AIS
+---
+# AIS - Automatic Identification System for ships
+A selection of ships from Norway
+
+<http://kystverket.no/Maritime-tjenester/Meldings--og-informasjonstjenester/AIS/Brukartilgang-til-AIS-Norge/>
+
+TCP listening on 153.44.253.27:5631 (ca be viewed in Firefox)
+
+Messages seen (2017-06-01T21:34:00)
+
+* 1: Position Report class A
+* 2: Position Report class A
+* 3: Position Report class A
+* 4: Base station report
+* 5: Static Voyage data (requires assembling fragments)
+* 6: Binary Addressed Message
+* 8: Binary Broadcast Message
+* 18: Standard Class B CS Position Report
+* 19: Extended Class B CS Position Report
+* 21: Aid-to-Navigation Report
+* 24: Static Data Report
+
+## Online tools
+AIS message decoder online
+
+<http://www.maritec.co.za/tools/aisvdmvdodecoding/>
+
+## NMEA checksum calculator online
+
+<http://nmeachecksum.eqth.net/>
+
+## Below 1000 ships (2017-04-27T17:11:00)
+
+Raw NMEA message example
+```
+ !BSVDM,1,1,,B,37fOa>50010lTAPT`;ktv0hr0000,0*1F
+```
+
+### Type 3
+Decoded with libais to python dictionary
+```json
+ {
+    "slot_increment": 0,
+    "sync_state": 0,
+    "true_heading": 24,
+    "sog": 0.10000000149011612,
+    "slots_to_allocate": 0,
+    "rot": 0.0,
+    "nav_status": 5,
+    "repeat_indicator": 0,
+    "raim": false,
+    "id": 3,
+    "spare": 0,
+    "keep_flag": false,
+    "cog": 332.0,
+    "timestamp": 29,
+    "y": 64.0118637084961,
+    "x": 11.483386993408203,
+    "position_accuracy": 0,
+    "rot_over_range": false,
+    "mmsi": 518515000,
+    "special_manoeuvre": 0
+}
+```
+
+
+### Decoded with libais to gpsd
+```
+ {
+    "slot_increment": 0,
+    "slots_to_allocate": 0,
+    "scaled": true,
+    "course": 332.0,
+    "second": 29,
+    "speed": 0.10000000149011612,
+    "sync_state": 0,
+    "lon": 11.483386993408203,
+    "device": "stdin",
+    "type": 3,
+    "accuracy": false,
+    "status": 5,
+    "maneuver": 0,
+    "repeat": 0,
+    "mmsi": 518515000,
+    "raim": false,
+    "spare": 0,
+    "keep_flag": false,
+    "lat": 64.0118637084961,
+    "class": "AIS",
+    "turn": 0.0,
+    "status_text": "Moored",
+    "heading": 24
+}
+```
+
+```
+imo,mmsi,name,flag,type
+9116462,1073727001,"AEGEANQUE EN",,"Passengers Ship" 9116462,1072678425,"AEGEQNQUE EN",,"Passengers Ship" 9700940,1028641360,"IVQ!PC=NDA  O0  O0",,Cargo 9116462,1073727001,"AEGEANQUE EN",,"Passengers Ship"
+```
+
+### CSV
+
+* <https://raw.githubusercontent.com/warrantgroup/IMO-Vessel-Codes/master/data/imo-vessel-codes.csv>
+* <http://www.kystinfo.no/proxies/xWmsProxy.ashx?uuid=2bbc8acf-9386-46e7-83ab-425c72da546d&key=20170419102234&LAYERS=open_policy_AIS&QUERY_LAYERS=open_policy_AIS&STYLES=&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&BBOX=240068.587391%2C6582965.279002%2C257001.954591%2C6589484.625374&FEATURE_COUNT=10&HEIGHT=308&WIDTH=800&FORMAT=image%2Fpng&INFO_FORMAT=application%2Fjson&SRS=EPSG%3A32633&X=425&Y=199>
+
+```
+[{
+    MMSI: "255801580",
+    Country: "Madeira",
+    Active: "true",
+    Ship_name: "AUTOPRESTIGE",
+    Call_sign: "CQQG",
+    IMO_number: "9190157",
+    Ship_type: "Cargo ship",
+    Cargo: "Unknown",
+    Destination: "CUXHAUEN",
+    To_Country: "GERMANY",
+    To_Port: "CUXHAVEN",
+    ETA: "2017-04-29T04:00:00.000Z",
+    Length: "128.0",
+    Breadth: "19.0",
+    Maximum_actual_draught: "4.9",
+    Positioning_device: "GPS",
+    Transponder: "ClassA",
+    From_Country: "NORWAY",
+    From_Port: "DRAMMEN",
+    Latitude: "59° 19.8906"",
+    Longitude: "010° 35.2360"",
+    Time_stamp: "2017-04-27T19:04:20.000Z",
+    Sun_Altitude: "-00,7",
+    SOG: "20.3",
+    COG: "170",
+    Heading: "170",
+    ROT: "-0.0",
+    Position_Source_name: "LSS 1",
+    Distance_to_closest_vessel: "4127",
+    Time_when_closest: "2017-04-27T19:04:20.000Z",
+    Nav_Status: "under way, using engine",
+    Pos_Accuracy: "< 10m",
+    RAIM: "Not in use",
+    Time_sailed: "1h 55m ",
+    Source_type: "AIS",
+    Source_name: "LSS 1",
+    Call_sign_country_IV: "CallSign country: Portugal != MMSI country: Madeira",
+    Ship_info_Direkte: "http://www.ship-info.com/prog/aiskip3.asp?usn=kyer&ircs=CQQG&imo=9190157&mmsi=255801580&pw=746AC14DEF3FF3CDBFDAFD89927299AA",
+    Ship_info_Callsign: "http://www.ship-info.com/prog/redskip.asp?id=CQQG",
+    Ship_info_IMO: "http://www.ship-info.com/prog/redskip.asp?id=9190157",
+    Ship_spotting_pictures: "http://www.shipspotting.com/search.php?action=results&query=9190157",
+    Llyods: "http://www.shipfinder.org/authenticated/result.aspx?LR/IMO%20Number=9190157",
+    Inmarsat: "http://www.inmarsat.com/Services/Maritime/Ships_Directory/default.aspx?ShipName=AUTOPRESTIGE",
+    Google: "http://www.google.com/search?&q=AUTOPRESTIGE",
+    SIReNaC: "http://195.25.216.218/sirenac/ShipFolder?P_SHIP_IMO=9190157",
+    DNV: "http://exchange.dnv.com/exchange/main.aspx?extool=vessel&Imono=9190157",
+    ITU_MMSI: "255801580",
+    ITU_Call_Sign: "CQQG",
+    NIS_IMO: "9190157",
+    NIS_Call_Sign: "CQQG",
+    Fiskeridirektoratet2: "CQQG",
+    ABS_IMO: "9190157",
+    Tokyo_MOU: "9190157"
+}]
+```
+
+### Vessel register at DNV GL
+Search by IMO name
+
+<http://vesselregister.dnvgl.com/vesselregister/api/vessel?term=9190157&includeHistoricalNames=false&includeNonClass=true&chunkSize=20>
+```json
+{
+  "Vessels": [
+    {
+      "Name": "AUTOPRESTIGE",
+      "HistoricalNames": [],
+      "Id": "20998",
+      "ImoNo": "9190157",
+      "OfficialNo": "",
+      "Flag": "",
+      "Register": "Madeira",
+      "VesselType": "Vehicle Carrier",
+      "MainClass": null,
+      "HomePort": "MADEIRA",
+      "OwnerName": "United European Car Carriers AS",
+      "OwnerId": "5416192",
+      "ManagerName": "United European Car Carriers AS",
+      "ManagerId": "5416192",
+      "NonClassServices": "OTHERCLASS,ERS",
+      "NonClassServiceVesselId": "20998",
+      "CallSign": "CQQG",
+      "HitFields": "ImoNumber",
+      "HitFieldsDescription": "[ImoNumber] = \"9190157\"",
+      "FlagCode": "PMD",
+      "RegisterCode": "PMD",
+      "DataSystem": "NPS"
+    }
+  ],
+  "DnvDetailsUrl": "http://vesselregister.dnvgl.com/vesselregister/vesseldetails.html?vesselid=",
+  "GlDetailsUrl": "https://app.gl-group.com/register/index.jsp?STyp=400&RegNo=",
+  "TotalCount": 1,
+  "LimitedCount": 1000,
+  "MaxHitsReached": false,
+  "GlLastUpdated": "<gllastupdated>",
+  "DnvLastUpdated": "<dnvlastupdated>"
+}
+```
+
+
+### DNV details
+Using
+
+<http://vesselregister.dnvgl.com/vesselregister/vesseldetails.html?vesselid=20998>
+
+### Ship-info
+html
+
+<http://www.ship-info.com/prog/aiskip3.asp?usn=kyer&ircs=CQQG&imo=9190157&mmsi=255801580>
+
+
+## AIS Type 5
+```
+!BSVDM,2,1,4,A,53nNb802<tAthi04000HD@`DH`u8@0000000000t4@N7740Ht:iQA2QKDhAE,0*46
+!BSVDM,2,2,4,A,TSiF@000000,2*61
+```
+
+
+decoded using <http://www.aggsoft.com/ais-decoder.htm>
+```
+Name	Value	Description
+Packet Type	BSVDM
+CHANNEL	A
+Message Type	5	Ship Static And Voyage Related Data
+Repeat Indicator
+Default
+User ID	258452000
+AIS Version
+Station compliant with AIS Edition 0
+IMO Number	9236767
+Call Sign	LLPA
+Name	FEDJEFJORD
+Ship Type	60	Passenger, all ships of this type
+Dimension: reference for pos. A	34
+Dimension: reference for pos. B	30
+Dimension: reference for pos. C	7
+Dimension: reference for pos. D	7
+Vessel length	64
+Vessel beam	14
+Electronic Position Fixing Device Type	1	GPS
+ETA	1596	Month not available (default), Day not available (default), Hour not available (default), Minute not available (default)
+Eta Datetime	5-5-18
+Maximum Present Static Draught	4.3
+Destination	FEDJE-SAEVROEY
+DTE
+Available
+```

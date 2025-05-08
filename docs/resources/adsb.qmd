@@ -1,0 +1,8 @@
+---
+title: ADSB - Flight Data publishing
+---
+
+I had access for some time, but it is now paid or you need to be part of publishers with your own receiver to get all data.
+
+1. <https://www.adsbexchange.com/data/#>
+1. <https://public-api.adsbexchange.com/VirtualRadar/AircraftList.json?lat=69.0&lng=10.0&fDstL=0&fDstU=1000>

@@ -7,7 +7,12 @@ number-sections: true
 For info related to 3D printing
 
 ## Maps
+### 3D Topographic map
 [Instructables 3D map](https://www.instructables.com/Create-3D-Printed-Terrain-Maps-Using-Terrain2STL/)
 
 
 Hardangervidda vest: X=30% Y=30% Z=70%
+
+
+### Europe puzzle
+[Europe](https://www.printables.com/model/26777-europe-game-and-puzzle-educational-and-fun-purpose/files)
