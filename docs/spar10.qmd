@@ -1,0 +1,361 @@
+# Spar10
+Using Statens Vegvensen Reisetider <http://www.reisetider.no> and help the user select the "fastest" way to get to job or some other repeated travel.
+
+## Ruter
+### Old API
+An older API that returns JSON and supports JSONP for webclient usage.
+
+<http://reis.trafikanten.no/reisrest/help>
+
+Example of JSONP
+
+<http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/3010013?callback=JSON_CALLBACK">
+
+New API
+Supports JSON and XML, but not JSONP (cannot be used from a webclient, need a server component).
+
+<http://reisapi.ruter.no/Help/>
+
+Example:
+
+<http://reisapi.ruter.no/stopvisit/getdepartures/3010013>
+
+<http://reisapi.ruter.no/Place/GetPlaces/aspelund>
+
+## Jernbaneverket
+<http://www.jernbaneverket.no/no/Marked/Tilgjengeliggjoring-av-data-fra-Jernbaneverket>
+
+SOAP og REST. Må registerer IP adresse som skal aksessere jernbaneverkets server.
+
+Basert på SIRI standarden <http://user47094.vs.easily.co.uk/siri/>
+
+Mulig backdoor via å lage sin egen monitor og hente JSON data direkte:
+
+<https://rtd.jbv.no/rt/login> Administrere monitor
+
+<http://rtd.jbv.no/rt/display/56a636c32defbddcd4af8d990c4394c73fa44294> Monitor Lysaker stasjon
+
+```
+REST backdoor
+POST http://rtd.jbv.no/internett1/index.php?t=realtimedisplay.stopmonitoringjson HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 78
+Host: rtd.jbv.no
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+```
+```xml
+<Response xmlns="http://rtd.jbv.no/internett1/index.php">
+   <Siri>
+      <e>
+         <AimedArrivalTime>1389203880000</AimedArrivalTime>
+         <AimedDepartureTime>1389203940000</AimedDepartureTime>
+         <ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+         <ArrivalCallCancellation>false</ArrivalCallCancellation>
+         <ArrivalPlatformName>2</ArrivalPlatformName>
+         <DatedVehicleJourneyRef>1654_2014-01-08</DatedVehicleJourneyRef>
+         <DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+         <DepartureCallCancellation>false</DepartureCallCancellation>
+         <DeparturePlatformName>2</DeparturePlatformName>
+         <DestinationDisplay>Drammen</DestinationDisplay>
+         <DestinationName>Drammen</DestinationName>
+         <ExpectedArrivalTime>1389204900000</ExpectedArrivalTime>
+         <ExpectedDepartureTime>1389204900000</ExpectedDepartureTime>
+         <LineID>L13</LineID>
+         <OperatorName>NSB</OperatorName>
+         <OperatorRef>NSB</OperatorRef>
+         <OriginName>Dal</OriginName>
+         <ProductCategoryRef>Lt</ProductCategoryRef>
+         <ServiceFeatureRef>Pt</ServiceFeatureRef>
+         <StopsAtAirport>0</StopsAtAirport>
+         <TrainKind>Pt</TrainKind>
+         <TrainProduct>NSB Lokaltog</TrainProduct>
+         <VehicleRef>1654</VehicleRef>
+      </e>
+      <e>
+         <AimedArrivalTime>1389204000000</AimedArrivalTime>
+         <AimedDepartureTime>1389204060000</AimedDepartureTime>
+         <ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+         <ArrivalCallCancellation>false</ArrivalCallCancellation>
+         <ArrivalPlatformName>3</ArrivalPlatformName>
+         <DatedVehicleJourneyRef>1657_2014-01-08</DatedVehicleJourneyRef>
+         <DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+         <DepartureCallCancellation>false</DepartureCallCancellation>
+         <DeparturePlatformName>3</DeparturePlatformName>
+         <DestinationDisplay>Dal</DestinationDisplay>
+         <DestinationName>Dal</DestinationName>
+         <ExpectedArrivalTime>1389204540000</ExpectedArrivalTime>
+         <ExpectedDepartureTime>1389204540000</ExpectedDepartureTime>
+         <LineID>L13</LineID>
+         <OperatorName>NSB</OperatorName>
+         <OperatorRef>NSB</OperatorRef>
+         <OriginName>Drammen</OriginName>
+         <ProductCategoryRef>Lt</ProductCategoryRef>
+         <ServiceFeatureRef>Pt</ServiceFeatureRef>
+         <StopsAtAirport>0</StopsAtAirport>
+         <TrainKind>Pt</TrainKind>
+         <TrainProduct>NSB Lokaltog</TrainProduct>
+         <VehicleRef>1657</VehicleRef>
+      </e>
+      <e>
+         <AimedArrivalTime>1389204480000</AimedArrivalTime>
+         <AimedDepartureTime>1389204540000</AimedDepartureTime>
+         <ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+         <ArrivalCallCancellation>false</ArrivalCallCancellation>
+         <ArrivalPlatformName>2</ArrivalPlatformName>
+         <DatedVehicleJourneyRef>1028_2014-01-08</DatedVehicleJourneyRef>
+         <DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+         <DepartureCallCancellation>false</DepartureCallCancellation>
+         <DeparturePlatformName>2</DeparturePlatformName>
+         <DestinationDisplay>Asker</DestinationDisplay>
+         <DestinationName>Asker</DestinationName>
+         <ExpectedArrivalTime>1389204480000</ExpectedArrivalTime>
+         <ExpectedDepartureTime>1389204540000</ExpectedDepartureTime>
+         <LineID>L14</LineID>
+         <OperatorName>NSB</OperatorName>
+         <OperatorRef>NSB</OperatorRef>
+         <OriginName>Kongsvinger</OriginName>
+         <ProductCategoryRef>Lt</ProductCategoryRef>
+         <ServiceFeatureRef>Pt</ServiceFeatureRef>
+         <StopsAtAirport>0</StopsAtAirport>
+         <TrainKind>Pt</TrainKind>
+         <TrainProduct>NSB Lokaltog</TrainProduct>
+         <VehicleRef>1028</VehicleRef>
+      </e>
+      <e>
+         <AimedArrivalTime>1389204600000</AimedArrivalTime>
+         <AimedDepartureTime>1389204660000</AimedDepartureTime>
+         <ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+         <ArrivalCallCancellation>false</ArrivalCallCancellation>
+         <ArrivalPlatformName>3</ArrivalPlatformName>
+         <DatedVehicleJourneyRef>828_2014-01-08</DatedVehicleJourneyRef>
+         <DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+         <DepartureCallCancellation>false</DepartureCallCancellation>
+         <DeparturePlatformName>3</DeparturePlatformName>
+         <DestinationDisplay>Lillehammer</DestinationDisplay>
+         <DestinationName>Lillehammer</DestinationName>
+         <ExpectedArrivalTime>1389204660000</ExpectedArrivalTime>
+         <ExpectedDepartureTime>1389204660000</ExpectedDepartureTime>
+         <LineID>R10</LineID>
+         <OperatorName>NSB</OperatorName>
+         <OperatorRef>NSB</OperatorRef>
+         <OriginName>Larvik</OriginName>
+         <ProductCategoryRef>IC</ProductCategoryRef>
+         <ServiceFeatureRef>Pt</ServiceFeatureRef>
+         <StopVisitNote>Via Oslo Lufthavn</StopVisitNote>
+         <StopsAtAirport>1</StopsAtAirport>
+         <TrainKind>Pt</TrainKind>
+         <TrainProduct>NSB Regiontog</TrainProduct>
+         <VehicleRef>828</VehicleRef>
+      </e>
+      <e>
+         <AimedArrivalTime>1389205080000</AimedArrivalTime>
+         <AimedDepartureTime>1389205140000</AimedDepartureTime>
+         <ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+         <ArrivalCallCancellation>false</ArrivalCallCancellation>
+         <ArrivalPlatformName>2</ArrivalPlatformName>
+         <DatedVehicleJourneyRef>529_2014-01-08</DatedVehicleJourneyRef>
+         <DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+         <DepartureCallCancellation>false</DepartureCallCancellation>
+         <DeparturePlatformName>2</DeparturePlatformName>
+         <DestinationDisplay>Kongsberg</DestinationDisplay>
+         <DestinationName>Kongsberg</DestinationName>
+         <ExpectedArrivalTime>1389205140000</ExpectedArrivalTime>
+         <ExpectedDepartureTime>1389205140000</ExpectedDepartureTime>
+         <LineID>L12</LineID>
+         <OperatorName>NSB</OperatorName>
+         <OperatorRef>NSB</OperatorRef>
+         <OriginName>Eidsvoll</OriginName>
+         <ProductCategoryRef>Lt</ProductCategoryRef>
+         <ServiceFeatureRef>Pt</ServiceFeatureRef>
+         <StopsAtAirport>0</StopsAtAirport>
+         <TrainKind>Pt</TrainKind>
+         <TrainProduct>NSB Lokaltog</TrainProduct>
+         <VehicleRef>529</VehicleRef>
+      </e>
+      <e>
+         <AimedArrivalTime>1389205200000</AimedArrivalTime>
+         <AimedDepartureTime>1389205260000</AimedDepartureTime>
+         <ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+         <ArrivalCallCancellation>false</ArrivalCallCancellation>
+         <ArrivalPlatformName>1</ArrivalPlatformName>
+         <DatedVehicleJourneyRef>2257_2014-01-08</DatedVehicleJourneyRef>
+         <DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+         <DepartureCallCancellation>false</DepartureCallCancellation>
+         <DeparturePlatformName>1</DeparturePlatformName>
+         <DestinationDisplay>Spikkestad</DestinationDisplay>
+         <DestinationName>Spikkestad</DestinationName>
+         <ExpectedArrivalTime>1389205200000</ExpectedArrivalTime>
+         <ExpectedDepartureTime>1389205260000</ExpectedDepartureTime>
+         <LineID>L1</LineID>
+         <OperatorName>NSB</OperatorName>
+         <OperatorRef>NSB</OperatorRef>
+         <OriginName>Lillestrøm</OriginName>
+         <ProductCategoryRef>Lt</ProductCategoryRef>
+         <ServiceFeatureRef>Pt</ServiceFeatureRef>
+         <StopVisitNote>Stopper ved alle stasjoner</StopVisitNote>
+         <StopsAtAirport>0</StopsAtAirport>
+         <TrainKind>Pt</TrainKind>
+         <TrainProduct>NSB Lokaltog</TrainProduct>
+         <VehicleRef>2257</VehicleRef>
+      </e>
+      <e>
+         <AimedArrivalTime>1389205560000</AimedArrivalTime>
+         <AimedDepartureTime>1389205620000</AimedDepartureTime>
+         <ArrivalBoardingActivity>noAlighting</ArrivalBoardingActivity>
+         <ArrivalCallCancellation>false</ArrivalCallCancellation>
+         <ArrivalPlatformName>3</ArrivalPlatformName>
+         <DatedVehicleJourneyRef>3791_2014-01-08</DatedVehicleJourneyRef>
+         <DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+         <DepartureCallCancellation>false</DepartureCallCancellation>
+         <DeparturePlatformName>3</DeparturePlatformName>
+         <DestinationDisplay>Oslo Lufthavn</DestinationDisplay>
+         <DestinationName>Oslo Lufthavn</DestinationName>
+         <ExpectedArrivalTime>1389205560000</ExpectedArrivalTime>
+         <ExpectedDepartureTime>1389205620000</ExpectedDepartureTime>
+         <LineID>F2</LineID>
+         <OperatorName>Flytoget</OperatorName>
+         <OperatorRef>FLY</OperatorRef>
+         <OriginName>Drammen</OriginName>
+         <ProductCategoryRef>GMB</ProductCategoryRef>
+         <ServiceFeatureRef>Pt</ServiceFeatureRef>
+         <StopVisitNote>Oslo Airport</StopVisitNote>
+         <StopsAtAirport>1</StopsAtAirport>
+         <TrainKind>Pt</TrainKind>
+         <TrainProduct>Flytoget</TrainProduct>
+         <VehicleRef>3791</VehicleRef>
+      </e>
+      <e>
+         <AimedArrivalTime>1389205680000</AimedArrivalTime>
+         <AimedDepartureTime>1389205740000</AimedDepartureTime>
+         <ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+         <ArrivalCallCancellation>false</ArrivalCallCancellation>
+         <ArrivalPlatformName>2</ArrivalPlatformName>
+         <DatedVehicleJourneyRef>1656_2014-01-08</DatedVehicleJourneyRef>
+         <DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+         <DepartureCallCancellation>false</DepartureCallCancellation>
+         <DeparturePlatformName>2</DeparturePlatformName>
+         <DestinationDisplay>Drammen</DestinationDisplay>
+         <DestinationName>Drammen</DestinationName>
+         <ExpectedArrivalTime>1389205680000</ExpectedArrivalTime>
+         <ExpectedDepartureTime>1389205740000</ExpectedDepartureTime>
+         <LineID>L13</LineID>
+         <OperatorName>NSB</OperatorName>
+         <OperatorRef>NSB</OperatorRef>
+         <OriginName>Dal</OriginName>
+         <ProductCategoryRef>Lt</ProductCategoryRef>
+         <ServiceFeatureRef>Pt</ServiceFeatureRef>
+         <StopsAtAirport>0</StopsAtAirport>
+         <TrainKind>Pt</TrainKind>
+         <TrainProduct>NSB Lokaltog</TrainProduct>
+         <VehicleRef>1656</VehicleRef>
+      </e>
+      <e>
+         <AimedArrivalTime>1389205620000</AimedArrivalTime>
+         <AimedDepartureTime>1389205740000</AimedDepartureTime>
+         <ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+         <ArrivalCallCancellation>false</ArrivalCallCancellation>
+         <ArrivalPlatformName>4</ArrivalPlatformName>
+         <DatedVehicleJourneyRef>2260_2014-01-08</DatedVehicleJourneyRef>
+         <DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+         <DepartureCallCancellation>false</DepartureCallCancellation>
+         <DeparturePlatformName>4</DeparturePlatformName>
+         <DestinationDisplay>Lillestrøm</DestinationDisplay>
+         <DestinationName>Lillestrøm</DestinationName>
+         <ExpectedArrivalTime>1389205620000</ExpectedArrivalTime>
+         <ExpectedDepartureTime>1389205740000</ExpectedDepartureTime>
+         <LineID>L1</LineID>
+         <OperatorName>NSB</OperatorName>
+         <OperatorRef>NSB</OperatorRef>
+         <OriginName>Spikkestad</OriginName>
+         <ProductCategoryRef>Lt</ProductCategoryRef>
+         <ServiceFeatureRef>Pt</ServiceFeatureRef>
+         <StopVisitNote>Stopper ved alle stasjoner</StopVisitNote>
+         <StopsAtAirport>0</StopsAtAirport>
+         <TrainKind>Pt</TrainKind>
+         <TrainProduct>NSB Lokaltog</TrainProduct>
+         <VehicleRef>2260</VehicleRef>
+      </e>
+      <e>
+         <AimedArrivalTime>1389205800000</AimedArrivalTime>
+         <AimedDepartureTime>1389205860000</AimedDepartureTime>
+         <ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+         <ArrivalCallCancellation>false</ArrivalCallCancellation>
+         <ArrivalPlatformName>3</ArrivalPlatformName>
+         <DatedVehicleJourneyRef>1659_2014-01-08</DatedVehicleJourneyRef>
+         <DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+         <DepartureCallCancellation>false</DepartureCallCancellation>
+         <DeparturePlatformName>3</DeparturePlatformName>
+         <DestinationDisplay>Dal</DestinationDisplay>
+         <DestinationName>Dal</DestinationName>
+         <ExpectedArrivalTime>1389205800000</ExpectedArrivalTime>
+         <ExpectedDepartureTime>1389205860000</ExpectedDepartureTime>
+         <LineID>L13</LineID>
+         <OperatorName>NSB</OperatorName>
+         <OperatorRef>NSB</OperatorRef>
+         <OriginName>Drammen</OriginName>
+         <ProductCategoryRef>Lt</ProductCategoryRef>
+         <ServiceFeatureRef>Pt</ServiceFeatureRef>
+         <StopsAtAirport>0</StopsAtAirport>
+         <TrainKind>Pt</TrainKind>
+         <TrainProduct>NSB Lokaltog</TrainProduct>
+         <VehicleRef>1659</VehicleRef>
+      </e>
+      <e>
+         <AimedArrivalTime>1389206400000</AimedArrivalTime>
+         <AimedDepartureTime>1389206460000</AimedDepartureTime>
+         <ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+         <ArrivalCallCancellation>false</ArrivalCallCancellation>
+         <ArrivalPlatformName>3</ArrivalPlatformName>
+         <DatedVehicleJourneyRef>530_2014-01-08</DatedVehicleJourneyRef>
+         <DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+         <DepartureCallCancellation>false</DepartureCallCancellation>
+         <DeparturePlatformName>3</DeparturePlatformName>
+         <DestinationDisplay>Eidsvoll</DestinationDisplay>
+         <DestinationName>Eidsvoll</DestinationName>
+         <ExpectedArrivalTime>1389206640000</ExpectedArrivalTime>
+         <ExpectedDepartureTime>1389206640000</ExpectedDepartureTime>
+         <LineID>L12</LineID>
+         <OperatorName>NSB</OperatorName>
+         <OperatorRef>NSB</OperatorRef>
+         <OriginName>Kongsberg</OriginName>
+         <ProductCategoryRef>Lt</ProductCategoryRef>
+         <ServiceFeatureRef>Pt</ServiceFeatureRef>
+         <StopsAtAirport>1</StopsAtAirport>
+         <TrainKind>Pt</TrainKind>
+         <TrainProduct>NSB Lokaltog</TrainProduct>
+         <VehicleRef>530</VehicleRef>
+      </e>
+      <e>
+         <AimedArrivalTime>1389206760000</AimedArrivalTime>
+         <AimedDepartureTime>1389206820000</AimedDepartureTime>
+         <ArrivalBoardingActivity>noAlighting</ArrivalBoardingActivity>
+         <ArrivalCallCancellation>false</ArrivalCallCancellation>
+         <ArrivalPlatformName>3</ArrivalPlatformName>
+         <CallMonitored>1</CallMonitored>
+         <DatedVehicleJourneyRef>3793_2014-01-08</DatedVehicleJourneyRef>
+         <DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+         <DepartureCallCancellation>false</DepartureCallCancellation>
+         <DeparturePlatformName>3</DeparturePlatformName>
+         <DestinationDisplay>Oslo Lufthavn</DestinationDisplay>
+         <DestinationName>Oslo Lufthavn</DestinationName>
+         <ExpectedArrivalTime>1389206760000</ExpectedArrivalTime>
+         <ExpectedDepartureTime>1389206820000</ExpectedDepartureTime>
+         <LineID>F2</LineID>
+         <OperatorName>Flytoget</OperatorName>
+         <OperatorRef>FLY</OperatorRef>
+         <OriginName>Drammen</OriginName>
+         <ProductCategoryRef>GMB</ProductCategoryRef>
+         <ServiceFeatureRef>Pt</ServiceFeatureRef>
+         <StopVisitNote>Oslo Airport</StopVisitNote>
+         <StopsAtAirport>1</StopsAtAirport>
+         <TrainKind>Pt</TrainKind>
+         <TrainProduct>Flytoget</TrainProduct>
+         <VehicleRef>3793</VehicleRef>
+      </e>
+   </Siri>
+   <Time>19&lt;blink>:&lt;/blink>08</Time>
+   <Updated>0</Updated>
+</Response>
+```

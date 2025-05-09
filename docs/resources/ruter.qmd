@@ -1,0 +1,33 @@
+# Ruter
+## Old API
+An older API that returns JSON and supports JSONP for webclient usage.
+
+<http://reis.trafikanten.no/reisrest/help>
+
+Example of JSONP
+
+<http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/3010013?callback=JSON_CALLBACK">
+
+## New API
+Supports JSON and XML, and recently JSONP
+
+<http://reisapi.ruter.no/Help/>
+
+### Example:
+
+<http://reisapi.ruter.no/stopvisit/getdepartures/3010013>
+
+<http://reisapi.ruter.no/Place/GetPlaces/aspelund>
+
+## Oldest API, not working any longer
+Takk for at du registrerte deg.
+
+Vedlagt finner du link til hvordan du bruker Json APIet:
+
+* <http://labs.trafikanten.no/2011/3/22/hvordan-bruke-json-data.aspx>
+* <http://labs.trafikanten.no/2011/9/2/reiseplanlegging.aspx>
+
+URL til å sende forespørsler mot:
+
+* <http://api-test.trafikanten.no/>
+

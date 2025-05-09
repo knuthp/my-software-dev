@@ -1,0 +1,34 @@
+# Statens Vegvesen
+## Reisetider
+Replaced with DatexII service which requires username and password etc.
+
+See <http://www.vegvesen.no/Om+Statens+vegvesen/Om+organisasjonen/For+utviklere+API/Datex>
+
+<http://www.reisetider.no/reisetid/static.html?method=tjenester>
+
+<http://www.reisetider.no/xml/strekninger.xml>
+
+<http://www.reisetider.no/xml/strekninger.xml?geometri>
+
+<http://www.reisetider.no/xml/reisetider.xml>
+
+## Nasjonal Vegdatabase
+<http://www.vegdata.no/>
+
+### API
+<https://www.vegvesen.no/nvdb/api/> Description of REST API to Nasjonal VegDataBase (NVDB)
+
+### Test kart:
+<https://www.vegvesen.no/vegkart>
+
+## Motorvognregister
+### API
+<http://www.vegvesen.no/system/mobilapi?registreringsnummer=DL25944>
+
+## Webcameras with live video
+<https://www.vegvesen.no/trafikkinformasjon/Reiseinformasjon/Trafikkmeldinger/Webkamera/nyhetsarkiv/linker-til-videostr%C3%B8mmene-fra-webkameraene>
+
+1. Sandvika Nord <http://kamera.vegvesen.no/public/0229030_1/manifest.m3u8>
+2. Sandvika <http://kamera.vegvesen.no/public/0229031_1/manifest.m3u8>
+3. Asker <http://kamera.vegvesen.no/public/0229032_1/manifest.m3u8>
+

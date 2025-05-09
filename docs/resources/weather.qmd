@@ -1,0 +1,103 @@
+# Weather
+## Yr - Forecast
+Description: <http://om.yr.no/verdata/xml/>
+
+## Metrologisk institutt - Detailed forecast
+Description: <https://api.met.no/weatherapi/documentation>
+
+### Examples
+Sunrise: <http://api.met.no/weatherapi/sunrise/1.0/?lat=59.0;lon=7.58;date=2016-06-20>
+
+## eKlima - Historical data
+Description: <http://eklima.met.no/wsKlima/start/start_no.html>
+
+WSDL: <http://eklima.met.no/metdata/MetDataService?WSDL>
+
+#### MetDataService.getStationsProperties()
+Gets all metrological stations in the database
+
+```xml
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:met="MetDataService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <met:getStationsProperties soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <stations xsi:type="xsd:string"></stations>
+         <username xsi:type="xsd:string"></username>
+      </met:getStationsProperties>
+   </soapenv:Body>
+</soapenv:Envelope>
+```
+
+
+#### MetDataService.getTimeserieTypesProperties()
+Get the different time series types
+```xml
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:met="MetDataService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <met:getTimeserieTypesProperties soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <language xsi:type="xsd:string">no</language>
+         <timeserieTypes xsi:type="xsd:string"></timeserieTypes>
+      </met:getTimeserieTypesProperties>
+   </soapenv:Body>
+</soapenv:Envelope>
+```
+
+
+#### MetDataService.getElementsFromTimeserieTypeStation()
+Gets the Elements a time series contains for a specific meterological station.
+```xml
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:met="MetDataService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <met:getElementsFromTimeserieTypeStation soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <timeserietypeID xsi:type="xsd:string">2</timeserietypeID>
+         <stnr xsi:type="xsd:int">19710</stnr>
+      </met:getElementsFromTimeserieTypeStation>
+   </soapenv:Body>
+</soapenv:Envelope>
+```
+
+#### MetDataService.getMetData()
+Gets the weather data for a specific station, and providing time series and elements type.
+```
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:met="MetDataService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <met:getMetData soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <timeserietypeID xsi:type="xsd:string">2</timeserietypeID>
+         <format xsi:type="xsd:string"></format>
+         <from xsi:type="xsd:string">2016-06-10</from>
+         <to xsi:type="xsd:string">2016-06-19</to>
+         <stations xsi:type="xsd:string">19710</stations>
+         <elements xsi:type="xsd:string">TAN,TAX,RR_1,RR_12,RR_24,RA,UU</elements>
+         <hours xsi:type="xsd:string">0</hours>
+         <months xsi:type="xsd:string"></months>
+         <username xsi:type="xsd:string"></username>
+      </met:getMetData>
+   </soapenv:Body>
+</soapenv:Envelope>
+```
+
+
+## NILU Luftkvalitet
+<https://luftkvalitet.info>
+
+API: <http://dataservice.luftkvalitet.info/>
+
+Datex
+<http://dataservice.luftkvalitet.info/datex/polygon>
+
+Gets xml in Datex2 format.
+
+HOW TO USE: <http://dataservice.luftkvalitet.info/datex/polygon/?source={source}&pollutanttype={pollutanttype}&aggregation={aggregation}&layerTitle={layerTitle}&epsg={epsg}>
+
+```
+{source}: Which city to use: default:OSLO, Others:STAVANGER,GRENLAND,BERGEN, DRAMMEN,TRONDHEIM.
+{pollutanttype}: Which component to use: default:PM10, Others: PM2.5 and NO2.
+{aggregation}: Whcih aggregation to use: default is HOURLY, Others: NHIGHEST or DAILYAVERAGE.
+{epsg}: Which epsg to use, default is 32632.
+{layerTitle}: Which layer to use, default is FIELDS, Others: RECEPTORPOINTS or ROADLINKS.)
+```
+
+Url format: <http://dataservice.luftkvalitet.info/geoserver/{source}/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=BB_{source}:{layerTitle}_{aggregation}&outputformat=json&cgl_filter=CompName%3D%27{pollutanttype}27&srsName=EPSG:{epsg}>

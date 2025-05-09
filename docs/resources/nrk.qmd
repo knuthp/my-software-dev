@@ -1,0 +1,34 @@
+# NRK
+## PSApi
+Information related to NRK programs aired now or next programs. Additionally information about programs in the archive.
+
+Challenge is that an id is needed to access archive information and I don't know where to query for "all ids"
+
+<http://v7.psapi.nrk.no/Help>
+
+Json
+From <https://github.com/eithe/NRKTV.bundle>
+
+<https://github.com/eithe/NRKTV.bundle/blob/master/Contents/Code/data.py>
+
+<http://tv.nrk.no/listobjects/mostpopular/Month.json/page/0/100>
+
+```
+PROGRAM_URL = Regex('\/program\/([^\/]+)')
+PROGRAM_IMAGE_BASE_URL = 'http://nrk.eu01.aws.af.cm/f/%s'
+PROGRAM_LETTER_BASE_URL = BASE_URL + '/programmer/%s'
+PROGRAM_CATEGORY_BASE_URL = BASE_URL + '/programmer/%s'
+PROGRAM_CATEGORY_LETTER_BASE_URL = PROGRAM_CATEGORY_BASE_URL + '/%s'
+PROGRAM_SEASON_URL = BASE_URL + "/program/Episodes/%s/%s/%s" #"/program/Episodes/schrodingers-katt/22493/dmpv73000114"
+JSON_URL_RECENT = BASE_URL + '/listobjects/recentlysent.json/page/0/100'
+JSON_URL_RECENT_SENT_BY_CATEGORY = BASE_URL + '/listobjects/recentlysentbycategory/%s.json/page/0'
+JSON_URL_POPULAR_WEEK = BASE_URL + '/listobjects/mostpopular/Week.json/page/0/100'
+JSON_URL_POPULAR_MONTH = BASE_URL + '/listobjects/mostpopular/Month.json/page/0/100'
+JSON_URL_CATEGORY = BASE_URL + '/listobjects/indexelements/%s/page/%s'
+```
+
+## Gluon
+<http://gluon.nrk.no/>
+
+## Ripping TV with Rabbit
+<http://nrk.mediakuppet.no/> discussion forum

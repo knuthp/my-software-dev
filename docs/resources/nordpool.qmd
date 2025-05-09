@@ -1,0 +1,4 @@
+# NordPool
+Download historical Electrical Spot prices in CSV
+
+<https://www.nordpoolgroup.com/historical-market-data/>

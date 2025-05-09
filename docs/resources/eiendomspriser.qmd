@@ -1,0 +1,75 @@
+---
+title: Eiendomspriser
+---
+## Eiendomspriser
+<http://siste.eiendomspriser.no/>
+
+Overview of Norwegian property transfers with names of sellers and byers and price.
+
+Also see
+
+<http://people.skolelinux.org/pere/blog/Kartverkets_lansering_av_tjenesten_Se_Eiendom_har_potensiale__hvis_bruksvilk_rene_ikke_blokkerer.html>
+
+### API
+For a specific position
+
+<http://siste.eiendomspriser.no/service/getpropertiesinbounds?nelat=59.659921194583966&nelon=9.642013013362885&swlat=59.65928711030292&swlon=9.637721478939056&sort=01&fromDate=&toDate=&_=1468666442519>
+
+For a specific property
+
+<http://siste.eiendomspriser.no/service/getPropertyInfo?id=0604074460001000000000000&_=1468666442508>
+
+Search for a number in a street in a town
+
+<http://siste.eiendomspriser.no/service/search?query=Stensgata%2B18%252c%2B0358%2BOslo&sort=&fromDate=&toDate=&placeFilter=&municipalities=&_=1468681551094>
+
+Search for entire street
+
+<http://siste.eiendomspriser.no/service/search?query=Stensgata%2B0358%2BOslo&sort=&fromDate=&toDate=&placeFilter=&municipalities=&_=1468681551094>
+
+Building id
+"BuildingId": "0125000590120000000000000"
+
+0125 = Komunenr
+
+00059 = Gaardsnummer
+
+0120 = Bruksnummer
+
+Return JSON
+```json
+{
+    "Id": "PS15227140",
+    "BuildingId": "0301002160187000000100000",
+    "SalesCount": 5,
+    "Type": "Bolig",
+    "SaleType": "Fritt salg",
+    "Title": "Stensgata 18, 0358 Oslo",
+    "Price": 3615000,
+    "PriceF": "3 615 000",
+    "Text": "Stensgata 18 (Gnr 216, bnr 187, seksjon 10) er solgt for kr 3.615.000 fra Carina Midgaard til Paul Arne Hordvik (27.05.2016)",
+    "SubTexts": null,
+    "SoldDate": "27.05.2016",
+    "SortableDate": "2016-05-27T00:00:00",
+    "Address": "Stensgata 18",
+    "PostCode": "0358",
+    "PostArea": "Oslo",
+    "Coordinate": {
+    "Lat": 59.9302177677736,
+    "Lon": 10.7322758980336
+    }
+}
+```
+
+## Matrikkel
+In HTML
+
+To get area of property etc.
+
+<http://www.seeiendom.no/services/Matrikkel.svc/GetDetailPage?type=property&knr=0125&gnr=59&bnr=117&fnr=0&snr=0&customer=kartverket&_ga=1.226581981.1735460164.1468682571>
+
+### Node API
+<https://github.com/zrrrzzt/seeiendom>
+
+### Street adresses
+<http://www.skatteetaten.no/no/Bedrift-og-organisasjon/Rapportering-til-Skatteetaten/Likningsoppgaver/Boligselskap/Oversikt-over-gatenavn/>

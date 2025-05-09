@@ -1,0 +1,167 @@
+---
+title: Car registration number
+---
+## Car regno lookup information (Obsolete)
+Lookup technical information about a car based on registration plate in Norway.
+
+<http://www.vegvesen.no/system/mobilapi?registreringsnummer=aj31812>
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<resultat>
+    <tidspunkt>07.01.2017</tidspunkt>
+    <nesteOppdatering>08.01.2017</nesteOppdatering>
+    <kjoretoy>true</kjoretoy>
+    <merke>Mitsubishi</merke>
+    <modell>Galant Gls</modell>
+    <type>E32ASNHQL6</type>
+    <brukstype>
+        <gruppe>Personbil</gruppe>
+        <ikon>
+            data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABuCAYAAACa0WXfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDRjRBMzNEQjBEMzUxMUUxQURGMEI4NkU4M0I2Njc3MyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDRjRBMzNEQzBEMzUxMUUxQURGMEI4NkU4M0I2Njc3MyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkNGNEEzM0Q5MEQzNTExRTFBREYwQjg2RTgzQjY2NzczIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkNGNEEzM0RBMEQzNTExRTFBREYwQjg2RTgzQjY2NzczIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+gQ4IkQAACBlJREFUeNrsmWuI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
+        </ikon>
+    </brukstype>
+    <farge>Rød</farge>
+    <kanBeregnes>
+        <klasseB>true</klasseB>
+    </kanBeregnes>
+    <seter>5</seter>
+    <staaplasser>0</staaplasser>
+    <drivstofftype>Bensin</drivstofftype>
+    <slagvolum>
+        <oppgitt>1755</oppgitt>
+        <liter>1.8</liter>
+    </slagvolum>
+    <motorytelse>
+        <oppgitt>Ikke oppgitt</oppgitt>
+        <oppgittBenevning />
+    </motorytelse>
+    <akslerMedDrift>1</akslerMedDrift>
+    <egenvektMedForer>1235</egenvektMedForer>
+    <tilhengervektMBrems>1100</tilhengervektMBrems>
+    <tilhengervektUBrems>530</tilhengervektUBrems>
+    <vogntogvekt>0</vogntogvekt>
+    <taklast>80</taklast>
+    <regnr>AJ 31812</regnr>
+    <understellsnr>JMBSNE32AJZ501595</understellsnr>
+    <registreringsaar>1988</registreringsaar>
+    <forstegangsreg>21.09.1988</forstegangsreg>
+    <registrertEierDato>07.03.2008</registrertEierDato>
+    <registrertDistrikt>Gjøvik</registrertDistrikt>
+    <avregistrertDato>19.03.2009</avregistrertDato>
+    <egenvekt>1160</egenvekt>
+    <totalvekt>1610</totalvekt>
+    <tilhengervektKopl>75</tilhengervektKopl>
+    <lengde>454</lengde>
+    <bredde>169</bredde>
+    <nyttelast>375</nyttelast>
+    <akseltrykkForan>860</akseltrykkForan>
+    <akseltrykkBak>870</akseltrykkBak>
+    <dekkdimensjonForan>185/70 R 14 </dekkdimensjonForan>
+    <dekkdimensjonBak>185/70 R 14 </dekkdimensjonBak>
+    <hastighetsindeksForan>S (180 km/t) </hastighetsindeksForan>
+    <hastighetsindeksBak>S (180 km/t) </hastighetsindeksBak>
+    <lastindeksForan>86 </lastindeksForan>
+    <lastindeksBak>86 </lastindeksBak>
+    <innpressForan>Ikke oppgitt</innpressForan>
+    <innpressBak>Ikke oppgitt</innpressBak>
+    <solgtDato />
+    <bruktimportert>Nei</bruktimportert>
+    <oppbygd>Nei</oppbygd>
+    <antallAksler>2 </antallAksler>
+    <eukontrollfrist>0</eukontrollfrist>
+    <eukontrollSist>22.11.2007</eukontrollSist>
+    <kmstandHistorikk>
+        <kilometerstandInfo>
+            <kmstand>285185</kmstand>
+            <dato>2007-11-21T00:00:00+01:00</dato>
+            <kilde>PKK</kilde>
+        </kilometerstandInfo>
+        <kilometerstandInfo>
+            <kmstand>272649</kmstand>
+            <dato>2006-02-22T14:00:00+01:00</dato>
+            <kilde>PKK</kilde>
+        </kilometerstandInfo>
+        <kilometerstandInfo>
+            <kmstand>272326</kmstand>
+            <dato>2006-01-09T00:00:00+01:00</dato>
+            <kilde>PKK</kilde>
+        </kilometerstandInfo>
+        <kilometerstandInfo>
+            <kmstand>258938</kmstand>
+            <dato>2004-02-24T00:00:00+01:00</dato>
+            <kilde>PKK</kilde>
+        </kilometerstandInfo>
+        <kilometerstandInfo>
+            <kmstand>222561</kmstand>
+            <dato>2001-12-13T00:00:00+01:00</dato>
+            <kilde>PKK</kilde>
+        </kilometerstandInfo>
+        <kilometerstandInfo>
+            <kmstand>178309</kmstand>
+            <dato>2000-03-27T14:00:00+02:00</dato>
+            <kilde>PKK</kilde>
+        </kilometerstandInfo>
+        <kilometerstandInfo>
+            <kmstand>176281</kmstand>
+            <dato>2000-02-16T00:00:00+01:00</dato>
+            <kilde>PKK</kilde>
+        </kilometerstandInfo>
+    </kmstandHistorikk>
+</resultat>
+```
+
+## New car prices
+<https://www.skatteetaten.no/satser/bilpriser-listepris-som-ny/>
+
+## Listepris bil
+Tax price of norwegian cars. Used in norwegian selvangivelse
+
+<http://www.skatteetaten.no/CarDataService.ashx>
+
+<http://www.skatteetaten.no/CarDataService.ashx?cpst=&cpsy=2000>
+
+```json
+{
+  "ProcessingTimeMs": 0,
+  "NumMatches": 2133,
+  "Matches": [
+    {
+      "Make": "Alfa romeo",
+      "Model": "156 1,6 T.SPARK",
+      "Year": 2000,
+      "Type": "Personbiler",
+      "IsMinibuss": false,
+      "Fuel": "Bensin",
+      "Body": "Sedan",
+      "NumDoors": 4,
+      "NumCylinders": 4,
+      "CylinderVolume": 1598,
+      "PowerKw": 88,
+      "PowerHp": 120,
+      "Gears": "5",
+      "Comment": null,
+      "Price": 273500,
+      "NumSeats": 0,
+      "Id": "2000_Alfa romeo_156 1,6 T.SPARK_Personbiler_273500"
+    },
+    {
+      "Make": "Alfa romeo",
+      "Model": "156 1,8 T.S.BUSINESS",
+      "Year": 2000,
+      "Type": "Personbiler",
+      "IsMinibuss": false,
+      "Fuel": "Bensin",
+      "Body": "Sedan",
+      "NumDoors": 4,
+      "NumCylinders": 4,
+      "CylinderVolume": 1747,
+      "PowerKw": 106,
+      "PowerHp": 144,
+      "Gears": "5",
+      "Comment": null,
+      "Price": 299900,
+      "NumSeats": 0,
+      "Id": "2000_Alfa romeo_156 1,8 T.S.BUSINESS_Personbiler_299900"
+    },
+```

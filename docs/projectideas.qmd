@@ -1,0 +1,64 @@
+---
+title: Ideas
+---
+# Project ideas
+This list started approx 2015. Hence, it is a bit obsolete
+
+## BirdApp
+App that assist the user to identify basic birds.
+
+By characteristics
+
+By listening to birdsongs
+
+By recognitioning birdsongs (WebBIRD?)
+
+## DS-ElectricalSpotPriceAMS
+Jupyter Notebook
+
+Use historical AMS data combined with Weather and actual spot prices etc to analyze usage
+
+AMS from Hafslund Nett
+
+ElSpot prices from NordPool
+
+Weather from Frost API Meterologisk institutt
+
+
+## GarbageCollector
+Uses the "kommunens tømmeplan" to display when garbage is collected. Also export to Calendar with notification for "plast" or "spesialavfall" etc.
+
+Location based to propose your address.
+
+## Medlemsrabapp
+Register your memberships and see what membership benefits you have
+
+Bitbucket <https://bitbucket.org/medlemsrabapp/medlemsrabapp-server>
+
+
+## NRKRadioDownloader
+1. Endre Radio avspiller instilling til å gi bare link.
+2. Bruke youtube-dl for nedlasting
+
+```bash
+youtube-dl -o "2016_01_23_aandemasken_%(autonumber)s.mp4" -f bestaudio  http://nordond19c-f.akamaihd.net/i/wo/open/11/115d66f7108e52a979a7d25e78d8118087cf8686/b322a4dc-2f0b-420c-b4d4-9f4dec107f7e_,64,192,.mp4.csmil/master.m3u8
+```
+
+## RaceTimer
+Used for sleddog events to track time of each contestant.
+
+Emit in norway
+
+Webscrore worldwide.
+
+
+## Solar Power Playhouse
+<https://www.instructables.com/id/DIY-Solar-Powered-Outdoor-LED-Lamp/>
+
+* Solar Panel 1
+* Solar Panel 2
+* Charger
+* Battery
+* Voltage Regulator
+* 12V COB LED 1
+* 12V COB LED 2

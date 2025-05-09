@@ -8,12 +8,23 @@ website:
       - href: index.qmd
         text: Home
       - 3dprint.qmd
-      - about.qmd
+      - projectideas.qmd
+      - spar10.qmd
       - resources/adsb.qmd
       - resources/ais.qmd
-      - resources/akseiere.qmd
+      - resources/aksjeeiere.qmd
       - resources/arduino.qmd
+      - resources/carregno.qmd
+      - resources/eiendomspriser.qmd
+      - resources/frost.qmd
       - resources/gtfs.qmd
+      - resources/nordpool.qmd
+      - resources/nrk.qmd
+      - resources/ruter.qmd
+      - resources/statensvegvesen.qmd
+      - resources/trafiklabs_se.qmd
+      - resources/weather.qmd
+      - about.qmd
 
 format:
   html:

@@ -1,0 +1,4 @@
+# FrostAPI
+Historical meterological data
+
+<https://frost.met.no/index2.html>
