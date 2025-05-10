@@ -43,6 +43,12 @@ website:
             text: Trafiklab.se
           - href: resources/weather.qmd
             text: Weather
+      - href: 3dprint.qmd
+        text: 3D Print
+      - href: projectideas.qmd
+        text: Project Ideas
+      - href: spar10.qmd
+        text: Sparetider
 
 format:
   html:
