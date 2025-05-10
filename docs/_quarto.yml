@@ -3,28 +3,46 @@ project:
 
 website:
   title: "My Software Dev"
-  navbar:
-    left:
+  sidebar:
+    style: docked
+    search: true
+    contents:
       - href: index.qmd
         text: Home
-      - 3dprint.qmd
-      - projectideas.qmd
-      - spar10.qmd
-      - resources/adsb.qmd
-      - resources/ais.qmd
-      - resources/aksjeeiere.qmd
-      - resources/arduino.qmd
-      - resources/carregno.qmd
-      - resources/eiendomspriser.qmd
-      - resources/frost.qmd
-      - resources/gtfs.qmd
-      - resources/nordpool.qmd
-      - resources/nrk.qmd
-      - resources/ruter.qmd
-      - resources/statensvegvesen.qmd
-      - resources/trafiklabs_se.qmd
-      - resources/weather.qmd
-      - about.qmd
+        contents:
+          - href: about.qmd
+            text: About this site
+      - section: Data Resources
+        text: Data Resources
+        contents:
+          - href: resources/adsb.qmd
+            text: ADS-B
+          - href: resources/ais.qmd
+            text: AIS
+          - href: resources/aksjeeiere.qmd
+            text: Aksjeeiere
+          - href: resources/arduino.qmd
+            text: Arduino
+          - href: resources/carregno.qmd
+            text: Carreg.no
+          - href: resources/eiendomspriser.qmd
+            text: Eiendomspriser
+          - href: resources/frost.qmd
+            text: Frost
+          - href: resources/gtfs.qmd
+            text: GTFS
+          - href: resources/nordpool.qmd
+            text: Nordpool
+          - href: resources/nrk.qmd
+            text: NRK
+          - href: resources/ruter.qmd
+            text: Ruter.no
+          - href: resources/statensvegvesen.qmd
+            text: Statens Vegvesen
+          - href: resources/trafiklabs_se.qmd
+            text: Trafiklab.se
+          - href: resources/weather.qmd
+            text: Weather
 
 format:
   html:
