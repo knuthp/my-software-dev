@@ -36,9 +36,8 @@ jobs:
       #   env:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: |
-          . venv/bin/activate
-          quarto render --to html
-          quarto publish gh-pages --no-prompt --no-commit --no-push
+          . .venv/bin/activate
+          quarto publish gh-pages --no-prompt --no-browser
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
