@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Arduino – My Software Dev</title>
+<title>Eiendomspriser – My Software Dev</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f29df41e86a1f52ed002fb944f35d3db.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f29df41e86a1f52ed002fb944f35d3db.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -69,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -81,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/adsb.html">Data Resources</a></li><li class="breadcrumb-item"><a href="../resources/arduino.html">Arduino</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/resources/adsb.html">Data Resources</a></li><li class="breadcrumb-item"><a href="../../docs/resources/eiendomspriser.html">Eiendomspriser</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -96,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">My Software Dev</a> 
+      <a href="../../">My Software Dev</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -108,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../docs/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -117,12 +152,18 @@ ul.task-list li input[type="checkbox"] {
       <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../about.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About this site</span></a>
   </div>
 </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/notebooks/demo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo Notebook</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -134,90 +175,108 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/adsb.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/adsb.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ADS-B</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/ais.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/ais.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">AIS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/aksjeeiere.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/aksjeeiere.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Aksjeeiere</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/arduino.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../docs/resources/arduino.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Arduino</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/carregno.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/carregno.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Carreg.no</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/eiendomspriser.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/eiendomspriser.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Eiendomspriser</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/frost.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/frost.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Frost</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/gtfs.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/gtfs.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GTFS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/nordpool.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/nordpool.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Nordpool</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/nrk.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/nrk.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">NRK</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/ruter.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/ruter.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Ruter.no</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/statensvegvesen.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/statensvegvesen.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Statens Vegvesen</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/trafiklabs_se.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/trafiklabs_se.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Trafiklab.se</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/weather.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/weather.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Weather</span></a>
   </div>
 </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/3dprint.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3D Print</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/projectideas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Project Ideas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/spar10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sparetider</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -228,13 +287,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#arduino-single-board-computer" id="toc-arduino-single-board-computer" class="nav-link active" data-scroll-target="#arduino-single-board-computer">Arduino Single Board computer</a></li>
-  <li><a href="#arduino" id="toc-arduino" class="nav-link" data-scroll-target="#arduino">Arduino</a>
+  <li><a href="#eiendomspriser" id="toc-eiendomspriser" class="nav-link active" data-scroll-target="#eiendomspriser">Eiendomspriser</a>
   <ul class="collapse">
-  <li><a href="#dof-sensor" id="toc-dof-sensor" class="nav-link" data-scroll-target="#dof-sensor">10DOF Sensor</a>
-  <ul class="collapse">
-  <li><a href="#datasheet" id="toc-datasheet" class="nav-link" data-scroll-target="#datasheet">Datasheet</a></li>
+  <li><a href="#api" id="toc-api" class="nav-link" data-scroll-target="#api">API</a></li>
   </ul></li>
+  <li><a href="#matrikkel" id="toc-matrikkel" class="nav-link" data-scroll-target="#matrikkel">Matrikkel</a>
+  <ul class="collapse">
+  <li><a href="#node-api" id="toc-node-api" class="nav-link" data-scroll-target="#node-api">Node API</a></li>
+  <li><a href="#street-adresses" id="toc-street-adresses" class="nav-link" data-scroll-target="#street-adresses">Street adresses</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -242,9 +302,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/adsb.html">Data Resources</a></li><li class="breadcrumb-item"><a href="../resources/arduino.html">Arduino</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/resources/adsb.html">Data Resources</a></li><li class="breadcrumb-item"><a href="../../docs/resources/eiendomspriser.html">Eiendomspriser</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Arduino</h1>
+<h1 class="title">Eiendomspriser</h1>
 </div>
 
 
@@ -261,35 +321,64 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="arduino-single-board-computer" class="level1">
-<h1>Arduino Single Board computer</h1>
+<section id="eiendomspriser" class="level2">
+<h2 class="anchored" data-anchor-id="eiendomspriser">Eiendomspriser</h2>
+<p><a href="http://siste.eiendomspriser.no/" class="uri">http://siste.eiendomspriser.no/</a></p>
+<p>Overview of Norwegian property transfers with names of sellers and byers and price.</p>
+<p>Also see</p>
+<p><a href="http://people.skolelinux.org/pere/blog/Kartverkets_lansering_av_tjenesten_Se_Eiendom_har_potensiale__hvis_bruksvilk_rene_ikke_blokkerer.html" class="uri">http://people.skolelinux.org/pere/blog/Kartverkets_lansering_av_tjenesten_Se_Eiendom_har_potensiale__hvis_bruksvilk_rene_ikke_blokkerer.html</a></p>
+<section id="api" class="level3">
+<h3 class="anchored" data-anchor-id="api">API</h3>
+<p>For a specific position</p>
+<p><a href="http://siste.eiendomspriser.no/service/getpropertiesinbounds?nelat=59.659921194583966&amp;nelon=9.642013013362885&amp;swlat=59.65928711030292&amp;swlon=9.637721478939056&amp;sort=01&amp;fromDate=&amp;toDate=&amp;_=1468666442519" class="uri">http://siste.eiendomspriser.no/service/getpropertiesinbounds?nelat=59.659921194583966&amp;nelon=9.642013013362885&amp;swlat=59.65928711030292&amp;swlon=9.637721478939056&amp;sort=01&amp;fromDate=&amp;toDate=&amp;_=1468666442519</a></p>
+<p>For a specific property</p>
+<p><a href="http://siste.eiendomspriser.no/service/getPropertyInfo?id=0604074460001000000000000&amp;_=1468666442508" class="uri">http://siste.eiendomspriser.no/service/getPropertyInfo?id=0604074460001000000000000&amp;_=1468666442508</a></p>
+<p>Search for a number in a street in a town</p>
+<p><a href="http://siste.eiendomspriser.no/service/search?query=Stensgata%2B18%252c%2B0358%2BOslo&amp;sort=&amp;fromDate=&amp;toDate=&amp;placeFilter=&amp;municipalities=&amp;_=1468681551094" class="uri">http://siste.eiendomspriser.no/service/search?query=Stensgata%2B18%252c%2B0358%2BOslo&amp;sort=&amp;fromDate=&amp;toDate=&amp;placeFilter=&amp;municipalities=&amp;_=1468681551094</a></p>
+<p>Search for entire street</p>
+<p><a href="http://siste.eiendomspriser.no/service/search?query=Stensgata%2B0358%2BOslo&amp;sort=&amp;fromDate=&amp;toDate=&amp;placeFilter=&amp;municipalities=&amp;_=1468681551094" class="uri">http://siste.eiendomspriser.no/service/search?query=Stensgata%2B0358%2BOslo&amp;sort=&amp;fromDate=&amp;toDate=&amp;placeFilter=&amp;municipalities=&amp;_=1468681551094</a></p>
+<p>Building id “BuildingId”: “0125000590120000000000000”</p>
+<p>0125 = Komunenr</p>
+<p>00059 = Gaardsnummer</p>
+<p>0120 = Bruksnummer</p>
+<p>Return JSON</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"Id"</span><span class="fu">:</span> <span class="st">"PS15227140"</span><span class="fu">,</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"BuildingId"</span><span class="fu">:</span> <span class="st">"0301002160187000000100000"</span><span class="fu">,</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"SalesCount"</span><span class="fu">:</span> <span class="dv">5</span><span class="fu">,</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"Type"</span><span class="fu">:</span> <span class="st">"Bolig"</span><span class="fu">,</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"SaleType"</span><span class="fu">:</span> <span class="st">"Fritt salg"</span><span class="fu">,</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"Title"</span><span class="fu">:</span> <span class="st">"Stensgata 18, 0358 Oslo"</span><span class="fu">,</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"Price"</span><span class="fu">:</span> <span class="dv">3615000</span><span class="fu">,</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"PriceF"</span><span class="fu">:</span> <span class="st">"3 615 000"</span><span class="fu">,</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"Text"</span><span class="fu">:</span> <span class="st">"Stensgata 18 (Gnr 216, bnr 187, seksjon 10) er solgt for kr 3.615.000 fra Carina Midgaard til Paul Arne Hordvik (27.05.2016)"</span><span class="fu">,</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"SubTexts"</span><span class="fu">:</span> <span class="kw">null</span><span class="fu">,</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"SoldDate"</span><span class="fu">:</span> <span class="st">"27.05.2016"</span><span class="fu">,</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"SortableDate"</span><span class="fu">:</span> <span class="st">"2016-05-27T00:00:00"</span><span class="fu">,</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"Address"</span><span class="fu">:</span> <span class="st">"Stensgata 18"</span><span class="fu">,</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"PostCode"</span><span class="fu">:</span> <span class="st">"0358"</span><span class="fu">,</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"PostArea"</span><span class="fu">:</span> <span class="st">"Oslo"</span><span class="fu">,</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"Coordinate"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"Lat"</span><span class="fu">:</span> <span class="fl">59.9302177677736</span><span class="fu">,</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"Lon"</span><span class="fu">:</span> <span class="fl">10.7322758980336</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="arduino" class="level1">
-<h1>Arduino</h1>
-<pre><code>BN: Arduino/Genuino Uno
-VID: 2A03
-PID: 0043
-SN: 9543334383335150E002Devices</code></pre>
-<section id="dof-sensor" class="level2">
-<h2 class="anchored" data-anchor-id="dof-sensor">10DOF Sensor</h2>
-<p>Bought at DealExtreme</p>
-<ul>
-<li>L3GD20H 3-axis gyroscope: ±250, ±500, or ±2000 degree-per-second scale</li>
-<li>LSM303 3-axis compass: ±1.3 to ±8.1 gauss magnetic field scale</li>
-<li>LSM303 3-axis accelerometer: ±2g/±4g/±8g/±16g selectable scale</li>
-<li>BMP180 barometric pressure/temperature: -40 to 85 °C, 300 - 1100hPa range, 0.17m</li>
-<li>BMP180 Barometric Pressure Sensor</li>
-</ul>
-<section id="datasheet" class="level3">
-<h3 class="anchored" data-anchor-id="datasheet">Datasheet</h3>
-<pre><code>I2C Addresses
-0x19     LSM303 Accelerometer
-0x1E     LSM303 Compass
-0x6B    L3GD20H 3-axis gyroscope
-0x77    BMP180  Barometric Pressure Sensor</code></pre>
+</section>
+<section id="matrikkel" class="level2">
+<h2 class="anchored" data-anchor-id="matrikkel">Matrikkel</h2>
+<p>In HTML</p>
+<p>To get area of property etc.</p>
+<p><a href="http://www.seeiendom.no/services/Matrikkel.svc/GetDetailPage?type=property&amp;knr=0125&amp;gnr=59&amp;bnr=117&amp;fnr=0&amp;snr=0&amp;customer=kartverket&amp;_ga=1.226581981.1735460164.1468682571" class="uri">http://www.seeiendom.no/services/Matrikkel.svc/GetDetailPage?type=property&amp;knr=0125&amp;gnr=59&amp;bnr=117&amp;fnr=0&amp;snr=0&amp;customer=kartverket&amp;_ga=1.226581981.1735460164.1468682571</a></p>
+<section id="node-api" class="level3">
+<h3 class="anchored" data-anchor-id="node-api">Node API</h3>
+<p><a href="https://github.com/zrrrzzt/seeiendom" class="uri">https://github.com/zrrrzzt/seeiendom</a></p>
+</section>
+<section id="street-adresses" class="level3">
+<h3 class="anchored" data-anchor-id="street-adresses">Street adresses</h3>
+<p><a href="http://www.skatteetaten.no/no/Bedrift-og-organisasjon/Rapportering-til-Skatteetaten/Likningsoppgaver/Boligselskap/Oversikt-over-gatenavn/" class="uri">http://www.skatteetaten.no/no/Bedrift-og-organisasjon/Rapportering-til-Skatteetaten/Likningsoppgaver/Boligselskap/Oversikt-over-gatenavn/</a></p>
 
 
-</section>
 </section>
 </section>
 

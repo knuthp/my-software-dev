@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ADSB - Flight Data publishing – My Software Dev</title>
+<title>weather – My Software Dev</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f29df41e86a1f52ed002fb944f35d3db.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f29df41e86a1f52ed002fb944f35d3db.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -69,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -81,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/adsb.html">Data Resources</a></li><li class="breadcrumb-item"><a href="../resources/adsb.html">ADS-B</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/resources/adsb.html">Data Resources</a></li><li class="breadcrumb-item"><a href="../../docs/resources/weather.html">Weather</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -96,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">My Software Dev</a> 
+      <a href="../../">My Software Dev</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -108,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../docs/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -117,12 +152,18 @@ ul.task-list li input[type="checkbox"] {
       <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../about.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About this site</span></a>
   </div>
 </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/notebooks/demo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo Notebook</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -134,127 +175,232 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/adsb.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../docs/resources/adsb.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ADS-B</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/ais.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/ais.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">AIS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/aksjeeiere.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/aksjeeiere.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Aksjeeiere</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/arduino.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/arduino.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Arduino</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/carregno.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/carregno.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Carreg.no</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/eiendomspriser.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/eiendomspriser.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Eiendomspriser</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/frost.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/frost.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Frost</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/gtfs.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/gtfs.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GTFS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/nordpool.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/nordpool.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Nordpool</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/nrk.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/nrk.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">NRK</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/ruter.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/ruter.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Ruter.no</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/statensvegvesen.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/statensvegvesen.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Statens Vegvesen</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/trafiklabs_se.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/trafiklabs_se.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Trafiklab.se</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/weather.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/resources/weather.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Weather</span></a>
   </div>
 </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/3dprint.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3D Print</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/projectideas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Project Ideas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/spar10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sparetider</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#weather" id="toc-weather" class="nav-link active" data-scroll-target="#weather">Weather</a>
+  <ul class="collapse">
+  <li><a href="#yr---forecast" id="toc-yr---forecast" class="nav-link" data-scroll-target="#yr---forecast">Yr - Forecast</a></li>
+  <li><a href="#metrologisk-institutt---detailed-forecast" id="toc-metrologisk-institutt---detailed-forecast" class="nav-link" data-scroll-target="#metrologisk-institutt---detailed-forecast">Metrologisk institutt - Detailed forecast</a>
+  <ul class="collapse">
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
+  </ul></li>
+  <li><a href="#eklima---historical-data" id="toc-eklima---historical-data" class="nav-link" data-scroll-target="#eklima---historical-data">eKlima - Historical data</a></li>
+  <li><a href="#nilu-luftkvalitet" id="toc-nilu-luftkvalitet" class="nav-link" data-scroll-target="#nilu-luftkvalitet">NILU Luftkvalitet</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/adsb.html">Data Resources</a></li><li class="breadcrumb-item"><a href="../resources/adsb.html">ADS-B</a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title">ADSB - Flight Data publishing</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/resources/adsb.html">Data Resources</a></li><li class="breadcrumb-item"><a href="../../docs/resources/weather.html">Weather</a></li></ol></nav></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
+<section id="weather" class="level1">
+<h1>Weather</h1>
+<section id="yr---forecast" class="level2">
+<h2 class="anchored" data-anchor-id="yr---forecast">Yr - Forecast</h2>
+<p>Description: <a href="http://om.yr.no/verdata/xml/" class="uri">http://om.yr.no/verdata/xml/</a></p>
+</section>
+<section id="metrologisk-institutt---detailed-forecast" class="level2">
+<h2 class="anchored" data-anchor-id="metrologisk-institutt---detailed-forecast">Metrologisk institutt - Detailed forecast</h2>
+<p>Description: <a href="https://api.met.no/weatherapi/documentation" class="uri">https://api.met.no/weatherapi/documentation</a></p>
+<section id="examples" class="level3">
+<h3 class="anchored" data-anchor-id="examples">Examples</h3>
+<p>Sunrise: <a href="http://api.met.no/weatherapi/sunrise/1.0/?lat=59.0;lon=7.58;date=2016-06-20" class="uri">http://api.met.no/weatherapi/sunrise/1.0/?lat=59.0;lon=7.58;date=2016-06-20</a></p>
+</section>
+</section>
+<section id="eklima---historical-data" class="level2">
+<h2 class="anchored" data-anchor-id="eklima---historical-data">eKlima - Historical data</h2>
+<p>Description: <a href="http://eklima.met.no/wsKlima/start/start_no.html" class="uri">http://eklima.met.no/wsKlima/start/start_no.html</a></p>
+<p>WSDL: <a href="http://eklima.met.no/metdata/MetDataService?WSDL" class="uri">http://eklima.met.no/metdata/MetDataService?WSDL</a></p>
+<section id="metdataservice.getstationsproperties" class="level4">
+<h4 class="anchored" data-anchor-id="metdataservice.getstationsproperties">MetDataService.getStationsProperties()</h4>
+<p>Gets all metrological stations in the database</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">soapenv:Envelope</span><span class="ot"> xmlns:xsi=</span><span class="st">"http://www.w3.org/2001/XMLSchema-instance"</span><span class="ot"> xmlns:xsd=</span><span class="st">"http://www.w3.org/2001/XMLSchema"</span><span class="ot"> xmlns:soapenv=</span><span class="st">"http://schemas.xmlsoap.org/soap/envelope/"</span><span class="ot"> xmlns:met=</span><span class="st">"MetDataService"</span>&gt;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>   &lt;<span class="kw">soapenv:Header</span>/&gt;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>   &lt;<span class="kw">soapenv:Body</span>&gt;</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">met:getStationsProperties</span><span class="ot"> soapenv:encodingStyle=</span><span class="st">"http://schemas.xmlsoap.org/soap/encoding/"</span>&gt;</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>         &lt;<span class="kw">stations</span><span class="ot"> xsi:type=</span><span class="st">"xsd:string"</span>&gt;&lt;/<span class="kw">stations</span>&gt;</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>         &lt;<span class="kw">username</span><span class="ot"> xsi:type=</span><span class="st">"xsd:string"</span>&gt;&lt;/<span class="kw">username</span>&gt;</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">met:getStationsProperties</span>&gt;</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>   &lt;/<span class="kw">soapenv:Body</span>&gt;</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">soapenv:Envelope</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="metdataservice.gettimeserietypesproperties" class="level4">
+<h4 class="anchored" data-anchor-id="metdataservice.gettimeserietypesproperties">MetDataService.getTimeserieTypesProperties()</h4>
+<p>Get the different time series types</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">soapenv:Envelope</span><span class="ot"> xmlns:xsi=</span><span class="st">"http://www.w3.org/2001/XMLSchema-instance"</span><span class="ot"> xmlns:xsd=</span><span class="st">"http://www.w3.org/2001/XMLSchema"</span><span class="ot"> xmlns:soapenv=</span><span class="st">"http://schemas.xmlsoap.org/soap/envelope/"</span><span class="ot"> xmlns:met=</span><span class="st">"MetDataService"</span>&gt;</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>   &lt;<span class="kw">soapenv:Header</span>/&gt;</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>   &lt;<span class="kw">soapenv:Body</span>&gt;</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">met:getTimeserieTypesProperties</span><span class="ot"> soapenv:encodingStyle=</span><span class="st">"http://schemas.xmlsoap.org/soap/encoding/"</span>&gt;</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>         &lt;<span class="kw">language</span><span class="ot"> xsi:type=</span><span class="st">"xsd:string"</span>&gt;no&lt;/<span class="kw">language</span>&gt;</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>         &lt;<span class="kw">timeserieTypes</span><span class="ot"> xsi:type=</span><span class="st">"xsd:string"</span>&gt;&lt;/<span class="kw">timeserieTypes</span>&gt;</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">met:getTimeserieTypesProperties</span>&gt;</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>   &lt;/<span class="kw">soapenv:Body</span>&gt;</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">soapenv:Envelope</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="metdataservice.getelementsfromtimeserietypestation" class="level4">
+<h4 class="anchored" data-anchor-id="metdataservice.getelementsfromtimeserietypestation">MetDataService.getElementsFromTimeserieTypeStation()</h4>
+<p>Gets the Elements a time series contains for a specific meterological station.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">soapenv:Envelope</span><span class="ot"> xmlns:xsi=</span><span class="st">"http://www.w3.org/2001/XMLSchema-instance"</span><span class="ot"> xmlns:xsd=</span><span class="st">"http://www.w3.org/2001/XMLSchema"</span><span class="ot"> xmlns:soapenv=</span><span class="st">"http://schemas.xmlsoap.org/soap/envelope/"</span><span class="ot"> xmlns:met=</span><span class="st">"MetDataService"</span>&gt;</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>   &lt;<span class="kw">soapenv:Header</span>/&gt;</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>   &lt;<span class="kw">soapenv:Body</span>&gt;</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">met:getElementsFromTimeserieTypeStation</span><span class="ot"> soapenv:encodingStyle=</span><span class="st">"http://schemas.xmlsoap.org/soap/encoding/"</span>&gt;</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>         &lt;<span class="kw">timeserietypeID</span><span class="ot"> xsi:type=</span><span class="st">"xsd:string"</span>&gt;2&lt;/<span class="kw">timeserietypeID</span>&gt;</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>         &lt;<span class="kw">stnr</span><span class="ot"> xsi:type=</span><span class="st">"xsd:int"</span>&gt;19710&lt;/<span class="kw">stnr</span>&gt;</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">met:getElementsFromTimeserieTypeStation</span>&gt;</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>   &lt;/<span class="kw">soapenv:Body</span>&gt;</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">soapenv:Envelope</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="metdataservice.getmetdata" class="level4">
+<h4 class="anchored" data-anchor-id="metdataservice.getmetdata">MetDataService.getMetData()</h4>
+<p>Gets the weather data for a specific station, and providing time series and elements type.</p>
+<pre><code>&lt;soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:met="MetDataService"&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;met:getMetData soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"&gt;
+         &lt;timeserietypeID xsi:type="xsd:string"&gt;2&lt;/timeserietypeID&gt;
+         &lt;format xsi:type="xsd:string"&gt;&lt;/format&gt;
+         &lt;from xsi:type="xsd:string"&gt;2016-06-10&lt;/from&gt;
+         &lt;to xsi:type="xsd:string"&gt;2016-06-19&lt;/to&gt;
+         &lt;stations xsi:type="xsd:string"&gt;19710&lt;/stations&gt;
+         &lt;elements xsi:type="xsd:string"&gt;TAN,TAX,RR_1,RR_12,RR_24,RA,UU&lt;/elements&gt;
+         &lt;hours xsi:type="xsd:string"&gt;0&lt;/hours&gt;
+         &lt;months xsi:type="xsd:string"&gt;&lt;/months&gt;
+         &lt;username xsi:type="xsd:string"&gt;&lt;/username&gt;
+      &lt;/met:getMetData&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;</code></pre>
+</section>
+</section>
+<section id="nilu-luftkvalitet" class="level2">
+<h2 class="anchored" data-anchor-id="nilu-luftkvalitet">NILU Luftkvalitet</h2>
+<p><a href="https://luftkvalitet.info" class="uri">https://luftkvalitet.info</a></p>
+<p>API: <a href="http://dataservice.luftkvalitet.info/" class="uri">http://dataservice.luftkvalitet.info/</a></p>
+<p>Datex <a href="http://dataservice.luftkvalitet.info/datex/polygon" class="uri">http://dataservice.luftkvalitet.info/datex/polygon</a></p>
+<p>Gets xml in Datex2 format.</p>
+<p>HOW TO USE: <a href="http://dataservice.luftkvalitet.info/datex/polygon/?source=%7Bsource%7D&amp;pollutanttype=%7Bpollutanttype%7D&amp;aggregation=%7Baggregation%7D&amp;layerTitle=%7BlayerTitle%7D&amp;epsg=%7Bepsg%7D" class="uri">http://dataservice.luftkvalitet.info/datex/polygon/?source={source}&amp;pollutanttype={pollutanttype}&amp;aggregation={aggregation}&amp;layerTitle={layerTitle}&amp;epsg={epsg}</a></p>
+<pre><code>{source}: Which city to use: default:OSLO, Others:STAVANGER,GRENLAND,BERGEN, DRAMMEN,TRONDHEIM.
+{pollutanttype}: Which component to use: default:PM10, Others: PM2.5 and NO2.
+{aggregation}: Whcih aggregation to use: default is HOURLY, Others: NHIGHEST or DAILYAVERAGE.
+{epsg}: Which epsg to use, default is 32632.
+{layerTitle}: Which layer to use, default is FIELDS, Others: RECEPTORPOINTS or ROADLINKS.)</code></pre>
+<p>Url format: <a href="http://dataservice.luftkvalitet.info/geoserver/%7Bsource%7D/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=BB_%7Bsource%7D:%7BlayerTitle%7D_%7Baggregation%7D&amp;outputformat=json&amp;cgl_filter=CompName%3D%27%7Bpollutanttype%7D27&amp;srsName=EPSG:%7Bepsg%7D" class="uri">http://dataservice.luftkvalitet.info/geoserver/{source}/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=BB_{source}:{layerTitle}_{aggregation}&amp;outputformat=json&amp;cgl_filter=CompName%3D%27{pollutanttype}27&amp;srsName=EPSG:{epsg}</a></p>
 
 
-</header>
-
-
-<p>I had access for some time, but it is now paid or you need to be part of publishers with your own receiver to get all data.</p>
-<ol type="1">
-<li><a href="https://www.adsbexchange.com/data/#" class="uri">https://www.adsbexchange.com/data/#</a></li>
-<li><a href="https://public-api.adsbexchange.com/VirtualRadar/AircraftList.json?lat=69.0&amp;lng=10.0&amp;fDstL=0&amp;fDstU=1000" class="uri">https://public-api.adsbexchange.com/VirtualRadar/AircraftList.json?lat=69.0&amp;lng=10.0&amp;fDstL=0&amp;fDstU=1000</a></li>
-</ol>
-
-
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
