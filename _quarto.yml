@@ -7,49 +7,49 @@ website:
     style: docked
     search: true
     contents:
-      - href: index.qmd
+      - href: docs/index.qmd
         text: Home
         contents:
-          - href: about.qmd
+          - href: docs/about.qmd
             text: About this site
-      - href: notebooks/demo.qmd
+      - href: docs/notebooks/demo.qmd
         text: Demo Notebook
       - section: Data Resources
         text: Data Resources
         contents:
-          - href: resources/adsb.qmd
+          - href: docs/resources/adsb.qmd
             text: ADS-B
-          - href: resources/ais.qmd
+          - href: docs/resources/ais.qmd
             text: AIS
-          - href: resources/aksjeeiere.qmd
+          - href: docs/resources/aksjeeiere.qmd
             text: Aksjeeiere
-          - href: resources/arduino.qmd
+          - href: docs/resources/arduino.qmd
             text: Arduino
-          - href: resources/carregno.qmd
+          - href: docs/resources/carregno.qmd
             text: Carreg.no
-          - href: resources/eiendomspriser.qmd
+          - href: docs/resources/eiendomspriser.qmd
             text: Eiendomspriser
-          - href: resources/frost.qmd
+          - href: docs/resources/frost.qmd
             text: Frost
-          - href: resources/gtfs.qmd
+          - href: docs/resources/gtfs.qmd
             text: GTFS
-          - href: resources/nordpool.qmd
+          - href: docs/resources/nordpool.qmd
             text: Nordpool
-          - href: resources/nrk.qmd
+          - href: docs/resources/nrk.qmd
             text: NRK
-          - href: resources/ruter.qmd
+          - href: docs/resources/ruter.qmd
             text: Ruter.no
-          - href: resources/statensvegvesen.qmd
+          - href: docs/resources/statensvegvesen.qmd
             text: Statens Vegvesen
-          - href: resources/trafiklabs_se.qmd
+          - href: docs/resources/trafiklabs_se.qmd
             text: Trafiklab.se
-          - href: resources/weather.qmd
+          - href: docs/resources/weather.qmd
             text: Weather
-      - href: 3dprint.qmd
+      - href: docs/3dprint.qmd
         text: 3D Print
-      - href: projectideas.qmd
+      - href: docs/projectideas.qmd
         text: Project Ideas
-      - href: spar10.qmd
+      - href: docs/spar10.qmd
         text: Sparetider
 
 format:

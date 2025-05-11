@@ -11,4 +11,6 @@ wheels/
 
 
 # Quarto
-docs/_site
+_site/*
+
+/.quarto/
