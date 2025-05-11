@@ -12,6 +12,8 @@ website:
         contents:
           - href: about.qmd
             text: About this site
+      - href: notebooks/demo.qmd
+        text: Demo Notebook
       - section: Data Resources
         text: Data Resources
         contents:

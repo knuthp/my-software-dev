@@ -7,7 +7,14 @@ authors = [
     { name = "Knut H Pedersen", email = "knuthp@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "ipykernel>=6.29.5",
+    "matplotlib>=3.10.3",
+    "nbclient>=0.10.2",
+    "nbformat>=5.10.4",
+    "numpy>=2.2.5",
+    "pyyaml>=6.0.2",
+]
 
 [project.scripts]
 my-software-dev = "my_software_dev:main"
