@@ -1,0 +1,23 @@
+---
+title: "GeoPandas demo"
+format:
+  html:
+    code-fold: true
+jupyter: python3
+---
+
+For a demonstration of a geopandas see @fig-geopandas-explore.
+
+```{python}
+#| label: fig-geopandas-explore
+#| fig-cap: "A map to explore geopandas"
+
+import geopandas
+url_postnummer_nor = "https://raw.githubusercontent.com/ivanhjel/postnummer/master/postnummeromrader.geojson"
+
+
+gdf = geopandas.read_file(url_postnummer_nor)
+gdf.explore()
+
+```
+
