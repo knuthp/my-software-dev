@@ -36,7 +36,29 @@
     "href": "docs/resources/adsb.html",
     "title": "ADSB - Flight Data publishing",
     "section": "",
-    "text": "I had access for some time, but it is now paid or you need to be part of publishers with your own receiver to get all data.\n\nhttps://www.adsbexchange.com/data/#\nhttps://public-api.adsbexchange.com/VirtualRadar/AircraftList.json?lat=69.0&lng=10.0&fDstL=0&fDstU=1000",
+    "text": "Works some without authentication\n\nSeems to return some kind of json\n{\n  \"time\": 1747082432,\n  \"states\": [\n    [\n      \"39de4e\",\n      \"TVF31HD \",\n      \"France\",\n      1747082431, 1747082431, 0.3835, 45.5267, 11879.58, false, 228.2, 208.99, 0.65, null, 11902.44, \"7654\",\n      false, 0],\n    [\n      \"80162c\",\n      \"\",\n      \"India\",\n      1747082136, 1747082136, 72.4998, 17.0829, 10363.2, false, 229.75, 309.82, 0, null, 10972.8, null, false, 0],\n    [\n      \"ab1644\",\n      \"\",\n      \"United States\",\n      1747082163, 1747082163, -89.6155, 37.2953, 8816.34, false, 224.63, 353.69, -14.31, null, 9144, null, false, 0],\n    [\n      \"a3feec\",\n      \"N357BE  \",\n      \"United States\",\n      1747082431, 1747082431, -95.6492, 43.5064, 6499.86, false, 175.37, 325.52, 11.38, null, 6697.98, null, false, 0],\n    [\n]}",
+    "crumbs": [
+      "Data Resources",
+      "ADS-B"
+    ]
+  },
+  {
+    "objectID": "docs/resources/adsb.html#opensky",
+    "href": "docs/resources/adsb.html#opensky",
+    "title": "ADSB - Flight Data publishing",
+    "section": "",
+    "text": "Works some without authentication\n\nSeems to return some kind of json\n{\n  \"time\": 1747082432,\n  \"states\": [\n    [\n      \"39de4e\",\n      \"TVF31HD \",\n      \"France\",\n      1747082431, 1747082431, 0.3835, 45.5267, 11879.58, false, 228.2, 208.99, 0.65, null, 11902.44, \"7654\",\n      false, 0],\n    [\n      \"80162c\",\n      \"\",\n      \"India\",\n      1747082136, 1747082136, 72.4998, 17.0829, 10363.2, false, 229.75, 309.82, 0, null, 10972.8, null, false, 0],\n    [\n      \"ab1644\",\n      \"\",\n      \"United States\",\n      1747082163, 1747082163, -89.6155, 37.2953, 8816.34, false, 224.63, 353.69, -14.31, null, 9144, null, false, 0],\n    [\n      \"a3feec\",\n      \"N357BE  \",\n      \"United States\",\n      1747082431, 1747082431, -95.6492, 43.5064, 6499.86, false, 175.37, 325.52, 11.38, null, 6697.98, null, false, 0],\n    [\n]}",
+    "crumbs": [
+      "Data Resources",
+      "ADS-B"
+    ]
+  },
+  {
+    "objectID": "docs/resources/adsb.html#adsbexchange",
+    "href": "docs/resources/adsb.html#adsbexchange",
+    "title": "ADSB - Flight Data publishing",
+    "section": "AdsbExchange",
+    "text": "AdsbExchange\nI had access for some time, but it is now paid or you need to be part of publishers with your own receiver to get all data.\n\nhttps://www.adsbexchange.com/data/#\nhttps://public-api.adsbexchange.com/VirtualRadar/AircraftList.json?lat=69.0&lng=10.0&fDstL=0&fDstU=1000",
     "crumbs": [
       "Data Resources",
       "ADS-B"
