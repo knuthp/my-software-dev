@@ -27,6 +27,7 @@
     "section": "",
     "text": "For a demonstration of a line plot on a polar axis, see Figure 1.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'}\n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 1: A line plot on a polar axis\n\n\n\n\n\nAnd some more.",
     "crumbs": [
+      "Data Exploring",
       "Demo Notebook"
     ]
   },
@@ -571,7 +572,11 @@
     "href": "docs/notebooks/geopandas.html",
     "title": "GeoPandas demo",
     "section": "",
-    "text": "For a demonstration of a geopandas see Figure 1.\n\n\nCode\nimport geopandas\nurl_postnummer_nor = \"https://raw.githubusercontent.com/ivanhjel/postnummer/master/postnummeromrader.geojson\"\n\n\ngdf = geopandas.read_file(url_postnummer_nor)\ngdf.explore()\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\nFigure 1: A map to explore geopandas"
+    "text": "For a demonstration of a geopandas see Figure 1.\n\n\nCode\nimport geopandas\nurl_postnummer_nor = \"https://raw.githubusercontent.com/ivanhjel/postnummer/master/postnummeromrader.geojson\"\n\n\ngdf = geopandas.read_file(url_postnummer_nor)\ngdf.explore()\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\nFigure 1: A map to explore geopandas",
+    "crumbs": [
+      "Data Exploring",
+      "Explore GeoJSON"
+    ]
   },
   {
     "objectID": "docs/spar10.html",
