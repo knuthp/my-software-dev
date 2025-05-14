@@ -6,9 +6,37 @@ title: ADSB - Flight Data publishing
 Works some without authentication
 
 
-[](https://opensky-network.org/api/states/all)
+[Read all flights right now](https://opensky-network.org/api/states/all)
 
-Seems to return some kind of json
+
+```json
+{
+  "time": 1680000000,
+  "states": [
+    [
+      "3c6444",          // 0: icao24
+      "DLH123 ",         // 1: callsign
+      "Germany",         // 2: origin_country
+      1680000000,        // 3: time_position
+      1680000001,        // 4: last_contact
+      9.2005,            // 5: longitude
+      48.6888,           // 6: latitude
+      11000.0,           // 7: baro_altitude
+      false,             // 8: on_ground
+      250.0,             // 9: velocity (m/s)
+      180.0,             // 10: heading (degrees)
+      -5.2,              // 11: vertical_rate (m/s)
+      null,              // 12: sensors
+      11200.0,           // 13: geo_altitude
+      "380",             // 14: squawk
+      false,             // 15: spi
+      0                  // 16: position_source
+    ]
+  ]
+}
+```
+
+Example of returned data
 ```json
 {
   "time": 1747082432,

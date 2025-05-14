@@ -19,6 +19,8 @@ website:
             text: Explore GeoJSON
           - href: docs/notebooks/demo.qmd
             text: Demo Notebook
+          - href: docs/notebooks/opensky.qmd
+            text: OpenSky flights geo
       - section: Data Resources
         text: Data Resources
         contents:

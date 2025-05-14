@@ -1,0 +1,47 @@
+---
+title: "Opensky"
+format:
+  html:
+    code-fold: true
+jupyter: python3
+---
+
+OpenSky provides api to get data for flights in progress. It is rate limited
+
+
+
+```{python}
+##| label:
+##| fig-cap: ""
+
+import requests
+import pandas as pd
+
+def fetch_opensky_data():
+    url = "https://opensky-network.org/api/states/all"
+    response = requests.get(url)
+    data = response.json()
+
+    columns = [
+        "icao24", "callsign", "origin_country", "time_position", "last_contact",
+        "longitude", "latitude", "baro_altitude", "on_ground", "velocity",
+        "heading", "vertical_rate", "sensors", "geo_altitude", "squawk",
+        "spi", "position_source"
+    ]
+
+    df_raw = pd.DataFrame(data['states'], columns=columns)
+    return (
+        df_raw
+        .assign(
+            time_position=pd.to_datetime(df_raw["time_position"], unit="s"),
+            last_contact=pd.to_datetime(df_raw["last_contact"], unit="s"),
+        )
+    )
+    # df['altitude'] = df['geo_altitude'].combine_first(df['baro_altitude'])
+    # return df[['latitude', 'longitude', 'altitude', 'velocity', 'heading']]
+
+# Example usage
+df_flights = fetch_opensky_data()
+df_flights
+```
+
