@@ -2,90 +2,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://knuthp.github.io/my-software-dev/docs/about.html</loc>
-    <lastmod>2025-05-12T20:43:32.507Z</lastmod>
+    <lastmod>2025-05-14T05:11:15.655Z</lastmod>
   </url>
   <url>
     <loc>https://knuthp.github.io/my-software-dev/docs/index.html</loc>
-    <lastmod>2025-05-12T20:43:32.507Z</lastmod>
+    <lastmod>2025-05-14T05:11:15.655Z</lastmod>
   </url>
   <url>
     <loc>https://knuthp.github.io/my-software-dev/docs/notebooks/demo.html</loc>
-    <lastmod>2025-05-12T20:43:32.507Z</lastmod>
-  </url>
-  <url>
-    <loc>https://knuthp.github.io/my-software-dev/docs/resources/adsb.html</loc>
-    <lastmod>2025-05-12T20:43:32.507Z</lastmod>
-  </url>
-  <url>
-    <loc>https://knuthp.github.io/my-software-dev/docs/resources/carregno.html</loc>
-    <lastmod>2025-05-12T20:43:32.507Z</lastmod>
-  </url>
-  <url>
-    <loc>https://knuthp.github.io/my-software-dev/docs/resources/weather.html</loc>
-    <lastmod>2025-05-12T20:43:32.508Z</lastmod>
-  </url>
-  <url>
-    <loc>https://knuthp.github.io/my-software-dev/docs/resources/ruter.html</loc>
-    <lastmod>2025-05-12T20:43:32.508Z</lastmod>
-  </url>
-  <url>
-    <loc>https://knuthp.github.io/my-software-dev/docs/resources/frost.html</loc>
-    <lastmod>2025-05-12T20:43:32.508Z</lastmod>
-  </url>
-  <url>
-    <loc>https://knuthp.github.io/my-software-dev/docs/resources/arduino.html</loc>
-    <lastmod>2025-05-12T20:43:32.507Z</lastmod>
-  </url>
-  <url>
-    <loc>https://knuthp.github.io/my-software-dev/docs/resources/nrk.html</loc>
-    <lastmod>2025-05-12T20:43:32.508Z</lastmod>
-  </url>
-  <url>
-    <loc>https://knuthp.github.io/my-software-dev/docs/3dprint.html</loc>
-    <lastmod>2025-05-12T20:43:32.507Z</lastmod>
-  </url>
-  <url>
-    <loc>https://knuthp.github.io/my-software-dev/docs/projectideas.html</loc>
-    <lastmod>2025-05-12T20:43:32.507Z</lastmod>
-  </url>
-  <url>
-    <loc>https://knuthp.github.io/my-software-dev/docs/resources/aksjeeiere.html</loc>
-    <lastmod>2025-05-12T20:43:32.507Z</lastmod>
-  </url>
-  <url>
-    <loc>https://knuthp.github.io/my-software-dev/docs/resources/index.html</loc>
-    <lastmod>2025-05-12T20:43:32.508Z</lastmod>
-  </url>
-  <url>
-    <loc>https://knuthp.github.io/my-software-dev/docs/resources/ais.html</loc>
-    <lastmod>2025-05-12T20:43:32.507Z</lastmod>
-  </url>
-  <url>
-    <loc>https://knuthp.github.io/my-software-dev/docs/resources/gtfs.html</loc>
-    <lastmod>2025-05-12T20:43:32.508Z</lastmod>
-  </url>
-  <url>
-    <loc>https://knuthp.github.io/my-software-dev/docs/resources/trafiklabs_se.html</loc>
-    <lastmod>2025-05-12T20:43:32.508Z</lastmod>
-  </url>
-  <url>
-    <loc>https://knuthp.github.io/my-software-dev/docs/resources/nordpool.html</loc>
-    <lastmod>2025-05-12T20:43:32.508Z</lastmod>
-  </url>
-  <url>
-    <loc>https://knuthp.github.io/my-software-dev/docs/resources/statensvegvesen.html</loc>
-    <lastmod>2025-05-12T20:43:32.508Z</lastmod>
+    <lastmod>2025-05-14T05:11:15.655Z</lastmod>
   </url>
   <url>
     <loc>https://knuthp.github.io/my-software-dev/docs/resources/eiendomspriser.html</loc>
-    <lastmod>2025-05-12T20:43:32.507Z</lastmod>
+    <lastmod>2025-05-14T05:11:15.656Z</lastmod>
+  </url>
+  <url>
+    <loc>https://knuthp.github.io/my-software-dev/docs/resources/statensvegvesen.html</loc>
+    <lastmod>2025-05-14T05:11:15.657Z</lastmod>
+  </url>
+  <url>
+    <loc>https://knuthp.github.io/my-software-dev/docs/resources/nordpool.html</loc>
+    <lastmod>2025-05-14T05:11:15.656Z</lastmod>
+  </url>
+  <url>
+    <loc>https://knuthp.github.io/my-software-dev/docs/resources/trafiklabs_se.html</loc>
+    <lastmod>2025-05-14T05:11:15.657Z</lastmod>
+  </url>
+  <url>
+    <loc>https://knuthp.github.io/my-software-dev/docs/resources/gtfs.html</loc>
+    <lastmod>2025-05-14T05:11:15.656Z</lastmod>
+  </url>
+  <url>
+    <loc>https://knuthp.github.io/my-software-dev/docs/resources/ais.html</loc>
+    <lastmod>2025-05-14T05:11:15.656Z</lastmod>
+  </url>
+  <url>
+    <loc>https://knuthp.github.io/my-software-dev/docs/resources/index.html</loc>
+    <lastmod>2025-05-14T05:11:15.656Z</lastmod>
+  </url>
+  <url>
+    <loc>https://knuthp.github.io/my-software-dev/docs/resources/aksjeeiere.html</loc>
+    <lastmod>2025-05-14T05:11:15.656Z</lastmod>
+  </url>
+  <url>
+    <loc>https://knuthp.github.io/my-software-dev/docs/projectideas.html</loc>
+    <lastmod>2025-05-14T05:11:15.656Z</lastmod>
+  </url>
+  <url>
+    <loc>https://knuthp.github.io/my-software-dev/docs/3dprint.html</loc>
+    <lastmod>2025-05-14T05:11:15.655Z</lastmod>
+  </url>
+  <url>
+    <loc>https://knuthp.github.io/my-software-dev/docs/resources/nrk.html</loc>
+    <lastmod>2025-05-14T05:11:15.656Z</lastmod>
+  </url>
+  <url>
+    <loc>https://knuthp.github.io/my-software-dev/docs/resources/arduino.html</loc>
+    <lastmod>2025-05-14T05:11:15.656Z</lastmod>
+  </url>
+  <url>
+    <loc>https://knuthp.github.io/my-software-dev/docs/resources/frost.html</loc>
+    <lastmod>2025-05-14T05:11:15.656Z</lastmod>
+  </url>
+  <url>
+    <loc>https://knuthp.github.io/my-software-dev/docs/resources/ruter.html</loc>
+    <lastmod>2025-05-14T05:11:15.656Z</lastmod>
+  </url>
+  <url>
+    <loc>https://knuthp.github.io/my-software-dev/docs/resources/weather.html</loc>
+    <lastmod>2025-05-14T05:11:15.657Z</lastmod>
+  </url>
+  <url>
+    <loc>https://knuthp.github.io/my-software-dev/docs/resources/carregno.html</loc>
+    <lastmod>2025-05-14T05:11:15.656Z</lastmod>
+  </url>
+  <url>
+    <loc>https://knuthp.github.io/my-software-dev/docs/resources/adsb.html</loc>
+    <lastmod>2025-05-14T05:11:15.656Z</lastmod>
+  </url>
+  <url>
+    <loc>https://knuthp.github.io/my-software-dev/docs/notebooks/opensky.html</loc>
+    <lastmod>2025-05-14T05:11:15.656Z</lastmod>
   </url>
   <url>
     <loc>https://knuthp.github.io/my-software-dev/docs/notebooks/geopandas.html</loc>
-    <lastmod>2025-05-12T20:43:32.507Z</lastmod>
+    <lastmod>2025-05-14T05:11:15.656Z</lastmod>
   </url>
   <url>
     <loc>https://knuthp.github.io/my-software-dev/docs/spar10.html</loc>
-    <lastmod>2025-05-12T20:43:32.508Z</lastmod>
+    <lastmod>2025-05-14T05:11:15.657Z</lastmod>
   </url>
 </urlset>
