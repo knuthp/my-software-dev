@@ -74,7 +74,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-97adc6f62f4452c3e92054d688235271.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-06484fad4722108f498d8c00c46b7438.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -334,43 +334,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>OpenSky provides api to get data for flights in progress. It is rate limited</p>
-<div id="41e3ff94" class="cell" data-execution_count="1">
+<div id="4447e2dd" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">##| label:</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">##| fig-cap: ""</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fetch_opensky_data():</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    url <span class="op">=</span> <span class="st">"https://opensky-network.org/api/states/all"</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> requests.get(url)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> response.json()</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    columns <span class="op">=</span> [</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        <span class="st">"icao24"</span>, <span class="st">"callsign"</span>, <span class="st">"origin_country"</span>, <span class="st">"time_position"</span>, <span class="st">"last_contact"</span>,</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        <span class="st">"longitude"</span>, <span class="st">"latitude"</span>, <span class="st">"baro_altitude"</span>, <span class="st">"on_ground"</span>, <span class="st">"velocity"</span>,</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        <span class="st">"heading"</span>, <span class="st">"vertical_rate"</span>, <span class="st">"sensors"</span>, <span class="st">"geo_altitude"</span>, <span class="st">"squawk"</span>,</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        <span class="st">"spi"</span>, <span class="st">"position_source"</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    ]</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    df_raw <span class="op">=</span> pd.DataFrame(data[<span class="st">'states'</span>], columns<span class="op">=</span>columns)</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        df_raw</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>        .assign(</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>            time_position<span class="op">=</span>pd.to_datetime(df_raw[<span class="st">"time_position"</span>], unit<span class="op">=</span><span class="st">"s"</span>),</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>            last_contact<span class="op">=</span>pd.to_datetime(df_raw[<span class="st">"last_contact"</span>], unit<span class="op">=</span><span class="st">"s"</span>),</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>        )</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># df['altitude'] = df['geo_altitude'].combine_first(df['baro_altitude'])</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="co"># return df[['latitude', 'longitude', 'altitude', 'velocity', 'heading']]</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Example usage</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>df_flights <span class="op">=</span> fetch_opensky_data()</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>df_flights</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> geopandas</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="1">
+</div>
+<div id="6a40a36e" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">##| label:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">##| fig-cap: ""</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fetch_opensky_data():</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    url <span class="op">=</span> <span class="st">"https://opensky-network.org/api/states/all"</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> requests.get(url)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> response.json()</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    columns <span class="op">=</span> [</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        <span class="st">"icao24"</span>, <span class="st">"callsign"</span>, <span class="st">"origin_country"</span>, <span class="st">"time_position"</span>, <span class="st">"last_contact"</span>,</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>        <span class="st">"longitude"</span>, <span class="st">"latitude"</span>, <span class="st">"baro_altitude"</span>, <span class="st">"on_ground"</span>, <span class="st">"velocity"</span>,</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>        <span class="st">"heading"</span>, <span class="st">"vertical_rate"</span>, <span class="st">"sensors"</span>, <span class="st">"geo_altitude"</span>, <span class="st">"squawk"</span>,</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        <span class="st">"spi"</span>, <span class="st">"position_source"</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    df_raw <span class="op">=</span> pd.DataFrame(data[<span class="st">'states'</span>], columns<span class="op">=</span>columns)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>        df_raw</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>        .assign(</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>            time_position<span class="op">=</span>pd.to_datetime(df_raw[<span class="st">"time_position"</span>], unit<span class="op">=</span><span class="st">"s"</span>),</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>            last_contact<span class="op">=</span>pd.to_datetime(df_raw[<span class="st">"last_contact"</span>], unit<span class="op">=</span><span class="st">"s"</span>),</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="co"># df['altitude'] = df['geo_altitude'].combine_first(df['baro_altitude'])</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    <span class="co"># return df[['latitude', 'longitude', 'altitude', 'velocity', 'heading']]</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Example usage</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>df_flights <span class="op">=</span> fetch_opensky_data()</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>df_flights</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="2">
 <div>
 
 
@@ -400,101 +406,101 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>39de4e</td>
-<td>TVF3423</td>
-<td>France</td>
-<td>2025-05-14 05:11:32</td>
-<td>2025-05-14 05:11:32</td>
-<td>21.0945</td>
-<td>43.7410</td>
-<td>11582.40</td>
+<td>80162a</td>
+<td>IGO6M</td>
+<td>India</td>
+<td>2025-05-15 05:12:09</td>
+<td>2025-05-15 05:12:09</td>
+<td>77.5738</td>
+<td>12.9404</td>
+<td>4046.22</td>
 <td>False</td>
-<td>214.20</td>
-<td>286.61</td>
-<td>0.00</td>
+<td>106.49</td>
+<td>179.45</td>
+<td>2.60</td>
 <td>None</td>
-<td>11612.88</td>
-<td>7350</td>
+<td>4175.76</td>
+<td>None</td>
 <td>False</td>
 <td>0</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
-<td>80162d</td>
-<td>AXB711</td>
-<td>India</td>
-<td>2025-05-14 05:11:39</td>
-<td>2025-05-14 05:11:39</td>
-<td>74.2576</td>
-<td>14.7037</td>
-<td>11582.40</td>
+<td>39de4d</td>
+<td>TVF82JB</td>
+<td>France</td>
+<td>2025-05-15 05:12:10</td>
+<td>2025-05-15 05:12:10</td>
+<td>-1.1161</td>
+<td>47.4473</td>
+<td>10652.76</td>
 <td>False</td>
-<td>248.03</td>
-<td>329.87</td>
+<td>235.05</td>
+<td>223.76</td>
 <td>0.00</td>
 <td>None</td>
-<td>12283.44</td>
-<td>None</td>
+<td>10782.30</td>
+<td>7631</td>
 <td>False</td>
 <td>0</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
-<td>801638</td>
-<td>AXB2641</td>
-<td>India</td>
-<td>2025-05-14 05:06:53</td>
-<td>2025-05-14 05:06:58</td>
-<td>88.8394</td>
-<td>17.9848</td>
-<td>11277.60</td>
+<td>407a38</td>
+<td>NPT902</td>
+<td>United Kingdom</td>
+<td>2025-05-15 05:12:10</td>
+<td>2025-05-15 05:12:10</td>
+<td>-1.1058</td>
+<td>51.6174</td>
+<td>5494.02</td>
 <td>False</td>
-<td>239.36</td>
-<td>172.22</td>
-<td>0.00</td>
+<td>142.86</td>
+<td>191.63</td>
+<td>-0.33</td>
 <td>None</td>
-<td>12001.50</td>
-<td>2647</td>
-<td>False</td>
+<td>5669.28</td>
+<td>5176</td>
+<td>True</td>
 <td>0</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
-<td>39de4d</td>
-<td>TVF29UL</td>
-<td>France</td>
-<td>2025-05-14 05:11:39</td>
-<td>2025-05-14 05:11:39</td>
-<td>1.9948</td>
-<td>40.5098</td>
-<td>10104.12</td>
+<td>801642</td>
+<td>AXB711</td>
+<td>India</td>
+<td>2025-05-15 05:12:08</td>
+<td>2025-05-15 05:12:08</td>
+<td>70.3265</td>
+<td>17.9124</td>
+<td>11582.40</td>
 <td>False</td>
-<td>239.13</td>
-<td>349.46</td>
-<td>8.78</td>
+<td>245.26</td>
+<td>296.14</td>
+<td>0.00</td>
 <td>None</td>
-<td>10248.90</td>
-<td>1473</td>
+<td>12298.68</td>
+<td>None</td>
 <td>False</td>
 <td>0</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">4</td>
-<td>407a38</td>
-<td>NPT902</td>
-<td>United Kingdom</td>
-<td>2025-05-14 05:11:39</td>
-<td>2025-05-14 05:11:39</td>
-<td>-1.1299</td>
-<td>51.8848</td>
-<td>5181.60</td>
+<td>801640</td>
+<td>AIC2354</td>
+<td>India</td>
+<td>2025-05-15 05:08:32</td>
+<td>2025-05-15 05:11:03</td>
+<td>90.2112</td>
+<td>18.3818</td>
+<td>11285.22</td>
 <td>False</td>
-<td>138.38</td>
-<td>184.91</td>
+<td>233.96</td>
+<td>104.65</td>
 <td>-0.33</td>
 <td>None</td>
-<td>5318.76</td>
-<td>5162</td>
+<td>12016.74</td>
+<td>2630</td>
 <td>False</td>
 <td>0</td>
 </tr>
@@ -519,101 +525,101 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>...</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">5433</td>
-<td>4b1918</td>
-<td>SWR39</td>
-<td>Switzerland</td>
-<td>2025-05-14 05:11:38</td>
-<td>2025-05-14 05:11:38</td>
-<td>-104.2249</td>
-<td>51.2912</td>
+<td data-quarto-table-cell-role="th">5810</td>
+<td>a7f804</td>
+<td>SKW5887</td>
+<td>United States</td>
+<td>2025-05-15 05:06:47</td>
+<td>2025-05-15 05:11:56</td>
+<td>-108.7792</td>
+<td>35.4781</td>
 <td>10668.00</td>
 <td>False</td>
-<td>285.09</td>
-<td>34.26</td>
-<td>0.00</td>
+<td>278.42</td>
+<td>88.41</td>
+<td>0.33</td>
 <td>None</td>
-<td>10774.68</td>
-<td>None</td>
+<td>10866.12</td>
+<td>3246</td>
 <td>False</td>
 <td>0</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">5434</td>
-<td>4b1919</td>
-<td>SWR92</td>
-<td>Switzerland</td>
-<td>2025-05-14 05:11:29</td>
-<td>2025-05-14 05:11:35</td>
-<td>-35.2633</td>
-<td>-6.0132</td>
-<td>10363.20</td>
+<td data-quarto-table-cell-role="th">5811</td>
+<td>a81815</td>
+<td>SKW5700</td>
+<td>United States</td>
+<td>2025-05-15 05:12:09</td>
+<td>2025-05-15 05:12:09</td>
+<td>-101.2171</td>
+<td>39.0867</td>
+<td>10668.00</td>
 <td>False</td>
-<td>255.15</td>
-<td>188.11</td>
-<td>0.00</td>
+<td>272.31</td>
+<td>77.12</td>
+<td>0.65</td>
 <td>None</td>
-<td>11041.38</td>
-<td>None</td>
+<td>10835.64</td>
+<td>3211</td>
 <td>False</td>
 <td>0</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">5435</td>
-<td>aa781f</td>
-<td>CKS220</td>
-<td>United States</td>
-<td>2025-05-14 05:11:38</td>
-<td>2025-05-14 05:11:38</td>
-<td>-152.9953</td>
-<td>60.5113</td>
-<td>10972.80</td>
-<td>False</td>
-<td>221.16</td>
-<td>244.81</td>
-<td>0.00</td>
+<td data-quarto-table-cell-role="th">5812</td>
+<td>398570</td>
+<td>AFR1701</td>
+<td>France</td>
+<td>2025-05-15 05:12:09</td>
+<td>2025-05-15 05:12:09</td>
+<td>5.0838</td>
+<td>45.7258</td>
+<td>NaN</td>
+<td>True</td>
+<td>9.77</td>
+<td>174.38</td>
+<td>NaN</td>
 <td>None</td>
-<td>10881.36</td>
-<td>6750</td>
+<td>NaN</td>
+<td>1000</td>
 <td>False</td>
 <td>0</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">5436</td>
+<td data-quarto-table-cell-role="th">5813</td>
 <td>a0c7b3</td>
-<td>ABX3115</td>
+<td>ABX3102</td>
 <td>United States</td>
-<td>2025-05-14 05:11:39</td>
-<td>2025-05-14 05:11:39</td>
-<td>-91.2982</td>
-<td>42.1609</td>
-<td>10972.80</td>
+<td>2025-05-15 05:12:09</td>
+<td>2025-05-15 05:12:09</td>
+<td>-81.3768</td>
+<td>40.6959</td>
+<td>11285.22</td>
 <td>False</td>
-<td>236.68</td>
-<td>269.00</td>
-<td>0.00</td>
+<td>244.28</td>
+<td>67.59</td>
+<td>-0.33</td>
 <td>None</td>
-<td>11193.78</td>
-<td>None</td>
+<td>11506.20</td>
+<td>6702</td>
 <td>False</td>
 <td>0</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">5437</td>
-<td>a6d83c</td>
-<td>DAL373</td>
+<td data-quarto-table-cell-role="th">5814</td>
+<td>a81836</td>
+<td>MWT620</td>
 <td>United States</td>
-<td>2025-05-14 05:11:38</td>
-<td>2025-05-14 05:11:38</td>
-<td>-112.7094</td>
-<td>36.4929</td>
-<td>9669.78</td>
+<td>2025-05-15 05:10:49</td>
+<td>2025-05-15 05:11:53</td>
+<td>-93.5994</td>
+<td>44.7634</td>
+<td>1264.92</td>
 <td>False</td>
-<td>291.95</td>
-<td>66.64</td>
-<td>2.93</td>
+<td>114.02</td>
+<td>259.60</td>
+<td>2.60</td>
 <td>None</td>
-<td>9822.18</td>
+<td>1173.48</td>
 <td>None</td>
 <td>False</td>
 <td>0</td>
@@ -621,7 +627,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 
-<p>5438 rows × 17 columns</p>
+<p>5815 rows × 17 columns</p>
+</div>
+</div>
+</div>
+<div id="b179e32a" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">##| label: flights_world</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">##| fig-cap: "Flights in world at notebook time"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>gdf <span class="op">=</span> geopandas.GeoDataFrame(</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    df_flights,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    geometry<span class="op">=</span>geopandas.points_from_xy(df_flights.longitude, df_flights.latitude),</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    crs<span class="op">=</span><span class="st">"EPSG:4326"</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>gdf.plot()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="opensky_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
 </div>
 </div>
 </div>
