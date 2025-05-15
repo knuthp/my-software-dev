@@ -16,8 +16,8 @@ import geopandas
 ```
 
 ```{python}
-##| label:
-##| fig-cap: ""
+#| label: flights_world
+#| fig-cap: "Flights in world at notebook time"
 
 
 def fetch_opensky_data():
@@ -40,23 +40,41 @@ def fetch_opensky_data():
             last_contact=pd.to_datetime(df_raw["last_contact"], unit="s"),
         )
     )
-    # df['altitude'] = df['geo_altitude'].combine_first(df['baro_altitude'])
-    # return df[['latitude', 'longitude', 'altitude', 'velocity', 'heading']]
 
-# Example usage
 df_flights = fetch_opensky_data()
-df_flights
+
+
+df_flihts_non_nan = df_flights.dropna(subset=["longitude", "latitude"])
+gdf = geopandas.GeoDataFrame(
+    df_flihts_non_nan,
+    geometry=geopandas.points_from_xy(df_flihts_non_nan.longitude, df_flihts_non_nan.latitude),
+    crs="EPSG:4326",
+)
+
+gdf.explore(fullscreen=True, tooltip=False, popup=True)
 ```
 
 
+## Number of flights by origin_country
+
 
 ```{python}
-##| label: flights_world
-##| fig-cap: "Flights in world at notebook time"
-gdf = geopandas.GeoDataFrame(
-    df_flights,
-    geometry=geopandas.points_from_xy(df_flights.longitude, df_flights.latitude),
-    crs="EPSG:4326",
+#| label: origin_country_count_top_20
+#| fig-cap: "Top 20 countries with most flights"
+
+(
+    df_flights
+    .groupby("origin_country")
+    .agg(num_flights=("icao24", "count"))
+    .sort_values("num_flights", ascending=False)
+    .head(20)
 )
-gdf.plot()
+```
+
+
+## All flights
+For reference
+
+```{python}
+df_flights
 ```
