@@ -9,13 +9,16 @@ jupyter: python3
 OpenSky provides api to get data for flights in progress. It is rate limited
 
 
+```{python}
+import requests
+import pandas as pd
+import geopandas
+```
 
 ```{python}
 ##| label:
 ##| fig-cap: ""
 
-import requests
-import pandas as pd
 
 def fetch_opensky_data():
     url = "https://opensky-network.org/api/states/all"
@@ -45,3 +48,15 @@ df_flights = fetch_opensky_data()
 df_flights
 ```
 
+
+
+```{python}
+##| label: flights_world
+##| fig-cap: "Flights in world at notebook time"
+gdf = geopandas.GeoDataFrame(
+    df_flights,
+    geometry=geopandas.points_from_xy(df_flights.longitude, df_flights.latitude),
+    crs="EPSG:4326",
+)
+gdf.plot()
+```
