@@ -72,3 +72,15 @@ I had access for some time, but it is now paid or you need to be part of publish
 
 1. <https://www.adsbexchange.com/data/#>
 1. <https://public-api.adsbexchange.com/VirtualRadar/AircraftList.json?lat=69.0&lng=10.0&fDstL=0&fDstU=1000>
+
+
+## Other
+### Airline list
+<https://en.wikipedia.org/wiki/List_of_airline_codes>
+
+
+## Airport list, airline, and route data
+* [Openflights Data info](https://openflights.org/data.php) - No Login
+* [CSV Airports](https://raw.githubusercontent.com/jpatokal/openflights/master/data/airports.dat) - No Login
+
+# [Routes Airlabs](https://www.airlabs.co/docs/routes) Login 1000 requests free
