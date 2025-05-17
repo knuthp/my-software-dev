@@ -52,8 +52,13 @@ website:
             text: Trafiklab.se
           - href: docs/resources/weather.qmd
             text: Weather
-      - href: docs/3dprint.qmd
-        text: 3D Print
+      - section: Data Resources
+        text: Data Resources
+        contents:
+          - href: docs/3dprint.qmd
+            text: 3D Print
+          - href: docs/3dprint/samples.qmd
+            text: Skeleton sampes
       - href: docs/projectideas.qmd
         text: Project Ideas
       - href: docs/spar10.qmd
