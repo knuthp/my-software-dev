@@ -6,15 +6,18 @@ lightbox: true
 ## Skeleton
 3D prints for studying skeleton
 
-::: {layout-ncol="3"}
+::: {layout-ncol="2" layout-nrow="2"}
 ![skeleton kit card built](./img/skeleton_kit_card.png){width=50% group="skeleton-gallery" #fig-human-kit}
 
 ![hand assembly](./img/hand_assembly.png){width=80% group="skeleton-gallery" #fig-hand-assembly}
 
 ![T-Rex kit card built](./img/t-rex_kit_card.png){width=70% group="skeleton-gallery" #fig-trex-kit}
 
+![skull](./img/skull.png){width=70% group="skeleton-gallery" #fig-skull}
+
 Finished builds
 :::
 * @fig-human-kit: [skeleton-kit-card-tinkercad](https://makerworld.com/en/models/465358-skeleton-kit-card-tinkercad#profileId-374187)
 * @fig-hand-assembly: [articulated-hand](https://makerworld.com/en/models/1372777-articulated-hand#profileId-1419528)
 * @fig-trex-kit: [t-rex-skeleton-kit-card](https://makerworld.com/en/models/199388-t-rex-skeleton-kit-card#profileId-227912)
+* @fig-skull: [Natural Skull size](https://makerworld.com/en/models/394709-natural-skull-size#profileId-515534)

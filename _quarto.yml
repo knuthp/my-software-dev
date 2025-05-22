@@ -58,7 +58,7 @@ website:
           - href: docs/3dprint.qmd
             text: 3D Print
           - href: docs/3dprint/samples.qmd
-            text: Skeleton sampes
+            text: Skeleton samples
       - href: docs/projectideas.qmd
         text: Project Ideas
       - href: docs/spar10.qmd
