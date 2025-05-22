@@ -384,10 +384,10 @@
     "href": "docs/3dprint/samples.html",
     "title": "Help for printed models",
     "section": "",
-    "text": "3D prints for studying skeleton\n\n\n\n\n\n\n\n\n\nFigure 1: skeleton kit card built\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: hand assembly\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: T-Rex kit card built\n\n\n\n\n\n\n\nFinished builds\n\n\n\n\nFigure 1: skeleton-kit-card-tinkercad\nFigure 2: articulated-hand\nFigure 3: t-rex-skeleton-kit-card",
+    "text": "3D prints for studying skeleton\n\n\n\n\n\n\n\n\n\nFigure 1: skeleton kit card built\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: hand assembly\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: T-Rex kit card built\n\n\n\n\n\n\n\n\n\n\n\nFigure 4: skull\n\n\n\n\n\n\n\nFinished builds\n\n\n\n\nFigure 1: skeleton-kit-card-tinkercad\nFigure 2: articulated-hand\nFigure 3: t-rex-skeleton-kit-card\nFigure 4: Natural Skull size",
     "crumbs": [
       "Data Resources",
-      "Skeleton sampes"
+      "Skeleton samples"
     ]
   },
   {
@@ -395,10 +395,10 @@
     "href": "docs/3dprint/samples.html#skeleton",
     "title": "Help for printed models",
     "section": "",
-    "text": "3D prints for studying skeleton\n\n\n\n\n\n\n\n\n\nFigure 1: skeleton kit card built\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: hand assembly\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: T-Rex kit card built\n\n\n\n\n\n\n\nFinished builds\n\n\n\n\nFigure 1: skeleton-kit-card-tinkercad\nFigure 2: articulated-hand\nFigure 3: t-rex-skeleton-kit-card",
+    "text": "3D prints for studying skeleton\n\n\n\n\n\n\n\n\n\nFigure 1: skeleton kit card built\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: hand assembly\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: T-Rex kit card built\n\n\n\n\n\n\n\n\n\n\n\nFigure 4: skull\n\n\n\n\n\n\n\nFinished builds\n\n\n\n\nFigure 1: skeleton-kit-card-tinkercad\nFigure 2: articulated-hand\nFigure 3: t-rex-skeleton-kit-card\nFigure 4: Natural Skull size",
     "crumbs": [
       "Data Resources",
-      "Skeleton sampes"
+      "Skeleton samples"
     ]
   },
   {
@@ -417,7 +417,7 @@
     "href": "docs/notebooks/opensky.html#number-of-flights-by-origin_country",
     "title": "Opensky",
     "section": "Number of flights by origin_country",
-    "text": "Number of flights by origin_country\n\n\nCode\n(\n    df_flights\n    .groupby(\"origin_country\")\n    .agg(num_flights=(\"icao24\", \"count\"))\n    .sort_values(\"num_flights\", ascending=False)\n    .head(20)\n)\n\n\n\n\n\n\n\n\n\nnum_flights\n\n\norigin_country\n\n\n\n\n\nUnited States\n4669\n\n\nUnited Kingdom\n340\n\n\nCanada\n325\n\n\nIreland\n228\n\n\nTurkey\n140\n\n\nGermany\n124\n\n\nChina\n118\n\n\nUnited Arab Emirates\n113\n\n\nAustralia\n106\n\n\nMalta\n104\n\n\nSpain\n102\n\n\nBrazil\n91\n\n\nIndia\n88\n\n\nKingdom of the Netherlands\n82\n\n\nFrance\n76\n\n\nMexico\n65\n\n\nAustria\n61\n\n\nJapan\n58\n\n\nNew Zealand\n56\n\n\nSweden\n54\n\n\n\n\n\nTop 20 countries with most flights",
+    "text": "Number of flights by origin_country\n\n\nCode\n(\n    df_flights\n    .groupby(\"origin_country\")\n    .agg(num_flights=(\"icao24\", \"count\"))\n    .sort_values(\"num_flights\", ascending=False)\n    .head(20)\n)\n\n\n\n\n\n\n\n\n\nnum_flights\n\n\norigin_country\n\n\n\n\n\nUnited States\n1368\n\n\nAustralia\n327\n\n\nChina\n256\n\n\nGermany\n250\n\n\nIreland\n221\n\n\nIndia\n215\n\n\nTurkey\n212\n\n\nUnited Kingdom\n183\n\n\nJapan\n183\n\n\nFrance\n166\n\n\nMalta\n144\n\n\nSpain\n138\n\n\nAustria\n132\n\n\nCanada\n128\n\n\nKingdom of the Netherlands\n121\n\n\nUnited Arab Emirates\n109\n\n\nSwitzerland\n86\n\n\nThailand\n75\n\n\nRepublic of Korea\n74\n\n\nPoland\n72\n\n\n\n\n\nTop 20 countries with most flights",
     "crumbs": [
       "Data Exploring",
       "OpenSky flights geo"
@@ -428,7 +428,7 @@
     "href": "docs/notebooks/opensky.html#all-flights",
     "title": "Opensky",
     "section": "All flights",
-    "text": "All flights\nFor reference\n\n\nCode\ndf_flights\n\n\n\n\n\n\n\n\n\nicao24\ncallsign\norigin_country\ntime_position\nlast_contact\nlongitude\nlatitude\nbaro_altitude\non_ground\nvelocity\nheading\nvertical_rate\nsensors\ngeo_altitude\nsquawk\nspi\nposition_source\n\n\n\n\n0\nab1644\nUAL8191\nUnited States\n2025-05-17 21:23:51\n2025-05-17 21:23:52\n-77.9301\n35.3311\n11262.36\nFalse\n198.84\n357.03\n0.33\nNone\n11711.94\n7046\nFalse\n0\n\n\n1\na1abf5\nN2069W\nUnited States\n2025-05-17 21:23:15\n2025-05-17 21:23:15\n-90.5551\n14.5664\n1653.54\nFalse\n69.18\n312.59\n3.58\nNone\n1729.74\n1601\nFalse\n0\n\n\n2\ne8027d\nLPE2454\nChile\n2025-05-17 21:19:15\n2025-05-17 21:19:19\n-86.9373\n21.0897\n381.00\nFalse\n72.06\n123.35\n-3.58\nNone\n396.24\nNone\nFalse\n0\n\n\n3\n39de4a\nTVF86LY\nFrance\n2025-05-17 21:23:52\n2025-05-17 21:23:52\n-7.8084\n35.5199\n11879.58\nFalse\n208.47\n178.02\n-0.33\nNone\n12207.24\n7644\nFalse\n0\n\n\n4\n801641\nAXB698\nIndia\n2025-05-17 21:23:52\n2025-05-17 21:23:52\n53.1650\n25.1998\n10668.00\nFalse\n241.39\n121.05\n0.00\nNone\n11338.56\nNone\nFalse\n0\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n7872\n7c4807\nOIH\nAustralia\n2025-05-17 21:23:52\n2025-05-17 21:23:52\n153.5465\n-28.1436\n1767.84\nFalse\n84.43\n333.59\n-12.03\nNone\n1866.90\n1733\nFalse\n0\n\n\n7873\n4caa32\nITY619\nIreland\n2025-05-17 21:23:51\n2025-05-17 21:23:51\n-77.4537\n38.9467\nNaN\nTrue\n5.40\n270.00\nNaN\nNone\nNaN\nNone\nFalse\n0\n\n\n7874\n458664\nCAT750\nDenmark\n2025-05-17 21:23:52\n2025-05-17 21:23:52\n21.8020\n45.8280\n11582.40\nFalse\n233.05\n330.95\n0.00\nNone\n11551.92\nNone\nFalse\n0\n\n\n7875\n458666\nCAT9752\nDenmark\n2025-05-17 21:23:52\n2025-05-17 21:23:52\n15.7253\n52.3409\n12192.00\nFalse\n230.90\n327.37\n0.00\nNone\n12123.42\n4532\nFalse\n0\n\n\n7876\n458665\nCAT314\nDenmark\n2025-05-17 21:23:52\n2025-05-17 21:23:52\n6.4021\n46.4385\n11582.40\nFalse\n201.63\n350.01\n0.00\nNone\n11719.56\n5334\nFalse\n0\n\n\n\n\n7877 rows × 17 columns",
+    "text": "All flights\nFor reference\n\n\nCode\ndf_flights\n\n\n\n\n\n\n\n\n\nicao24\ncallsign\norigin_country\ntime_position\nlast_contact\nlongitude\nlatitude\nbaro_altitude\non_ground\nvelocity\nheading\nvertical_rate\nsensors\ngeo_altitude\nsquawk\nspi\nposition_source\n\n\n\n\n0\n39de4f\nTVF29UL\nFrance\n2025-05-22 05:17:51\n2025-05-22 05:17:51\n4.1351\n40.9820\n11582.40\nFalse\n231.26\n27.71\n0.00\nNone\n11803.38\n1000\nFalse\n0\n\n\n1\n39de4b\nTVF32ER\nFrance\n2025-05-22 05:17:50\n2025-05-22 05:17:51\n1.1356\n45.7228\n10355.58\nFalse\n212.04\n358.33\n-0.33\nNone\n10408.92\n1000\nFalse\n0\n\n\n2\n39de4c\nTVF3423\nFrance\n2025-05-22 05:17:50\n2025-05-22 05:17:50\n18.9498\n44.2522\n11574.78\nFalse\n215.18\n285.53\n0.33\nNone\n11727.18\n5316\nFalse\n0\n\n\n3\n407a38\nNPT902\nUnited Kingdom\n2025-05-22 05:17:50\n2025-05-22 05:17:50\n-1.7468\n50.5203\n4876.80\nFalse\n156.92\n203.37\n0.33\nNone\n4960.62\n5140\nFalse\n0\n\n\n4\n801644\nFLG708\nIndia\n2025-05-22 05:17:51\n2025-05-22 05:17:51\n78.4740\n29.9195\n3048.00\nFalse\n70.94\n315.88\n0.00\nNone\n3131.82\nNone\nFalse\n0\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n5705\n47bfb3\nNSZ3LZ\nNorway\n2025-05-22 05:17:50\n2025-05-22 05:17:50\n0.8705\n38.7302\n7178.04\nFalse\n217.71\n68.22\n8.13\nNone\n7437.12\n5343\nFalse\n0\n\n\n5706\n4caa59\nRYR87FC\nIreland\n2025-05-22 05:17:50\n2025-05-22 05:17:50\n7.6107\n44.2233\n11277.60\nFalse\n205.93\n239.53\n0.33\nNone\n11399.52\n2250\nFalse\n0\n\n\n5707\n398570\nAFR76BR\nFrance\n2025-05-22 05:17:50\n2025-05-22 05:17:50\n4.8580\n47.6055\n8633.46\nFalse\n235.08\n321.58\n-4.88\nNone\n8602.98\n1000\nFalse\n0\n\n\n5708\na0c7b3\nABX3102\nUnited States\n2025-05-22 05:17:50\n2025-05-22 05:17:50\n-80.1244\n41.4330\n11285.22\nFalse\n252.33\n72.19\n0.00\nNone\n11323.32\n4043\nFalse\n0\n\n\n5709\n458666\nVKG1512\nDenmark\n2025-05-22 05:17:49\n2025-05-22 05:17:50\n11.0709\n60.3134\n1463.04\nFalse\n136.84\n301.00\n11.38\nNone\n1409.70\n6005\nFalse\n0\n\n\n\n\n5710 rows × 17 columns",
     "crumbs": [
       "Data Exploring",
       "OpenSky flights geo"
