@@ -15,6 +15,9 @@ For a demonstration of a geopandas see @fig-geopandas-explore.
 import geopandas
 import folium
 from folium.plugins.fullscreen import Fullscreen
+from great_tables import GT
+
+
 url_postnummer_nor = "https://raw.githubusercontent.com/ivanhjel/postnummer/master/postnummeromrader.geojson"
 
 
@@ -26,5 +29,38 @@ m
 ```
 
 ```{python}
-gdf
+(
+  GT(
+    (
+      gdf
+      .sample(10, random_state=1)
+      .sort_values("postnummer")
+      .assign(postnummer=gdf["postnummer"].apply(lambda x: f"{x:04}"))
+      .reset_index(drop=True)
+      [["postnummer", "poststedsnavn", "kommune"]]
+    )
+  )
+  .tab_header(title="Sample postal codes in order")
+)
+```
+
+## The postal codes covering largest area
+```{python}
+(
+  GT(
+    (gdf
+      .to_crs(gdf.estimate_utm_crs())
+      .assign(area=lambda gdf_: gdf_.geometry.area / 1E6)
+      .sort_values("area", ascending=False)
+      .reset_index(drop=True)
+      .head(10)
+      [["postnummer", "poststedsnavn", "kommune", "area"]]
+    )
+  )
+  .tab_header("Largest area postal codes")
+  .cols_label(
+    area="Area km2"
+  )
+  .fmt_number(columns="area", decimals=1)
+)
 ```
