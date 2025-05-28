@@ -21,6 +21,8 @@ website:
             text: Demo Notebook
           - href: docs/notebooks/opensky.qmd
             text: OpenSky flights geo
+          - href: docs/notebooks/trafikkdata.ipynb
+            text: Trafikkdata Norge
       - section: Data Resources
         text: Data Resources
         contents:

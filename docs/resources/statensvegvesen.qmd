@@ -21,6 +21,17 @@ See <http://www.vegvesen.no/Om+Statens+vegvesen/Om+organisasjonen/For+utviklere+
 ### Test kart:
 <https://www.vegvesen.no/vegkart>
 
+
+## Trafikkdata
+<https://trafikkdata.atlas.vegvesen.no/#/om-api>
+
+* Open API
+* GraphQL based
+
+
+1. [Kart](https://trafikkdata.atlas.vegvesen.no/#/kart?zoom=4&lat=65.0059&lon=18.2750)
+1. [Detaljer om dataregistreringen](https://trafikkdata.atlas.vegvesen.no/#/om-trafikkdata)
+
 ## Motorvognregister
 ### API
 <http://www.vegvesen.no/system/mobilapi?registreringsnummer=DL25944>
