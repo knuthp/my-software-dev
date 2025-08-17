@@ -1,0 +1,17 @@
+---
+title: "Android APK disassembly"
+toc: true
+number-sections: true
+---
+## Disassembly steps
+
+1. Download apk file like [talkingtomcamp](../../data/com.outfit7.talkingtomcamp_1.6.6.381-23_minAPI16(armeabi-v7a)(nodpi)_apkmirror.com.apk)
+2. Make a new directory to unpack the apk into (many files directly in root of unpacked data) and cd into this directory
+3. Unzip apk `unzip <myapk>.apk
+
+```shell
+cd ~/src/my-software-dev/data
+mkdir talkingtomcamp
+cd talkingtomcamp
+unzip ../com.outfit7.talkingtomcamp_1.6.6.381-23_minAPI16\(armeabi-v7a\)\(nodpi\)_apkmirror.com.apk
+```
