@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>matplotlib demo – My Software Dev</title>
+<title>Ducklake experiment – My Software Dev</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,7 +58,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -102,6 +102,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -116,7 +119,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/notebooks/geopandas.html">Data Exploring</a></li><li class="breadcrumb-item"><a href="../../docs/notebooks/demo.html">Demo Notebook</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      My Software Dev
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -175,7 +180,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/notebooks/demo.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../docs/notebooks/demo.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Demo Notebook</span></a>
   </div>
 </li>
@@ -334,15 +339,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#ducklake-documentation" id="toc-ducklake-documentation" class="nav-link active" data-scroll-target="#ducklake-documentation">Ducklake documentation</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/notebooks/geopandas.html">Data Exploring</a></li><li class="breadcrumb-item"><a href="../../docs/notebooks/demo.html">Demo Notebook</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">matplotlib demo</h1>
+<h1 class="title">Ducklake experiment</h1>
 </div>
 
 
@@ -359,39 +370,312 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>For a demonstration of a line plot on a polar axis, see <a href="#fig-polar" class="quarto-xref">Figure&nbsp;1</a>.</p>
-<div id="cell-fig-polar" class="cell" data-execution_count="1">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  subplot_kw <span class="op">=</span> {<span class="st">'projection'</span>: <span class="st">'polar'</span>}</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>ax.plot(theta, r)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div id="fig-polar" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-polar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="demo_files/figure-html/fig-polar-output-1.png" width="450" height="439" class="figure-img">
+<p>Ducklake is a new data lake system built on top of DuckDB, designed to provide a simple and efficient way to manage and query large datasets. It leverages the power of DuckDB’s SQL engine while adding features for data lake management.</p>
+<p>My goal is to explore Ducklake’s capabilities,</p>
+<section id="ducklake-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="ducklake-documentation">Ducklake documentation</h2>
+<p>For more information on Ducklake, including installation and usage instructions, please refer to the official documentation</p>
+<p><a href="https://ducklake.select/docs/stable/duckdb/introduction" class="uri">https://ducklake.select/docs/stable/duckdb/introduction</a></p>
+<div id="3608cf3d" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> duckdb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-polar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: A line plot on a polar axis
-</figcaption>
-</figure>
+<div id="b15e1982" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>duckdb.install_extension(<span class="st">"ducklake"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>con <span class="op">=</span> duckdb.<span class="ex">connect</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="3bfd5f23" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>con.execute(<span class="st">"ATTACH 'ducklake:my_ducklake.ducklake' (DATA_PATH 'ducklake_data/');"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<pre><code>&lt;duckdb.duckdb.DuckDBPyConnection at 0x7d3c50c948f0&gt;</code></pre>
 </div>
 </div>
+<div id="35a1f273" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>con.execute(<span class="st">"CREATE TABLE IF NOT EXISTS my_ducklake.nl_train_stations AS FROM 'https://blobs.duckdb.org/nl_stations.csv';"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<pre><code>&lt;duckdb.duckdb.DuckDBPyConnection at 0x7d3c50c948f0&gt;</code></pre>
 </div>
-<p>And some more.</p>
+</div>
+<div id="6161cbf3" class="cell" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>con.execute(<span class="st">"SELECT * FROM my_ducklake.nl_train_stations"</span>).df().sample(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="30">
+<div>
 
 
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">id</th>
+<th data-quarto-table-cell-role="th">code</th>
+<th data-quarto-table-cell-role="th">uic</th>
+<th data-quarto-table-cell-role="th">name_short</th>
+<th data-quarto-table-cell-role="th">name_medium</th>
+<th data-quarto-table-cell-role="th">name_long</th>
+<th data-quarto-table-cell-role="th">slug</th>
+<th data-quarto-table-cell-role="th">country</th>
+<th data-quarto-table-cell-role="th">type</th>
+<th data-quarto-table-cell-role="th">geo_lat</th>
+<th data-quarto-table-cell-role="th">geo_lng</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">345</td>
+<td>723</td>
+<td>MTN</td>
+<td>8400449</td>
+<td>Maastr. N</td>
+<td>Maastricht N.</td>
+<td>Maastricht Noord</td>
+<td>maastricht-noord</td>
+<td>NL</td>
+<td>stoptreinstation</td>
+<td>50.870870</td>
+<td>5.717740</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">419</td>
+<td>399</td>
+<td>RHN</td>
+<td>8400517</td>
+<td>Rhenen</td>
+<td>Rhenen</td>
+<td>Rhenen</td>
+<td>rhenen</td>
+<td>NL</td>
+<td>knooppuntStoptreinstation</td>
+<td>51.958611</td>
+<td>5.578333</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">76</td>
+<td>810</td>
+<td>GSB</td>
+<td>8007799</td>
+<td>Berlin Gsb</td>
+<td>Berlin Gesundbr.</td>
+<td>Berlin Gesundbrunnen</td>
+<td>berlin-gesundbrunnen</td>
+<td>D</td>
+<td>intercitystation</td>
+<td>52.548633</td>
+<td>13.390427</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">439</td>
+<td>436</td>
+<td>SPTZ</td>
+<td>8400544</td>
+<td>Santprt Z</td>
+<td>Santpoort Z.</td>
+<td>Santpoort Zuid</td>
+<td>santpoort-zuid</td>
+<td>NL</td>
+<td>stoptreinstation</td>
+<td>52.419724</td>
+<td>4.631389</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">567</td>
+<td>539</td>
+<td>ZVB</td>
+<td>8400737</td>
+<td>Zevenbergn</td>
+<td>Zevenbergen</td>
+<td>Zevenbergen</td>
+<td>zevenbergen</td>
+<td>NL</td>
+<td>stoptreinstation</td>
+<td>51.640420</td>
+<td>4.609040</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">371</td>
+<td>713</td>
+<td>LNI</td>
+<td>8824240</td>
+<td>Niel</td>
+<td>Niel</td>
+<td>Niel</td>
+<td>niel</td>
+<td>B</td>
+<td>stoptreinstation</td>
+<td>51.111540</td>
+<td>4.338450</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">480</td>
+<td>459</td>
+<td>TPSW</td>
+<td>8400600</td>
+<td>Passewaaij</td>
+<td>Passewaaij</td>
+<td>Tiel Passewaaij</td>
+<td>tiel-passewaaij</td>
+<td>NL</td>
+<td>stoptreinstation</td>
+<td>51.873890</td>
+<td>5.392222</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">534</td>
+<td>842</td>
+<td>WELS</td>
+<td>8101081</td>
+<td>Wels Hbf</td>
+<td>Wels Hbf</td>
+<td>Wels Hbf</td>
+<td>wels-hbf</td>
+<td>A</td>
+<td>intercitystation</td>
+<td>48.166111</td>
+<td>14.026667</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">84</td>
+<td>77</td>
+<td>BHV</td>
+<td>8400114</td>
+<td>Bilthoven</td>
+<td>Bilthoven</td>
+<td>Bilthoven</td>
+<td>bilthoven</td>
+<td>NL</td>
+<td>stoptreinstation</td>
+<td>52.130001</td>
+<td>5.203889</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">155</td>
+<td>145</td>
+<td>DTC</td>
+<td>8400177</td>
+<td>Doetinchem</td>
+<td>Doetinchem</td>
+<td>Doetinchem</td>
+<td>doetinchem</td>
+<td>NL</td>
+<td>knooppuntStoptreinstation</td>
+<td>51.958596</td>
+<td>6.296215</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="a65b45d2" class="cell" data-execution_count="33">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>con.execute(<span class="st">"FROM my_ducklake.snapshots();"</span>).df()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="33">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">snapshot_id</th>
+<th data-quarto-table-cell-role="th">snapshot_time</th>
+<th data-quarto-table-cell-role="th">schema_version</th>
+<th data-quarto-table-cell-role="th">changes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>0</td>
+<td>2025-06-21 22:45:24.223000+02:00</td>
+<td>0</td>
+<td>{'schemas_created': ['main']}</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>3</td>
+<td>2025-06-24 07:19:25.356000+02:00</td>
+<td>1</td>
+<td>{}</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="81546582" class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>con.execute(<span class="st">"""FROM ducklake_list_files('my_ducklake', 'nl_train_stations');"""</span>).df()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="20">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">data_file</th>
+<th data-quarto-table-cell-role="th">data_file_size_bytes</th>
+<th data-quarto-table-cell-role="th">data_file_footer_size</th>
+<th data-quarto-table-cell-role="th">data_file_encryption_key</th>
+<th data-quarto-table-cell-role="th">delete_file</th>
+<th data-quarto-table-cell-role="th">delete_file_size_bytes</th>
+<th data-quarto-table-cell-role="th">delete_file_footer_size</th>
+<th data-quarto-table-cell-role="th">delete_file_encryption_key</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>ducklake_data/main/nl_train_stations//ducklake...</td>
+<td>60165</td>
+<td>1456</td>
+<td>&lt;NA&gt;</td>
+<td>None</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="f0ea4987" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>con.execute(<span class="st">"INSERT INTO my_ducklake.nl_train_stations VALUES (0, 'KHP', 0, 'khp', 'knut', 'Knut H Pedersen', 'knut_h_pedersen', 'no', 'abc', 59.0, 11.0);"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="15">
+<pre><code>&lt;duckdb.duckdb.DuckDBPyConnection at 0x7d3c50c948f0&gt;</code></pre>
+</div>
+</div>
+<div id="ef63959d" class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>con.execute(<span class="st">"CALL my_ducklake.merge_adjacent_files();"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="19">
+<pre><code>&lt;duckdb.duckdb.DuckDBPyConnection at 0x7d3c50c948f0&gt;</code></pre>
+</div>
+</div>
+<div id="f0660593" class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>con.execute(<span class="st">"CALL ducklake_expire_snapshots('my_ducklake', versions =&gt; [1, 2]);"</span>).fetchall()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="28">
+<pre><code>[(1,
+  datetime.datetime(2025, 6, 24, 6, 58, 37, 41000, tzinfo=&lt;DstTzInfo 'Europe/Oslo' CEST+2:00:00 DST&gt;),
+  1,
+  {'tables_created': ['main.nl_train_stations'],
+   'tables_inserted_into': ['1']}),
+ (2,
+  datetime.datetime(2025, 6, 24, 7, 17, 21, 65000, tzinfo=&lt;DstTzInfo 'Europe/Oslo' CEST+2:00:00 DST&gt;),
+  1,
+  {'tables_inserted_into': ['1']})]</code></pre>
+</div>
+</div>
+<div id="207f714d" class="cell" data-execution_count="32">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>con.execute(<span class="st">"CALL ducklake_cleanup_old_files('my_ducklake', cleanup_all =&gt; true);"</span>).fetchall()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="32">
+<pre><code>[('ducklake_data/main/nl_train_stations//ducklake-0197a04d-6912-7c86-a996-6f3842224be1.parquet',),
+ ('ducklake_data/main/nl_train_stations//ducklake-0197a05e-8f2c-7420-a485-3902662897e1.parquet',)]</code></pre>
+</div>
+</div>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
