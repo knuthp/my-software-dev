@@ -1,49 +1,5 @@
 [
   {
-    "objectID": "docs/resources/ruter.html",
-    "href": "docs/resources/ruter.html",
-    "title": "Ruter",
-    "section": "",
-    "text": "An older API that returns JSON and supports JSONP for webclient usage.\nhttp://reis.trafikanten.no/reisrest/help\nExample of JSONP\nhttp://reis.trafikanten.no/reisrest/realtime/getrealtimedata/3010013?callback=JSON_CALLBACK\"\n\n\n\nSupports JSON and XML, and recently JSONP\nhttp://reisapi.ruter.no/Help/\n\n\nhttp://reisapi.ruter.no/stopvisit/getdepartures/3010013\nhttp://reisapi.ruter.no/Place/GetPlaces/aspelund\n\n\n\n\nTakk for at du registrerte deg.\nVedlagt finner du link til hvordan du bruker Json APIet:\n\nhttp://labs.trafikanten.no/2011/3/22/hvordan-bruke-json-data.aspx\nhttp://labs.trafikanten.no/2011/9/2/reiseplanlegging.aspx\n\nURL til å sende forespørsler mot:\n\nhttp://api-test.trafikanten.no/",
-    "crumbs": [
-      "Data Resources",
-      "Ruter.no"
-    ]
-  },
-  {
-    "objectID": "docs/resources/ruter.html#old-api",
-    "href": "docs/resources/ruter.html#old-api",
-    "title": "Ruter",
-    "section": "",
-    "text": "An older API that returns JSON and supports JSONP for webclient usage.\nhttp://reis.trafikanten.no/reisrest/help\nExample of JSONP\nhttp://reis.trafikanten.no/reisrest/realtime/getrealtimedata/3010013?callback=JSON_CALLBACK\"",
-    "crumbs": [
-      "Data Resources",
-      "Ruter.no"
-    ]
-  },
-  {
-    "objectID": "docs/resources/ruter.html#new-api",
-    "href": "docs/resources/ruter.html#new-api",
-    "title": "Ruter",
-    "section": "",
-    "text": "Supports JSON and XML, and recently JSONP\nhttp://reisapi.ruter.no/Help/\n\n\nhttp://reisapi.ruter.no/stopvisit/getdepartures/3010013\nhttp://reisapi.ruter.no/Place/GetPlaces/aspelund",
-    "crumbs": [
-      "Data Resources",
-      "Ruter.no"
-    ]
-  },
-  {
-    "objectID": "docs/resources/ruter.html#oldest-api-not-working-any-longer",
-    "href": "docs/resources/ruter.html#oldest-api-not-working-any-longer",
-    "title": "Ruter",
-    "section": "",
-    "text": "Takk for at du registrerte deg.\nVedlagt finner du link til hvordan du bruker Json APIet:\n\nhttp://labs.trafikanten.no/2011/3/22/hvordan-bruke-json-data.aspx\nhttp://labs.trafikanten.no/2011/9/2/reiseplanlegging.aspx\n\nURL til å sende forespørsler mot:\n\nhttp://api-test.trafikanten.no/",
-    "crumbs": [
-      "Data Resources",
-      "Ruter.no"
-    ]
-  },
-  {
     "objectID": "docs/resources/carregno.html",
     "href": "docs/resources/carregno.html",
     "title": "Car registration number",
@@ -85,6 +41,79 @@
     "crumbs": [
       "Data Resources",
       "Carreg.no"
+    ]
+  },
+  {
+    "objectID": "docs/resources/arduino.html#dof-sensor",
+    "href": "docs/resources/arduino.html#dof-sensor",
+    "title": "Arduino",
+    "section": "10DOF Sensor",
+    "text": "10DOF Sensor\nBought at DealExtreme\n\nL3GD20H 3-axis gyroscope: ±250, ±500, or ±2000 degree-per-second scale\nLSM303 3-axis compass: ±1.3 to ±8.1 gauss magnetic field scale\nLSM303 3-axis accelerometer: ±2g/±4g/±8g/±16g selectable scale\nBMP180 barometric pressure/temperature: -40 to 85 °C, 300 - 1100hPa range, 0.17m\nBMP180 Barometric Pressure Sensor\n\n\nDatasheet\nI2C Addresses\n0x19     LSM303 Accelerometer\n0x1E     LSM303 Compass\n0x6B    L3GD20H 3-axis gyroscope\n0x77    BMP180  Barometric Pressure Sensor",
+    "crumbs": [
+      "Data Resources",
+      "Arduino"
+    ]
+  },
+  {
+    "objectID": "docs/resources/nordpool.html",
+    "href": "docs/resources/nordpool.html",
+    "title": "NordPool",
+    "section": "",
+    "text": "NordPool\nDownload historical Electrical Spot prices in CSV\nhttps://www.nordpoolgroup.com/historical-market-data/",
+    "crumbs": [
+      "Data Resources",
+      "Nordpool"
+    ]
+  },
+  {
+    "objectID": "docs/resources/index.html",
+    "href": "docs/resources/index.html",
+    "title": "My Software Dev",
+    "section": "",
+    "text": "My Software Dev\nConverted from Google Sites, mainly written 2011-2016.\nTesting out how Quarto performs for writing documentation also integrating writing some code that shows output."
+  },
+  {
+    "objectID": "docs/resources/aksjeeiere.html",
+    "href": "docs/resources/aksjeeiere.html",
+    "title": "Aksjeeiere",
+    "section": "",
+    "text": "https://www.nored.no/Redaktoernyheter/Her-finner-du-aksjonaerregisteret",
+    "crumbs": [
+      "Data Resources",
+      "Aksjeeiere"
+    ]
+  },
+  {
+    "objectID": "docs/resources/aksjeeiere.html#link-til-ods-fil",
+    "href": "docs/resources/aksjeeiere.html#link-til-ods-fil",
+    "title": "Aksjeeiere",
+    "section": "",
+    "text": "https://www.nored.no/Redaktoernyheter/Her-finner-du-aksjonaerregisteret",
+    "crumbs": [
+      "Data Resources",
+      "Aksjeeiere"
+    ]
+  },
+  {
+    "objectID": "docs/resources/aksjeeiere.html#direkte-lenker",
+    "href": "docs/resources/aksjeeiere.html#direkte-lenker",
+    "title": "Aksjeeiere",
+    "section": "Direkte lenker",
+    "text": "Direkte lenker\nRecord beskrivelse (fra 2014)\nhttps://www.nored.no/download/file/11710\n\n2018\nhttps://www.nored.no/download/file/14396\n\n\n2017\nTBD url on nored.no goes to 2018.\n\n\n2016\nAksjonærregister 2016 - korrigert.xlsx\nhttps://www.nored.no/download/file/13722\n\n\n2015\nAksjonærregisteret 2015 csv.zip\nhttps://www.nored.no/download/file/12860\n\n\n2014\nAksjonærlist (Excel)\nhttp://www.nored.no/content/download/13238/116766/version/1/file/Aksjon%C3%A6rlist",
+    "crumbs": [
+      "Data Resources",
+      "Aksjeeiere"
+    ]
+  },
+  {
+    "objectID": "docs/resources/gtfs.html",
+    "href": "docs/resources/gtfs.html",
+    "title": "GTFS",
+    "section": "",
+    "text": "General Transit Feed Specification\nhttps://developers.google.com/transit/gtfs-realtime/",
+    "crumbs": [
+      "Data Resources",
+      "GTFS"
     ]
   },
   {
@@ -143,157 +172,149 @@
     ]
   },
   {
-    "objectID": "docs/resources/gtfs.html",
-    "href": "docs/resources/gtfs.html",
-    "title": "GTFS",
+    "objectID": "docs/resources/ruter.html",
+    "href": "docs/resources/ruter.html",
+    "title": "Ruter",
     "section": "",
-    "text": "General Transit Feed Specification\nhttps://developers.google.com/transit/gtfs-realtime/",
+    "text": "An older API that returns JSON and supports JSONP for webclient usage.\nhttp://reis.trafikanten.no/reisrest/help\nExample of JSONP\nhttp://reis.trafikanten.no/reisrest/realtime/getrealtimedata/3010013?callback=JSON_CALLBACK\"\n\n\n\nSupports JSON and XML, and recently JSONP\nhttp://reisapi.ruter.no/Help/\n\n\nhttp://reisapi.ruter.no/stopvisit/getdepartures/3010013\nhttp://reisapi.ruter.no/Place/GetPlaces/aspelund\n\n\n\n\nTakk for at du registrerte deg.\nVedlagt finner du link til hvordan du bruker Json APIet:\n\nhttp://labs.trafikanten.no/2011/3/22/hvordan-bruke-json-data.aspx\nhttp://labs.trafikanten.no/2011/9/2/reiseplanlegging.aspx\n\nURL til å sende forespørsler mot:\n\nhttp://api-test.trafikanten.no/",
     "crumbs": [
       "Data Resources",
-      "GTFS"
+      "Ruter.no"
     ]
   },
   {
-    "objectID": "docs/resources/statensvegvesen.html",
-    "href": "docs/resources/statensvegvesen.html",
-    "title": "Statens Vegvesen",
+    "objectID": "docs/resources/ruter.html#old-api",
+    "href": "docs/resources/ruter.html#old-api",
+    "title": "Ruter",
     "section": "",
-    "text": "Replaced with DatexII service which requires username and password etc.\nSee http://www.vegvesen.no/Om+Statens+vegvesen/Om+organisasjonen/For+utviklere+API/Datex\nhttp://www.reisetider.no/reisetid/static.html?method=tjenester\nhttp://www.reisetider.no/xml/strekninger.xml\nhttp://www.reisetider.no/xml/strekninger.xml?geometri\nhttp://www.reisetider.no/xml/reisetider.xml\n\n\n\nhttp://www.vegdata.no/\n\n\nhttps://www.vegvesen.no/nvdb/api/ Description of REST API to Nasjonal VegDataBase (NVDB)\n\n\n\nhttps://www.vegvesen.no/vegkart\n\n\n\n\nhttps://trafikkdata.atlas.vegvesen.no/#/om-api\n\nOpen API\nGraphQL based\n\n\nKart\nDetaljer om dataregistreringen\n\n\n\n\n\n\nhttp://www.vegvesen.no/system/mobilapi?registreringsnummer=DL25944\n\n\n\n\nhttps://www.vegvesen.no/trafikkinformasjon/Reiseinformasjon/Trafikkmeldinger/Webkamera/nyhetsarkiv/linker-til-videostr%C3%B8mmene-fra-webkameraene\n\nSandvika Nord http://kamera.vegvesen.no/public/0229030_1/manifest.m3u8\nSandvika http://kamera.vegvesen.no/public/0229031_1/manifest.m3u8\nAsker http://kamera.vegvesen.no/public/0229032_1/manifest.m3u8",
+    "text": "An older API that returns JSON and supports JSONP for webclient usage.\nhttp://reis.trafikanten.no/reisrest/help\nExample of JSONP\nhttp://reis.trafikanten.no/reisrest/realtime/getrealtimedata/3010013?callback=JSON_CALLBACK\"",
     "crumbs": [
       "Data Resources",
-      "Statens Vegvesen"
+      "Ruter.no"
     ]
   },
   {
-    "objectID": "docs/resources/statensvegvesen.html#reisetider",
-    "href": "docs/resources/statensvegvesen.html#reisetider",
-    "title": "Statens Vegvesen",
+    "objectID": "docs/resources/ruter.html#new-api",
+    "href": "docs/resources/ruter.html#new-api",
+    "title": "Ruter",
     "section": "",
-    "text": "Replaced with DatexII service which requires username and password etc.\nSee http://www.vegvesen.no/Om+Statens+vegvesen/Om+organisasjonen/For+utviklere+API/Datex\nhttp://www.reisetider.no/reisetid/static.html?method=tjenester\nhttp://www.reisetider.no/xml/strekninger.xml\nhttp://www.reisetider.no/xml/strekninger.xml?geometri\nhttp://www.reisetider.no/xml/reisetider.xml",
+    "text": "Supports JSON and XML, and recently JSONP\nhttp://reisapi.ruter.no/Help/\n\n\nhttp://reisapi.ruter.no/stopvisit/getdepartures/3010013\nhttp://reisapi.ruter.no/Place/GetPlaces/aspelund",
     "crumbs": [
       "Data Resources",
-      "Statens Vegvesen"
+      "Ruter.no"
     ]
   },
   {
-    "objectID": "docs/resources/statensvegvesen.html#nasjonal-vegdatabase",
-    "href": "docs/resources/statensvegvesen.html#nasjonal-vegdatabase",
-    "title": "Statens Vegvesen",
+    "objectID": "docs/resources/ruter.html#oldest-api-not-working-any-longer",
+    "href": "docs/resources/ruter.html#oldest-api-not-working-any-longer",
+    "title": "Ruter",
     "section": "",
-    "text": "http://www.vegdata.no/\n\n\nhttps://www.vegvesen.no/nvdb/api/ Description of REST API to Nasjonal VegDataBase (NVDB)\n\n\n\nhttps://www.vegvesen.no/vegkart",
+    "text": "Takk for at du registrerte deg.\nVedlagt finner du link til hvordan du bruker Json APIet:\n\nhttp://labs.trafikanten.no/2011/3/22/hvordan-bruke-json-data.aspx\nhttp://labs.trafikanten.no/2011/9/2/reiseplanlegging.aspx\n\nURL til å sende forespørsler mot:\n\nhttp://api-test.trafikanten.no/",
     "crumbs": [
       "Data Resources",
-      "Statens Vegvesen"
+      "Ruter.no"
     ]
   },
   {
-    "objectID": "docs/resources/statensvegvesen.html#trafikkdata",
-    "href": "docs/resources/statensvegvesen.html#trafikkdata",
-    "title": "Statens Vegvesen",
+    "objectID": "docs/android/apk_disassembly.html",
+    "href": "docs/android/apk_disassembly.html",
+    "title": "Android APK disassembly",
     "section": "",
-    "text": "https://trafikkdata.atlas.vegvesen.no/#/om-api\n\nOpen API\nGraphQL based\n\n\nKart\nDetaljer om dataregistreringen",
+    "text": "Download apk file like talkingtomcamp\nMake a new directory to unpack the apk into (many files directly in root of unpacked data) and cd into this directory\nUnzip apk `unzip .apk\n\ncd ~/src/my-software-dev/data\nmkdir talkingtomcamp\ncd talkingtomcamp\nunzip ../com.outfit7.talkingtomcamp_1.6.6.381-23_minAPI16\\(armeabi-v7a\\)\\(nodpi\\)_apkmirror.com.apk"
+  },
+  {
+    "objectID": "docs/android/apk_disassembly.html#disassembly-steps",
+    "href": "docs/android/apk_disassembly.html#disassembly-steps",
+    "title": "Android APK disassembly",
+    "section": "",
+    "text": "Download apk file like talkingtomcamp\nMake a new directory to unpack the apk into (many files directly in root of unpacked data) and cd into this directory\nUnzip apk `unzip .apk\n\ncd ~/src/my-software-dev/data\nmkdir talkingtomcamp\ncd talkingtomcamp\nunzip ../com.outfit7.talkingtomcamp_1.6.6.381-23_minAPI16\\(armeabi-v7a\\)\\(nodpi\\)_apkmirror.com.apk"
+  },
+  {
+    "objectID": "docs/notebooks/geopandas.html",
+    "href": "docs/notebooks/geopandas.html",
+    "title": "GeoPandas demo",
+    "section": "",
+    "text": "For a demonstration of a geopandas see Figure 1.\nCode\nimport geopandas\nimport folium\nfrom folium.plugins.fullscreen import Fullscreen\nfrom great_tables import GT\n\n\nurl_postnummer_nor = \"https://raw.githubusercontent.com/ivanhjel/postnummer/master/postnummeromrader.geojson\"\n\n\ngdf = geopandas.read_file(url_postnummer_nor)\nm = gdf.explore(column=\"postnummer\", cmap=\"viridis\")\nFullscreen().add_to(m)\nm\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\nFigure 1: A map to explore geopandas\nCode\n(\n  GT(\n    (\n      gdf\n      .sample(10, random_state=1)\n      .sort_values(\"postnummer\")\n      .assign(postnummer=gdf[\"postnummer\"].apply(lambda x: f\"{x:04}\"))\n      .reset_index(drop=True)\n      [[\"postnummer\", \"poststedsnavn\", \"kommune\"]]\n    )\n  )\n  .tab_header(title=\"Sample postal codes in order\")\n)\n\n\n\n\n\n\n\n\nSample postal codes in order\n\n\npostnummer\npoststedsnavn\nkommune\n\n\n\n\n1151\nOSLO\n301.0\n\n\n1168\nOSLO\n301.0\n\n\n1368\nSTABEKK\n219.0\n\n\n3070\nSANDE I VESTFOLD\n713.0\n\n\n6855\nFRØNNINGEN\n1422.0\n\n\n7114\nRÅKVÅG\n1624.0\n\n\n7160\nBJUGN\n1627.0\n\n\n7602\nLEVANGER\n1719.0\n\n\n8643\nBJERKA\n1832.0\n\n\n8985\nYLVINGEN\n1815.0",
     "crumbs": [
-      "Data Resources",
-      "Statens Vegvesen"
+      "Data Exploring",
+      "Explore GeoJSON"
     ]
   },
   {
-    "objectID": "docs/resources/statensvegvesen.html#motorvognregister",
-    "href": "docs/resources/statensvegvesen.html#motorvognregister",
-    "title": "Statens Vegvesen",
-    "section": "",
-    "text": "http://www.vegvesen.no/system/mobilapi?registreringsnummer=DL25944",
+    "objectID": "docs/notebooks/geopandas.html#the-postal-codes-covering-largest-area",
+    "href": "docs/notebooks/geopandas.html#the-postal-codes-covering-largest-area",
+    "title": "GeoPandas demo",
+    "section": "The postal codes covering largest area",
+    "text": "The postal codes covering largest area\n\n\nCode\n(\n  GT(\n    (gdf\n      .to_crs(gdf.estimate_utm_crs())\n      .assign(area=lambda gdf_: gdf_.geometry.area / 1E6)\n      .sort_values(\"area\", ascending=False)\n      .reset_index(drop=True)\n      .head(10)\n      [[\"postnummer\", \"poststedsnavn\", \"kommune\", \"area\"]]\n    )\n  )\n  .tab_header(\"Largest area postal codes\")\n  .cols_label(\n    area=\"Area km2\"\n  )\n  .fmt_number(columns=\"area\", decimals=1)\n)\n\n\n\n\n\n\n\n\nLargest area postal codes\n\n\npostnummer\npoststedsnavn\nkommune\nArea km2\n\n\n\n\n9170\nLONGYEARBYEN\n2111.0\n143,769.0\n\n\n9520\nKAUTOKEINO\n2011.0\n6,524.2\n\n\n9730\nKARASJOK\n2021.0\n5,451.9\n\n\n9151\nSTORSLETT\n1942.0\n3,210.0\n\n\n9845\nTANA\n2025.0\n3,179.8\n\n\n9174\nHOPEN\n2131.0\n3,179.7\n\n\n9525\nMAZE\n2011.0\n3,179.0\n\n\n9176\nBJØRNØYA\n2121.0\n2,980.7\n\n\n9360\nBARDU\n1922.0\n2,696.9\n\n\n8690\nHATTFJELLDAL\n1826.0\n2,689.2",
     "crumbs": [
-      "Data Resources",
-      "Statens Vegvesen"
+      "Data Exploring",
+      "Explore GeoJSON"
     ]
   },
   {
-    "objectID": "docs/resources/statensvegvesen.html#webcameras-with-live-video",
-    "href": "docs/resources/statensvegvesen.html#webcameras-with-live-video",
-    "title": "Statens Vegvesen",
+    "objectID": "docs/notebooks/trafikkdata.html",
+    "href": "docs/notebooks/trafikkdata.html",
+    "title": "Trafikkdata Norway",
     "section": "",
-    "text": "https://www.vegvesen.no/trafikkinformasjon/Reiseinformasjon/Trafikkmeldinger/Webkamera/nyhetsarkiv/linker-til-videostr%C3%B8mmene-fra-webkameraene\n\nSandvika Nord http://kamera.vegvesen.no/public/0229030_1/manifest.m3u8\nSandvika http://kamera.vegvesen.no/public/0229031_1/manifest.m3u8\nAsker http://kamera.vegvesen.no/public/0229032_1/manifest.m3u8",
+    "text": "Data obtained from Statens Vegvesen1\nCode\nimport requests\nimport pandas as pd\nimport geopandas\n\nimport matplotlib.pyplot as plt",
     "crumbs": [
-      "Data Resources",
-      "Statens Vegvesen"
+      "Data Exploring",
+      "Trafikkdata Norge"
     ]
   },
   {
-    "objectID": "docs/resources/ais.html",
-    "href": "docs/resources/ais.html",
-    "title": "AIS",
-    "section": "",
-    "text": "A selection of ships from Norway\nhttp://kystverket.no/Maritime-tjenester/Meldings--og-informasjonstjenester/AIS/Brukartilgang-til-AIS-Norge/\nTCP listening on 153.44.253.27:5631 (ca be viewed in Firefox)\nMessages seen (2017-06-01T21:34:00)\n\n1: Position Report class A\n2: Position Report class A\n3: Position Report class A\n4: Base station report\n5: Static Voyage data (requires assembling fragments)\n6: Binary Addressed Message\n8: Binary Broadcast Message\n18: Standard Class B CS Position Report\n19: Extended Class B CS Position Report\n21: Aid-to-Navigation Report\n24: Static Data Report\n\n\n\nAIS message decoder online\nhttp://www.maritec.co.za/tools/aisvdmvdodecoding/\n\n\n\nhttp://nmeachecksum.eqth.net/\n\n\n\nRaw NMEA message example\n !BSVDM,1,1,,B,37fOa&gt;50010lTAPT`;ktv0hr0000,0*1F\n\n\nDecoded with libais to python dictionary\n {\n    \"slot_increment\": 0,\n    \"sync_state\": 0,\n    \"true_heading\": 24,\n    \"sog\": 0.10000000149011612,\n    \"slots_to_allocate\": 0,\n    \"rot\": 0.0,\n    \"nav_status\": 5,\n    \"repeat_indicator\": 0,\n    \"raim\": false,\n    \"id\": 3,\n    \"spare\": 0,\n    \"keep_flag\": false,\n    \"cog\": 332.0,\n    \"timestamp\": 29,\n    \"y\": 64.0118637084961,\n    \"x\": 11.483386993408203,\n    \"position_accuracy\": 0,\n    \"rot_over_range\": false,\n    \"mmsi\": 518515000,\n    \"special_manoeuvre\": 0\n}\n\n\n\n {\n    \"slot_increment\": 0,\n    \"slots_to_allocate\": 0,\n    \"scaled\": true,\n    \"course\": 332.0,\n    \"second\": 29,\n    \"speed\": 0.10000000149011612,\n    \"sync_state\": 0,\n    \"lon\": 11.483386993408203,\n    \"device\": \"stdin\",\n    \"type\": 3,\n    \"accuracy\": false,\n    \"status\": 5,\n    \"maneuver\": 0,\n    \"repeat\": 0,\n    \"mmsi\": 518515000,\n    \"raim\": false,\n    \"spare\": 0,\n    \"keep_flag\": false,\n    \"lat\": 64.0118637084961,\n    \"class\": \"AIS\",\n    \"turn\": 0.0,\n    \"status_text\": \"Moored\",\n    \"heading\": 24\n}\nimo,mmsi,name,flag,type\n9116462,1073727001,\"AEGEANQUE EN\",,\"Passengers Ship\" 9116462,1072678425,\"AEGEQNQUE EN\",,\"Passengers Ship\" 9700940,1028641360,\"IVQ!PC=NDA  O0  O0\",,Cargo 9116462,1073727001,\"AEGEANQUE EN\",,\"Passengers Ship\"\n\n\n\n\nhttps://raw.githubusercontent.com/warrantgroup/IMO-Vessel-Codes/master/data/imo-vessel-codes.csv\nhttp://www.kystinfo.no/proxies/xWmsProxy.ashx?uuid=2bbc8acf-9386-46e7-83ab-425c72da546d&key=20170419102234&LAYERS=open_policy_AIS&QUERY_LAYERS=open_policy_AIS&STYLES=&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&BBOX=240068.587391%2C6582965.279002%2C257001.954591%2C6589484.625374&FEATURE_COUNT=10&HEIGHT=308&WIDTH=800&FORMAT=image%2Fpng&INFO_FORMAT=application%2Fjson&SRS=EPSG%3A32633&X=425&Y=199\n\n[{\n    MMSI: \"255801580\",\n    Country: \"Madeira\",\n    Active: \"true\",\n    Ship_name: \"AUTOPRESTIGE\",\n    Call_sign: \"CQQG\",\n    IMO_number: \"9190157\",\n    Ship_type: \"Cargo ship\",\n    Cargo: \"Unknown\",\n    Destination: \"CUXHAUEN\",\n    To_Country: \"GERMANY\",\n    To_Port: \"CUXHAVEN\",\n    ETA: \"2017-04-29T04:00:00.000Z\",\n    Length: \"128.0\",\n    Breadth: \"19.0\",\n    Maximum_actual_draught: \"4.9\",\n    Positioning_device: \"GPS\",\n    Transponder: \"ClassA\",\n    From_Country: \"NORWAY\",\n    From_Port: \"DRAMMEN\",\n    Latitude: \"59° 19.8906\"\",\n    Longitude: \"010° 35.2360\"\",\n    Time_stamp: \"2017-04-27T19:04:20.000Z\",\n    Sun_Altitude: \"-00,7\",\n    SOG: \"20.3\",\n    COG: \"170\",\n    Heading: \"170\",\n    ROT: \"-0.0\",\n    Position_Source_name: \"LSS 1\",\n    Distance_to_closest_vessel: \"4127\",\n    Time_when_closest: \"2017-04-27T19:04:20.000Z\",\n    Nav_Status: \"under way, using engine\",\n    Pos_Accuracy: \"&lt; 10m\",\n    RAIM: \"Not in use\",\n    Time_sailed: \"1h 55m \",\n    Source_type: \"AIS\",\n    Source_name: \"LSS 1\",\n    Call_sign_country_IV: \"CallSign country: Portugal != MMSI country: Madeira\",\n    Ship_info_Direkte: \"http://www.ship-info.com/prog/aiskip3.asp?usn=kyer&ircs=CQQG&imo=9190157&mmsi=255801580&pw=746AC14DEF3FF3CDBFDAFD89927299AA\",\n    Ship_info_Callsign: \"http://www.ship-info.com/prog/redskip.asp?id=CQQG\",\n    Ship_info_IMO: \"http://www.ship-info.com/prog/redskip.asp?id=9190157\",\n    Ship_spotting_pictures: \"http://www.shipspotting.com/search.php?action=results&query=9190157\",\n    Llyods: \"http://www.shipfinder.org/authenticated/result.aspx?LR/IMO%20Number=9190157\",\n    Inmarsat: \"http://www.inmarsat.com/Services/Maritime/Ships_Directory/default.aspx?ShipName=AUTOPRESTIGE\",\n    Google: \"http://www.google.com/search?&q=AUTOPRESTIGE\",\n    SIReNaC: \"http://195.25.216.218/sirenac/ShipFolder?P_SHIP_IMO=9190157\",\n    DNV: \"http://exchange.dnv.com/exchange/main.aspx?extool=vessel&Imono=9190157\",\n    ITU_MMSI: \"255801580\",\n    ITU_Call_Sign: \"CQQG\",\n    NIS_IMO: \"9190157\",\n    NIS_Call_Sign: \"CQQG\",\n    Fiskeridirektoratet2: \"CQQG\",\n    ABS_IMO: \"9190157\",\n    Tokyo_MOU: \"9190157\"\n}]\n\n\n\nSearch by IMO name\nhttp://vesselregister.dnvgl.com/vesselregister/api/vessel?term=9190157&includeHistoricalNames=false&includeNonClass=true&chunkSize=20\n{\n  \"Vessels\": [\n    {\n      \"Name\": \"AUTOPRESTIGE\",\n      \"HistoricalNames\": [],\n      \"Id\": \"20998\",\n      \"ImoNo\": \"9190157\",\n      \"OfficialNo\": \"\",\n      \"Flag\": \"\",\n      \"Register\": \"Madeira\",\n      \"VesselType\": \"Vehicle Carrier\",\n      \"MainClass\": null,\n      \"HomePort\": \"MADEIRA\",\n      \"OwnerName\": \"United European Car Carriers AS\",\n      \"OwnerId\": \"5416192\",\n      \"ManagerName\": \"United European Car Carriers AS\",\n      \"ManagerId\": \"5416192\",\n      \"NonClassServices\": \"OTHERCLASS,ERS\",\n      \"NonClassServiceVesselId\": \"20998\",\n      \"CallSign\": \"CQQG\",\n      \"HitFields\": \"ImoNumber\",\n      \"HitFieldsDescription\": \"[ImoNumber] = \\\"9190157\\\"\",\n      \"FlagCode\": \"PMD\",\n      \"RegisterCode\": \"PMD\",\n      \"DataSystem\": \"NPS\"\n    }\n  ],\n  \"DnvDetailsUrl\": \"http://vesselregister.dnvgl.com/vesselregister/vesseldetails.html?vesselid=\",\n  \"GlDetailsUrl\": \"https://app.gl-group.com/register/index.jsp?STyp=400&RegNo=\",\n  \"TotalCount\": 1,\n  \"LimitedCount\": 1000,\n  \"MaxHitsReached\": false,\n  \"GlLastUpdated\": \"&lt;gllastupdated&gt;\",\n  \"DnvLastUpdated\": \"&lt;dnvlastupdated&gt;\"\n}\n\n\n\nUsing\nhttp://vesselregister.dnvgl.com/vesselregister/vesseldetails.html?vesselid=20998\n\n\n\nhtml\nhttp://www.ship-info.com/prog/aiskip3.asp?usn=kyer&ircs=CQQG&imo=9190157&mmsi=255801580\n\n\n\n\n!BSVDM,2,1,4,A,53nNb802&lt;tAthi04000HD@`DH`u8@0000000000t4@N7740Ht:iQA2QKDhAE,0*46\n!BSVDM,2,2,4,A,TSiF@000000,2*61\ndecoded using http://www.aggsoft.com/ais-decoder.htm\nName    Value   Description\nPacket Type BSVDM\nCHANNEL A\nMessage Type    5   Ship Static And Voyage Related Data\nRepeat Indicator\nDefault\nUser ID 258452000\nAIS Version\nStation compliant with AIS Edition 0\nIMO Number  9236767\nCall Sign   LLPA\nName    FEDJEFJORD\nShip Type   60  Passenger, all ships of this type\nDimension: reference for pos. A 34\nDimension: reference for pos. B 30\nDimension: reference for pos. C 7\nDimension: reference for pos. D 7\nVessel length   64\nVessel beam 14\nElectronic Position Fixing Device Type  1   GPS\nETA 1596    Month not available (default), Day not available (default), Hour not available (default), Minute not available (default)\nEta Datetime    5-5-18\nMaximum Present Static Draught  4.3\nDestination FEDJE-SAEVROEY\nDTE\nAvailable\n\n\nhttps://api.vesselfinder.com/docs/",
+    "objectID": "docs/notebooks/trafikkdata.html#sensors-around-in-norway",
+    "href": "docs/notebooks/trafikkdata.html#sensors-around-in-norway",
+    "title": "Trafikkdata Norway",
+    "section": "Sensors around in Norway",
+    "text": "Sensors around in Norway\n\n\nCode\nroad_categories = {\n    'E': \"Europavei\", 'R' : \"Riksvei\", 'F': \"Fylkesvei\", 'K': \"Kommunalvei\", 'P': \"Privatvei\"\n}\n\ndef get_sensors():\n    \"\"\"\n    Fetches traffic sensors data from the Atlas API and returns it as a GeoDataFrame.\n    \"\"\"\n    url = \"https://trafikkdata-api.atlas.vegvesen.no\"\n    headers = {\n        \"content-type\": \"application/json\"\n    }\n\n\n    query_template = \"\"\"\n            {\n                trafficRegistrationPoints(searchQuery: {roadCategoryIds: [%s] }) {\n                    id\n                    name\n                    trafficRegistrationType\n                    commissions {\n                        validFrom\n                        validTo\n                        lanes {\n                            laneNumberAccordingToRoadLink\n                            laneNumberAccordingToMetering\n                        }\n                    }\n                    direction {\n                        fromAccordingToRoadLink\n                        fromAccordingToMetering\n                        toAccordingToRoadLink\n                        toAccordingToMetering\n                    }\n                    manualLabels {\n                        validFrom\n                        validTo\n                        affectedLanes {\n                            lane {\n                                laneNumberAccordingToRoadLink\n                                laneNumberAccordingToMetering\n                            }\n                            states\n                        }\n                    }\n                    operationalStatus\n                    registrationFrequency\n                    dataTimeSpan {\n                        firstData\n                        firstDataWithQualityMetrics\n                        latestData {\n                            volumeByHour\n                            volumeByDay\n                            volumeAverageDailyByMonth\n                            volumeAverageDailyBySeason\n                            volumeAverageDailyByYear\n                        }\n                    }\n                    location {\n                        coordinates {\n                            latLon {\n                                lat\n                                lon\n                            }\n                        }\n                    }\n                }\n            }\n        \"\"\"\n\n    road_category_ids = road_categories.keys()\n\n    df_sensors_list = []\n    for road_category_id in road_category_ids:\n        # Use old style string formatting to not escape the curly braces in the query.\n        data = {\n            \"query\": query_template % road_category_id,\n            \"variables\": None\n        }\n\n        response = requests.post(url, headers=headers, json=data)\n\n        df_sensors_list.append((\n            pd.json_normalize(response.json()['data']['trafficRegistrationPoints'])\n            .assign(road_category_id=road_category_id)\n        ))\n    df_sensors = pd.concat(df_sensors_list).reset_index(drop=True)\n    # Convert to GeoDataFrame with geometry based on coordinates.\n    gdf_sensors = geopandas.GeoDataFrame(\n        df_sensors,\n        geometry=geopandas.points_from_xy(df_sensors['location.coordinates.latLon.lon'], df_sensors['location.coordinates.latLon.lat']),\n        crs=\"EPSG:4326\"\n    )\n\n    return gdf_sensors\n\n\ngdf_sensors = get_sensors()\ngdf_sensors\n\n\n\n\nCode\nfig, ax = plt.subplots(nrows=1, ncols=3, figsize=(15, 7))\n\ngdf_sensors[\"operationalStatus\"].value_counts().plot(kind=\"bar\", title=\"Operational Status\", ax=ax[0])\ngdf_sensors[\"trafficRegistrationType\"].value_counts().plot(kind=\"bar\", title=\"Traffic Registration Type\", sharey=True, ax=ax[1])\ngdf_sensors[\"road_category_id\"].map(road_categories).value_counts().plot(kind=\"bar\", title=\"Road Category Type\", sharey=True, ax=ax[2])\n\n\n\n\n\n\n\n\nFigure 1: Statistics of traffic registration points\n\n\n\n\n\nAs seen in Figure 1 there are many sensors out of service, or maybe some sensors are moved around to different locations. Vehicle measurements are more common than bicycle measurements. Most sensors are located on Fylkesvei\nLooking at first year of data\n\n\nCode\nfirst_data_year = (\n    gdf_sensors\n    .query(\"operationalStatus == 'OPERATIONAL'\")\n    .assign(\n        first_data_year= pd.to_datetime(gdf_sensors[\"dataTimeSpan.firstData\"], utc=True).dt.year\n    )\n    [\"first_data_year\"].value_counts(ascending=True)\n    .sort_index()\n)\n\nfirst_data_year.index = first_data_year.index.astype(int)\nfirst_data_year.plot(kind=\"bar\", title=\"First Data Year\")\n\n\n\n\n\n\n\n\n\n\n\nCode\ngdf_sensors.plot()\n\n\n\n\n\n\n\n\nFigure 2: Map of traffic registration points",
     "crumbs": [
-      "Data Resources",
-      "AIS"
+      "Data Exploring",
+      "Trafikkdata Norge"
     ]
   },
   {
-    "objectID": "docs/resources/ais.html#online-tools",
-    "href": "docs/resources/ais.html#online-tools",
-    "title": "AIS",
-    "section": "",
-    "text": "AIS message decoder online\nhttp://www.maritec.co.za/tools/aisvdmvdodecoding/",
+    "objectID": "docs/notebooks/trafikkdata.html#footnotes",
+    "href": "docs/notebooks/trafikkdata.html#footnotes",
+    "title": "Trafikkdata Norway",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nContains data under the Norwegian licence for Open Government data (NLOD) distributed by the Norwegian Public Roads Administration.↩︎",
     "crumbs": [
-      "Data Resources",
-      "AIS"
+      "Data Exploring",
+      "Trafikkdata Norge"
     ]
   },
   {
-    "objectID": "docs/resources/ais.html#nmea-checksum-calculator-online",
-    "href": "docs/resources/ais.html#nmea-checksum-calculator-online",
-    "title": "AIS",
+    "objectID": "docs/notebooks/opensky.html",
+    "href": "docs/notebooks/opensky.html",
+    "title": "Opensky",
     "section": "",
-    "text": "http://nmeachecksum.eqth.net/",
+    "text": "OpenSky provides api to get data for flights in progress. It is rate limited\nCode\nimport requests\nimport pandas as pd\nimport geopandas\nCode\ndef fetch_opensky_data():\n    url = \"https://opensky-network.org/api/states/all\"\n    response = requests.get(url)\n    data = response.json()\n\n    columns = [\n        \"icao24\", \"callsign\", \"origin_country\", \"time_position\", \"last_contact\",\n        \"longitude\", \"latitude\", \"baro_altitude\", \"on_ground\", \"velocity\",\n        \"heading\", \"vertical_rate\", \"sensors\", \"geo_altitude\", \"squawk\",\n        \"spi\", \"position_source\"\n    ]\n\n    df_raw = pd.DataFrame(data['states'], columns=columns)\n    return (\n        df_raw\n        .assign(\n            time_position=pd.to_datetime(df_raw[\"time_position\"], unit=\"s\"),\n            last_contact=pd.to_datetime(df_raw[\"last_contact\"], unit=\"s\"),\n        )\n    )\n\ndf_flights = fetch_opensky_data()\n\n\ndf_flihts_non_nan = df_flights.dropna(subset=[\"longitude\", \"latitude\"])\ngdf = geopandas.GeoDataFrame(\n    df_flihts_non_nan,\n    geometry=geopandas.points_from_xy(df_flihts_non_nan.longitude, df_flihts_non_nan.latitude),\n    crs=\"EPSG:4326\",\n)\n\ngdf.explore(fullscreen=True, tooltip=False, popup=True)\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\nFlights in world at notebook time",
     "crumbs": [
-      "Data Resources",
-      "AIS"
+      "Data Exploring",
+      "OpenSky flights geo"
     ]
   },
   {
-    "objectID": "docs/resources/ais.html#below-1000-ships-2017-04-27t171100",
-    "href": "docs/resources/ais.html#below-1000-ships-2017-04-27t171100",
-    "title": "AIS",
-    "section": "",
-    "text": "Raw NMEA message example\n !BSVDM,1,1,,B,37fOa&gt;50010lTAPT`;ktv0hr0000,0*1F\n\n\nDecoded with libais to python dictionary\n {\n    \"slot_increment\": 0,\n    \"sync_state\": 0,\n    \"true_heading\": 24,\n    \"sog\": 0.10000000149011612,\n    \"slots_to_allocate\": 0,\n    \"rot\": 0.0,\n    \"nav_status\": 5,\n    \"repeat_indicator\": 0,\n    \"raim\": false,\n    \"id\": 3,\n    \"spare\": 0,\n    \"keep_flag\": false,\n    \"cog\": 332.0,\n    \"timestamp\": 29,\n    \"y\": 64.0118637084961,\n    \"x\": 11.483386993408203,\n    \"position_accuracy\": 0,\n    \"rot_over_range\": false,\n    \"mmsi\": 518515000,\n    \"special_manoeuvre\": 0\n}\n\n\n\n {\n    \"slot_increment\": 0,\n    \"slots_to_allocate\": 0,\n    \"scaled\": true,\n    \"course\": 332.0,\n    \"second\": 29,\n    \"speed\": 0.10000000149011612,\n    \"sync_state\": 0,\n    \"lon\": 11.483386993408203,\n    \"device\": \"stdin\",\n    \"type\": 3,\n    \"accuracy\": false,\n    \"status\": 5,\n    \"maneuver\": 0,\n    \"repeat\": 0,\n    \"mmsi\": 518515000,\n    \"raim\": false,\n    \"spare\": 0,\n    \"keep_flag\": false,\n    \"lat\": 64.0118637084961,\n    \"class\": \"AIS\",\n    \"turn\": 0.0,\n    \"status_text\": \"Moored\",\n    \"heading\": 24\n}\nimo,mmsi,name,flag,type\n9116462,1073727001,\"AEGEANQUE EN\",,\"Passengers Ship\" 9116462,1072678425,\"AEGEQNQUE EN\",,\"Passengers Ship\" 9700940,1028641360,\"IVQ!PC=NDA  O0  O0\",,Cargo 9116462,1073727001,\"AEGEANQUE EN\",,\"Passengers Ship\"\n\n\n\n\nhttps://raw.githubusercontent.com/warrantgroup/IMO-Vessel-Codes/master/data/imo-vessel-codes.csv\nhttp://www.kystinfo.no/proxies/xWmsProxy.ashx?uuid=2bbc8acf-9386-46e7-83ab-425c72da546d&key=20170419102234&LAYERS=open_policy_AIS&QUERY_LAYERS=open_policy_AIS&STYLES=&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&BBOX=240068.587391%2C6582965.279002%2C257001.954591%2C6589484.625374&FEATURE_COUNT=10&HEIGHT=308&WIDTH=800&FORMAT=image%2Fpng&INFO_FORMAT=application%2Fjson&SRS=EPSG%3A32633&X=425&Y=199\n\n[{\n    MMSI: \"255801580\",\n    Country: \"Madeira\",\n    Active: \"true\",\n    Ship_name: \"AUTOPRESTIGE\",\n    Call_sign: \"CQQG\",\n    IMO_number: \"9190157\",\n    Ship_type: \"Cargo ship\",\n    Cargo: \"Unknown\",\n    Destination: \"CUXHAUEN\",\n    To_Country: \"GERMANY\",\n    To_Port: \"CUXHAVEN\",\n    ETA: \"2017-04-29T04:00:00.000Z\",\n    Length: \"128.0\",\n    Breadth: \"19.0\",\n    Maximum_actual_draught: \"4.9\",\n    Positioning_device: \"GPS\",\n    Transponder: \"ClassA\",\n    From_Country: \"NORWAY\",\n    From_Port: \"DRAMMEN\",\n    Latitude: \"59° 19.8906\"\",\n    Longitude: \"010° 35.2360\"\",\n    Time_stamp: \"2017-04-27T19:04:20.000Z\",\n    Sun_Altitude: \"-00,7\",\n    SOG: \"20.3\",\n    COG: \"170\",\n    Heading: \"170\",\n    ROT: \"-0.0\",\n    Position_Source_name: \"LSS 1\",\n    Distance_to_closest_vessel: \"4127\",\n    Time_when_closest: \"2017-04-27T19:04:20.000Z\",\n    Nav_Status: \"under way, using engine\",\n    Pos_Accuracy: \"&lt; 10m\",\n    RAIM: \"Not in use\",\n    Time_sailed: \"1h 55m \",\n    Source_type: \"AIS\",\n    Source_name: \"LSS 1\",\n    Call_sign_country_IV: \"CallSign country: Portugal != MMSI country: Madeira\",\n    Ship_info_Direkte: \"http://www.ship-info.com/prog/aiskip3.asp?usn=kyer&ircs=CQQG&imo=9190157&mmsi=255801580&pw=746AC14DEF3FF3CDBFDAFD89927299AA\",\n    Ship_info_Callsign: \"http://www.ship-info.com/prog/redskip.asp?id=CQQG\",\n    Ship_info_IMO: \"http://www.ship-info.com/prog/redskip.asp?id=9190157\",\n    Ship_spotting_pictures: \"http://www.shipspotting.com/search.php?action=results&query=9190157\",\n    Llyods: \"http://www.shipfinder.org/authenticated/result.aspx?LR/IMO%20Number=9190157\",\n    Inmarsat: \"http://www.inmarsat.com/Services/Maritime/Ships_Directory/default.aspx?ShipName=AUTOPRESTIGE\",\n    Google: \"http://www.google.com/search?&q=AUTOPRESTIGE\",\n    SIReNaC: \"http://195.25.216.218/sirenac/ShipFolder?P_SHIP_IMO=9190157\",\n    DNV: \"http://exchange.dnv.com/exchange/main.aspx?extool=vessel&Imono=9190157\",\n    ITU_MMSI: \"255801580\",\n    ITU_Call_Sign: \"CQQG\",\n    NIS_IMO: \"9190157\",\n    NIS_Call_Sign: \"CQQG\",\n    Fiskeridirektoratet2: \"CQQG\",\n    ABS_IMO: \"9190157\",\n    Tokyo_MOU: \"9190157\"\n}]\n\n\n\nSearch by IMO name\nhttp://vesselregister.dnvgl.com/vesselregister/api/vessel?term=9190157&includeHistoricalNames=false&includeNonClass=true&chunkSize=20\n{\n  \"Vessels\": [\n    {\n      \"Name\": \"AUTOPRESTIGE\",\n      \"HistoricalNames\": [],\n      \"Id\": \"20998\",\n      \"ImoNo\": \"9190157\",\n      \"OfficialNo\": \"\",\n      \"Flag\": \"\",\n      \"Register\": \"Madeira\",\n      \"VesselType\": \"Vehicle Carrier\",\n      \"MainClass\": null,\n      \"HomePort\": \"MADEIRA\",\n      \"OwnerName\": \"United European Car Carriers AS\",\n      \"OwnerId\": \"5416192\",\n      \"ManagerName\": \"United European Car Carriers AS\",\n      \"ManagerId\": \"5416192\",\n      \"NonClassServices\": \"OTHERCLASS,ERS\",\n      \"NonClassServiceVesselId\": \"20998\",\n      \"CallSign\": \"CQQG\",\n      \"HitFields\": \"ImoNumber\",\n      \"HitFieldsDescription\": \"[ImoNumber] = \\\"9190157\\\"\",\n      \"FlagCode\": \"PMD\",\n      \"RegisterCode\": \"PMD\",\n      \"DataSystem\": \"NPS\"\n    }\n  ],\n  \"DnvDetailsUrl\": \"http://vesselregister.dnvgl.com/vesselregister/vesseldetails.html?vesselid=\",\n  \"GlDetailsUrl\": \"https://app.gl-group.com/register/index.jsp?STyp=400&RegNo=\",\n  \"TotalCount\": 1,\n  \"LimitedCount\": 1000,\n  \"MaxHitsReached\": false,\n  \"GlLastUpdated\": \"&lt;gllastupdated&gt;\",\n  \"DnvLastUpdated\": \"&lt;dnvlastupdated&gt;\"\n}\n\n\n\nUsing\nhttp://vesselregister.dnvgl.com/vesselregister/vesseldetails.html?vesselid=20998\n\n\n\nhtml\nhttp://www.ship-info.com/prog/aiskip3.asp?usn=kyer&ircs=CQQG&imo=9190157&mmsi=255801580",
+    "objectID": "docs/notebooks/opensky.html#number-of-flights-by-origin_country",
+    "href": "docs/notebooks/opensky.html#number-of-flights-by-origin_country",
+    "title": "Opensky",
+    "section": "Number of flights by origin_country",
+    "text": "Number of flights by origin_country\n\n\nCode\n(\n    df_flights\n    .groupby(\"origin_country\")\n    .agg(num_flights=(\"icao24\", \"count\"))\n    .sort_values(\"num_flights\", ascending=False)\n    .head(20)\n)\n\n\n\n\n\n\n\n\n\nnum_flights\n\n\norigin_country\n\n\n\n\n\nUnited States\n6918\n\n\nCanada\n462\n\n\nAustralia\n312\n\n\nIreland\n260\n\n\nUnited Kingdom\n253\n\n\nGermany\n143\n\n\nSpain\n126\n\n\nMalta\n119\n\n\nChina\n109\n\n\nUnited Arab Emirates\n100\n\n\nMexico\n99\n\n\nTurkey\n97\n\n\nBrazil\n94\n\n\nFrance\n89\n\n\nNew Zealand\n89\n\n\nAustria\n87\n\n\nIndia\n76\n\n\nRepublic of Korea\n68\n\n\nJapan\n62\n\n\nKingdom of the Netherlands\n59\n\n\n\n\n\nTop 20 countries with most flights",
     "crumbs": [
-      "Data Resources",
-      "AIS"
+      "Data Exploring",
+      "OpenSky flights geo"
     ]
   },
   {
-    "objectID": "docs/resources/ais.html#ais-type-5",
-    "href": "docs/resources/ais.html#ais-type-5",
-    "title": "AIS",
-    "section": "",
-    "text": "!BSVDM,2,1,4,A,53nNb802&lt;tAthi04000HD@`DH`u8@0000000000t4@N7740Ht:iQA2QKDhAE,0*46\n!BSVDM,2,2,4,A,TSiF@000000,2*61\ndecoded using http://www.aggsoft.com/ais-decoder.htm\nName    Value   Description\nPacket Type BSVDM\nCHANNEL A\nMessage Type    5   Ship Static And Voyage Related Data\nRepeat Indicator\nDefault\nUser ID 258452000\nAIS Version\nStation compliant with AIS Edition 0\nIMO Number  9236767\nCall Sign   LLPA\nName    FEDJEFJORD\nShip Type   60  Passenger, all ships of this type\nDimension: reference for pos. A 34\nDimension: reference for pos. B 30\nDimension: reference for pos. C 7\nDimension: reference for pos. D 7\nVessel length   64\nVessel beam 14\nElectronic Position Fixing Device Type  1   GPS\nETA 1596    Month not available (default), Day not available (default), Hour not available (default), Minute not available (default)\nEta Datetime    5-5-18\nMaximum Present Static Draught  4.3\nDestination FEDJE-SAEVROEY\nDTE\nAvailable\n\n\nhttps://api.vesselfinder.com/docs/",
+    "objectID": "docs/notebooks/opensky.html#all-flights",
+    "href": "docs/notebooks/opensky.html#all-flights",
+    "title": "Opensky",
+    "section": "All flights",
+    "text": "All flights\nFor reference\n\n\nCode\ndf_flights\n\n\n\n\n\n\n\n\n\nicao24\ncallsign\norigin_country\ntime_position\nlast_contact\nlongitude\nlatitude\nbaro_altitude\non_ground\nvelocity\nheading\nvertical_rate\nsensors\ngeo_altitude\nsquawk\nspi\nposition_source\n\n\n\n\n0\n39de4f\nTVF17PT\nFrance\n2026-02-16 21:54:10\n2026-02-16 21:54:18\n2.4071\n48.7283\n205.74\nFalse\n57.95\n253.50\n-2.93\nNone\n198.12\n1000\nFalse\n0\n\n\n1\na2224b\nN2368S\nUnited States\n2026-02-16 21:55:59\n2026-02-16 21:55:59\n-82.0607\n33.8398\n1028.70\nFalse\n64.77\n83.16\n0.00\nNone\n1043.94\nNone\nFalse\n0\n\n\n2\na5f852\nRTY484\nUnited States\n2026-02-16 21:55:59\n2026-02-16 21:55:59\n-104.7598\n40.4803\n2499.36\nFalse\n63.35\n325.92\n0.98\nNone\n2453.64\nNone\nFalse\n0\n\n\n3\nc81bd2\nZKJMR\nNew Zealand\n2026-02-16 21:55:58\n2026-02-16 21:55:59\n176.9848\n-39.4429\n2545.08\nFalse\n39.64\n2.23\n0.65\nNone\n2552.70\nNone\nFalse\n0\n\n\n4\naa9321\nUAL889\nUnited States\n2026-02-16 21:56:00\n2026-02-16 21:56:00\n-123.0489\n37.3437\n3482.34\nFalse\n183.45\n119.94\n-9.10\nNone\n3345.18\nNone\nFalse\n0\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n10457\n4b1904\nSWR282\nSwitzerland\n2026-02-16 21:55:59\n2026-02-16 21:55:59\n8.5130\n47.5007\n845.82\nFalse\n84.47\n325.92\n9.10\nNone\n807.72\n3034\nFalse\n0\n\n\n10458\nabc0e4\nSWA1138\nUnited States\n2026-02-16 21:56:00\n2026-02-16 21:56:00\n-82.5746\n41.3409\n11582.40\nFalse\n179.32\n275.43\n-0.33\nNone\n11536.68\n4123\nFalse\n0\n\n\n10459\na1c28c\nN711PZ\nUnited States\n2026-02-16 21:55:55\n2026-02-16 21:55:55\n-122.9432\n45.5392\nNaN\nTrue\n0.06\n298.12\nNaN\nNone\nNaN\nNone\nFalse\n0\n\n\n10460\na207a4\nN23RF\nUnited States\n2026-02-16 21:55:59\n2026-02-16 21:55:59\n-97.0478\n32.6005\n548.64\nFalse\n50.08\n213.69\n0.33\nNone\n579.12\nNone\nFalse\n0\n\n\n10461\nc00734\nWJA2605\nCanada\n2026-02-16 21:55:59\n2026-02-16 21:55:59\n-89.4223\n27.5570\n10363.20\nFalse\n221.04\n339.71\n0.00\nNone\n10789.92\nNone\nFalse\n0\n\n\n\n\n10462 rows × 17 columns",
     "crumbs": [
-      "Data Resources",
-      "AIS"
-    ]
-  },
-  {
-    "objectID": "docs/resources/frost.html",
-    "href": "docs/resources/frost.html",
-    "title": "FrostAPI",
-    "section": "",
-    "text": "FrostAPI\nHistorical meterological data\nhttps://frost.met.no/index2.html",
-    "crumbs": [
-      "Data Resources",
-      "Frost"
-    ]
-  },
-  {
-    "objectID": "docs/resources/trafiklabs_se.html",
-    "href": "docs/resources/trafiklabs_se.html",
-    "title": "TrafikLabs.se",
-    "section": "",
-    "text": "TrafikLabs.se\nhttps://www.trafiklab.se/api",
-    "crumbs": [
-      "Data Resources",
-      "Trafiklab.se"
+      "Data Exploring",
+      "OpenSky flights geo"
     ]
   },
   {
@@ -377,6 +398,38 @@
     ]
   },
   {
+    "objectID": "docs/3dprint/samples.html",
+    "href": "docs/3dprint/samples.html",
+    "title": "Help for printed models",
+    "section": "",
+    "text": "3D prints for studying skeleton\n\n\n\n\n\n\n\n\n\nFigure 1: skeleton kit card built\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: hand assembly\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: T-Rex kit card built\n\n\n\n\n\n\n\n\n\n\n\nFigure 4: skull\n\n\n\n\n\n\n\nFinished builds\n\n\n\n\nFigure 1: skeleton-kit-card-tinkercad\nFigure 2: articulated-hand\nFigure 3: t-rex-skeleton-kit-card\nFigure 4: Natural Skull size",
+    "crumbs": [
+      "Data Resources",
+      "Skeleton samples"
+    ]
+  },
+  {
+    "objectID": "docs/3dprint/samples.html#skeleton",
+    "href": "docs/3dprint/samples.html#skeleton",
+    "title": "Help for printed models",
+    "section": "",
+    "text": "3D prints for studying skeleton\n\n\n\n\n\n\n\n\n\nFigure 1: skeleton kit card built\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: hand assembly\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: T-Rex kit card built\n\n\n\n\n\n\n\n\n\n\n\nFigure 4: skull\n\n\n\n\n\n\n\nFinished builds\n\n\n\n\nFigure 1: skeleton-kit-card-tinkercad\nFigure 2: articulated-hand\nFigure 3: t-rex-skeleton-kit-card\nFigure 4: Natural Skull size",
+    "crumbs": [
+      "Data Resources",
+      "Skeleton samples"
+    ]
+  },
+  {
+    "objectID": "docs/index.html",
+    "href": "docs/index.html",
+    "title": "My Software Dev",
+    "section": "",
+    "text": "Notes related to software development, and other thinkering.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
     "objectID": "docs/3dprint.html",
     "href": "docs/3dprint.html",
     "title": "3D printing",
@@ -429,28 +482,6 @@
     ]
   },
   {
-    "objectID": "docs/notebooks/geopandas.html",
-    "href": "docs/notebooks/geopandas.html",
-    "title": "GeoPandas demo",
-    "section": "",
-    "text": "For a demonstration of a geopandas see Figure 1.\nCode\nimport geopandas\nimport folium\nfrom folium.plugins.fullscreen import Fullscreen\nfrom great_tables import GT\n\n\nurl_postnummer_nor = \"https://raw.githubusercontent.com/ivanhjel/postnummer/master/postnummeromrader.geojson\"\n\n\ngdf = geopandas.read_file(url_postnummer_nor)\nm = gdf.explore(column=\"postnummer\", cmap=\"viridis\")\nFullscreen().add_to(m)\nm\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\nFigure 1: A map to explore geopandas\nCode\n(\n  GT(\n    (\n      gdf\n      .sample(10, random_state=1)\n      .sort_values(\"postnummer\")\n      .assign(postnummer=gdf[\"postnummer\"].apply(lambda x: f\"{x:04}\"))\n      .reset_index(drop=True)\n      [[\"postnummer\", \"poststedsnavn\", \"kommune\"]]\n    )\n  )\n  .tab_header(title=\"Sample postal codes in order\")\n)\n\n\n\n\n\n\n\n\nSample postal codes in order\n\n\npostnummer\npoststedsnavn\nkommune\n\n\n\n\n1151\nOSLO\n301.0\n\n\n1168\nOSLO\n301.0\n\n\n1368\nSTABEKK\n219.0\n\n\n3070\nSANDE I VESTFOLD\n713.0\n\n\n6855\nFRØNNINGEN\n1422.0\n\n\n7114\nRÅKVÅG\n1624.0\n\n\n7160\nBJUGN\n1627.0\n\n\n7602\nLEVANGER\n1719.0\n\n\n8643\nBJERKA\n1832.0\n\n\n8985\nYLVINGEN\n1815.0",
-    "crumbs": [
-      "Data Exploring",
-      "Explore GeoJSON"
-    ]
-  },
-  {
-    "objectID": "docs/notebooks/geopandas.html#the-postal-codes-covering-largest-area",
-    "href": "docs/notebooks/geopandas.html#the-postal-codes-covering-largest-area",
-    "title": "GeoPandas demo",
-    "section": "The postal codes covering largest area",
-    "text": "The postal codes covering largest area\n\n\nCode\n(\n  GT(\n    (gdf\n      .to_crs(gdf.estimate_utm_crs())\n      .assign(area=lambda gdf_: gdf_.geometry.area / 1E6)\n      .sort_values(\"area\", ascending=False)\n      .reset_index(drop=True)\n      .head(10)\n      [[\"postnummer\", \"poststedsnavn\", \"kommune\", \"area\"]]\n    )\n  )\n  .tab_header(\"Largest area postal codes\")\n  .cols_label(\n    area=\"Area km2\"\n  )\n  .fmt_number(columns=\"area\", decimals=1)\n)\n\n\n\n\n\n\n\n\nLargest area postal codes\n\n\npostnummer\npoststedsnavn\nkommune\nArea km2\n\n\n\n\n9170\nLONGYEARBYEN\n2111.0\n143,769.0\n\n\n9520\nKAUTOKEINO\n2011.0\n6,524.2\n\n\n9730\nKARASJOK\n2021.0\n5,451.9\n\n\n9151\nSTORSLETT\n1942.0\n3,210.0\n\n\n9845\nTANA\n2025.0\n3,179.8\n\n\n9174\nHOPEN\n2131.0\n3,179.7\n\n\n9525\nMAZE\n2011.0\n3,179.0\n\n\n9176\nBJØRNØYA\n2121.0\n2,980.7\n\n\n9360\nBARDU\n1922.0\n2,696.9\n\n\n8690\nHATTFJELLDAL\n1826.0\n2,689.2",
-    "crumbs": [
-      "Data Exploring",
-      "Explore GeoJSON"
-    ]
-  },
-  {
     "objectID": "docs/notebooks/ducklake.html",
     "href": "docs/notebooks/ducklake.html",
     "title": "Ducklake experiment",
@@ -465,39 +496,6 @@
     "text": "Ducklake documentation\nFor more information on Ducklake, including installation and usage instructions, please refer to the official documentation\nhttps://ducklake.select/docs/stable/duckdb/introduction\n\nimport duckdb\n\n\nduckdb.install_extension(\"ducklake\")\ncon = duckdb.connect()\n\n\ncon.execute(\"ATTACH 'ducklake:my_ducklake.ducklake' (DATA_PATH 'ducklake_data/');\")\n\n&lt;duckdb.duckdb.DuckDBPyConnection at 0x7d3c50c948f0&gt;\n\n\n\ncon.execute(\"CREATE TABLE IF NOT EXISTS my_ducklake.nl_train_stations AS FROM 'https://blobs.duckdb.org/nl_stations.csv';\")\n\n&lt;duckdb.duckdb.DuckDBPyConnection at 0x7d3c50c948f0&gt;\n\n\n\ncon.execute(\"SELECT * FROM my_ducklake.nl_train_stations\").df().sample(10)\n\n\n\n\n\n\n\n\nid\ncode\nuic\nname_short\nname_medium\nname_long\nslug\ncountry\ntype\ngeo_lat\ngeo_lng\n\n\n\n\n345\n723\nMTN\n8400449\nMaastr. N\nMaastricht N.\nMaastricht Noord\nmaastricht-noord\nNL\nstoptreinstation\n50.870870\n5.717740\n\n\n419\n399\nRHN\n8400517\nRhenen\nRhenen\nRhenen\nrhenen\nNL\nknooppuntStoptreinstation\n51.958611\n5.578333\n\n\n76\n810\nGSB\n8007799\nBerlin Gsb\nBerlin Gesundbr.\nBerlin Gesundbrunnen\nberlin-gesundbrunnen\nD\nintercitystation\n52.548633\n13.390427\n\n\n439\n436\nSPTZ\n8400544\nSantprt Z\nSantpoort Z.\nSantpoort Zuid\nsantpoort-zuid\nNL\nstoptreinstation\n52.419724\n4.631389\n\n\n567\n539\nZVB\n8400737\nZevenbergn\nZevenbergen\nZevenbergen\nzevenbergen\nNL\nstoptreinstation\n51.640420\n4.609040\n\n\n371\n713\nLNI\n8824240\nNiel\nNiel\nNiel\nniel\nB\nstoptreinstation\n51.111540\n4.338450\n\n\n480\n459\nTPSW\n8400600\nPassewaaij\nPassewaaij\nTiel Passewaaij\ntiel-passewaaij\nNL\nstoptreinstation\n51.873890\n5.392222\n\n\n534\n842\nWELS\n8101081\nWels Hbf\nWels Hbf\nWels Hbf\nwels-hbf\nA\nintercitystation\n48.166111\n14.026667\n\n\n84\n77\nBHV\n8400114\nBilthoven\nBilthoven\nBilthoven\nbilthoven\nNL\nstoptreinstation\n52.130001\n5.203889\n\n\n155\n145\nDTC\n8400177\nDoetinchem\nDoetinchem\nDoetinchem\ndoetinchem\nNL\nknooppuntStoptreinstation\n51.958596\n6.296215\n\n\n\n\n\n\n\n\ncon.execute(\"FROM my_ducklake.snapshots();\").df()\n\n\n\n\n\n\n\n\nsnapshot_id\nsnapshot_time\nschema_version\nchanges\n\n\n\n\n0\n0\n2025-06-21 22:45:24.223000+02:00\n0\n{'schemas_created': ['main']}\n\n\n1\n3\n2025-06-24 07:19:25.356000+02:00\n1\n{}\n\n\n\n\n\n\n\n\ncon.execute(\"\"\"FROM ducklake_list_files('my_ducklake', 'nl_train_stations');\"\"\").df()\n\n\n\n\n\n\n\n\ndata_file\ndata_file_size_bytes\ndata_file_footer_size\ndata_file_encryption_key\ndelete_file\ndelete_file_size_bytes\ndelete_file_footer_size\ndelete_file_encryption_key\n\n\n\n\n0\nducklake_data/main/nl_train_stations//ducklake...\n60165\n1456\n&lt;NA&gt;\nNone\n&lt;NA&gt;\n&lt;NA&gt;\n&lt;NA&gt;\n\n\n\n\n\n\n\n\ncon.execute(\"INSERT INTO my_ducklake.nl_train_stations VALUES (0, 'KHP', 0, 'khp', 'knut', 'Knut H Pedersen', 'knut_h_pedersen', 'no', 'abc', 59.0, 11.0);\")\n\n&lt;duckdb.duckdb.DuckDBPyConnection at 0x7d3c50c948f0&gt;\n\n\n\ncon.execute(\"CALL my_ducklake.merge_adjacent_files();\")\n\n&lt;duckdb.duckdb.DuckDBPyConnection at 0x7d3c50c948f0&gt;\n\n\n\ncon.execute(\"CALL ducklake_expire_snapshots('my_ducklake', versions =&gt; [1, 2]);\").fetchall()\n\n[(1,\n  datetime.datetime(2025, 6, 24, 6, 58, 37, 41000, tzinfo=&lt;DstTzInfo 'Europe/Oslo' CEST+2:00:00 DST&gt;),\n  1,\n  {'tables_created': ['main.nl_train_stations'],\n   'tables_inserted_into': ['1']}),\n (2,\n  datetime.datetime(2025, 6, 24, 7, 17, 21, 65000, tzinfo=&lt;DstTzInfo 'Europe/Oslo' CEST+2:00:00 DST&gt;),\n  1,\n  {'tables_inserted_into': ['1']})]\n\n\n\ncon.execute(\"CALL ducklake_cleanup_old_files('my_ducklake', cleanup_all =&gt; true);\").fetchall()\n\n[('ducklake_data/main/nl_train_stations//ducklake-0197a04d-6912-7c86-a996-6f3842224be1.parquet',),\n ('ducklake_data/main/nl_train_stations//ducklake-0197a05e-8f2c-7420-a485-3902662897e1.parquet',)]"
   },
   {
-    "objectID": "docs/notebooks/trafikkdata.html",
-    "href": "docs/notebooks/trafikkdata.html",
-    "title": "Trafikkdata Norway",
-    "section": "",
-    "text": "Data obtained from Statens Vegvesen1\nCode\nimport requests\nimport pandas as pd\nimport geopandas\n\nimport matplotlib.pyplot as plt",
-    "crumbs": [
-      "Data Exploring",
-      "Trafikkdata Norge"
-    ]
-  },
-  {
-    "objectID": "docs/notebooks/trafikkdata.html#sensors-around-in-norway",
-    "href": "docs/notebooks/trafikkdata.html#sensors-around-in-norway",
-    "title": "Trafikkdata Norway",
-    "section": "Sensors around in Norway",
-    "text": "Sensors around in Norway\n\n\nCode\nroad_categories = {\n    'E': \"Europavei\", 'R' : \"Riksvei\", 'F': \"Fylkesvei\", 'K': \"Kommunalvei\", 'P': \"Privatvei\"\n}\n\ndef get_sensors():\n    \"\"\"\n    Fetches traffic sensors data from the Atlas API and returns it as a GeoDataFrame.\n    \"\"\"\n    url = \"https://trafikkdata-api.atlas.vegvesen.no\"\n    headers = {\n        \"content-type\": \"application/json\"\n    }\n\n\n    query_template = \"\"\"\n            {\n                trafficRegistrationPoints(searchQuery: {roadCategoryIds: [%s] }) {\n                    id\n                    name\n                    trafficRegistrationType\n                    commissions {\n                        validFrom\n                        validTo\n                        lanes {\n                            laneNumberAccordingToRoadLink\n                            laneNumberAccordingToMetering\n                        }\n                    }\n                    direction {\n                        fromAccordingToRoadLink\n                        fromAccordingToMetering\n                        toAccordingToRoadLink\n                        toAccordingToMetering\n                    }\n                    manualLabels {\n                        validFrom\n                        validTo\n                        affectedLanes {\n                            lane {\n                                laneNumberAccordingToRoadLink\n                                laneNumberAccordingToMetering\n                            }\n                            states\n                        }\n                    }\n                    operationalStatus\n                    registrationFrequency\n                    dataTimeSpan {\n                        firstData\n                        firstDataWithQualityMetrics\n                        latestData {\n                            volumeByHour\n                            volumeByDay\n                            volumeAverageDailyByMonth\n                            volumeAverageDailyBySeason\n                            volumeAverageDailyByYear\n                        }\n                    }\n                    location {\n                        coordinates {\n                            latLon {\n                                lat\n                                lon\n                            }\n                        }\n                    }\n                }\n            }\n        \"\"\"\n\n    road_category_ids = road_categories.keys()\n\n    df_sensors_list = []\n    for road_category_id in road_category_ids:\n        # Use old style string formatting to not escape the curly braces in the query.\n        data = {\n            \"query\": query_template % road_category_id,\n            \"variables\": None\n        }\n\n        response = requests.post(url, headers=headers, json=data)\n\n        df_sensors_list.append((\n            pd.json_normalize(response.json()['data']['trafficRegistrationPoints'])\n            .assign(road_category_id=road_category_id)\n        ))\n    df_sensors = pd.concat(df_sensors_list).reset_index(drop=True)\n    # Convert to GeoDataFrame with geometry based on coordinates.\n    gdf_sensors = geopandas.GeoDataFrame(\n        df_sensors,\n        geometry=geopandas.points_from_xy(df_sensors['location.coordinates.latLon.lon'], df_sensors['location.coordinates.latLon.lat']),\n        crs=\"EPSG:4326\"\n    )\n\n    return gdf_sensors\n\n\ngdf_sensors = get_sensors()\ngdf_sensors\n\n\n\n\nCode\nfig, ax = plt.subplots(nrows=1, ncols=3, figsize=(15, 7))\n\ngdf_sensors[\"operationalStatus\"].value_counts().plot(kind=\"bar\", title=\"Operational Status\", ax=ax[0])\ngdf_sensors[\"trafficRegistrationType\"].value_counts().plot(kind=\"bar\", title=\"Traffic Registration Type\", sharey=True, ax=ax[1])\ngdf_sensors[\"road_category_id\"].map(road_categories).value_counts().plot(kind=\"bar\", title=\"Road Category Type\", sharey=True, ax=ax[2])\n\n\n\n\n\n\n\n\nFigure 1: Statistics of traffic registration points\n\n\n\n\n\nAs seen in Figure 1 there are many sensors out of service, or maybe some sensors are moved around to different locations. Vehicle measurements are more common than bicycle measurements. Most sensors are located on Fylkesvei\nLooking at first year of data\n\n\nCode\nfirst_data_year = (\n    gdf_sensors\n    .query(\"operationalStatus == 'OPERATIONAL'\")\n    .assign(\n        first_data_year= pd.to_datetime(gdf_sensors[\"dataTimeSpan.firstData\"], utc=True).dt.year\n    )\n    [\"first_data_year\"].value_counts(ascending=True)\n    .sort_index()\n)\n\nfirst_data_year.index = first_data_year.index.astype(int)\nfirst_data_year.plot(kind=\"bar\", title=\"First Data Year\")\n\n\n\n\n\n\n\n\n\n\n\nCode\ngdf_sensors.plot()\n\n\n\n\n\n\n\n\nFigure 2: Map of traffic registration points",
-    "crumbs": [
-      "Data Exploring",
-      "Trafikkdata Norge"
-    ]
-  },
-  {
-    "objectID": "docs/notebooks/trafikkdata.html#footnotes",
-    "href": "docs/notebooks/trafikkdata.html#footnotes",
-    "title": "Trafikkdata Norway",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nContains data under the Norwegian licence for Open Government data (NLOD) distributed by the Norwegian Public Roads Administration.↩︎",
-    "crumbs": [
-      "Data Exploring",
-      "Trafikkdata Norge"
-    ]
-  },
-  {
     "objectID": "docs/notebooks/demo.html",
     "href": "docs/notebooks/demo.html",
     "title": "matplotlib demo",
@@ -506,39 +504,6 @@
     "crumbs": [
       "Data Exploring",
       "Demo Notebook"
-    ]
-  },
-  {
-    "objectID": "docs/notebooks/opensky.html",
-    "href": "docs/notebooks/opensky.html",
-    "title": "Opensky",
-    "section": "",
-    "text": "OpenSky provides api to get data for flights in progress. It is rate limited\nCode\nimport requests\nimport pandas as pd\nimport geopandas\nCode\ndef fetch_opensky_data():\n    url = \"https://opensky-network.org/api/states/all\"\n    response = requests.get(url)\n    data = response.json()\n\n    columns = [\n        \"icao24\", \"callsign\", \"origin_country\", \"time_position\", \"last_contact\",\n        \"longitude\", \"latitude\", \"baro_altitude\", \"on_ground\", \"velocity\",\n        \"heading\", \"vertical_rate\", \"sensors\", \"geo_altitude\", \"squawk\",\n        \"spi\", \"position_source\"\n    ]\n\n    df_raw = pd.DataFrame(data['states'], columns=columns)\n    return (\n        df_raw\n        .assign(\n            time_position=pd.to_datetime(df_raw[\"time_position\"], unit=\"s\"),\n            last_contact=pd.to_datetime(df_raw[\"last_contact\"], unit=\"s\"),\n        )\n    )\n\ndf_flights = fetch_opensky_data()\n\n\ndf_flihts_non_nan = df_flights.dropna(subset=[\"longitude\", \"latitude\"])\ngdf = geopandas.GeoDataFrame(\n    df_flihts_non_nan,\n    geometry=geopandas.points_from_xy(df_flihts_non_nan.longitude, df_flihts_non_nan.latitude),\n    crs=\"EPSG:4326\",\n)\n\ngdf.explore(fullscreen=True, tooltip=False, popup=True)\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\nFlights in world at notebook time",
-    "crumbs": [
-      "Data Exploring",
-      "OpenSky flights geo"
-    ]
-  },
-  {
-    "objectID": "docs/notebooks/opensky.html#number-of-flights-by-origin_country",
-    "href": "docs/notebooks/opensky.html#number-of-flights-by-origin_country",
-    "title": "Opensky",
-    "section": "Number of flights by origin_country",
-    "text": "Number of flights by origin_country\n\n\nCode\n(\n    df_flights\n    .groupby(\"origin_country\")\n    .agg(num_flights=(\"icao24\", \"count\"))\n    .sort_values(\"num_flights\", ascending=False)\n    .head(20)\n)\n\n\n\n\n\n\n\n\n\nnum_flights\n\n\norigin_country\n\n\n\n\n\nUnited States\n6399\n\n\nUnited Kingdom\n550\n\n\nCanada\n460\n\n\nGermany\n320\n\n\nIreland\n319\n\n\nTurkey\n279\n\n\nFrance\n220\n\n\nMalta\n203\n\n\nSpain\n201\n\n\nChina\n168\n\n\nIndia\n149\n\n\nUnited Arab Emirates\n147\n\n\nPoland\n132\n\n\nKingdom of the Netherlands\n129\n\n\nAustria\n109\n\n\nBrazil\n108\n\n\nSwitzerland\n106\n\n\nMexico\n96\n\n\nSweden\n94\n\n\nQatar\n76\n\n\n\n\n\nTop 20 countries with most flights",
-    "crumbs": [
-      "Data Exploring",
-      "OpenSky flights geo"
-    ]
-  },
-  {
-    "objectID": "docs/notebooks/opensky.html#all-flights",
-    "href": "docs/notebooks/opensky.html#all-flights",
-    "title": "Opensky",
-    "section": "All flights",
-    "text": "All flights\nFor reference\n\n\nCode\ndf_flights\n\n\n\n\n\n\n\n\n\nicao24\ncallsign\norigin_country\ntime_position\nlast_contact\nlongitude\nlatitude\nbaro_altitude\non_ground\nvelocity\nheading\nvertical_rate\nsensors\ngeo_altitude\nsquawk\nspi\nposition_source\n\n\n\n\n0\n39de4f\nTVF3289\nFrance\n2025-08-23 16:46:51\n2025-08-23 16:46:51\n3.2063\n48.2210\n3253.74\nFalse\n193.56\n307.87\n-13.98\nNone\n3543.30\n5713\nFalse\n0\n\n\n1\na21b74\nTWY235\nUnited States\n2025-08-23 16:46:52\n2025-08-23 16:46:52\n-7.4506\n53.4894\n10972.80\nFalse\n265.33\n86.89\n-0.33\nNone\n11407.14\n5157\nFalse\n0\n\n\n2\nab1644\nUAL1107\nUnited States\n2025-08-23 16:46:52\n2025-08-23 16:46:52\n-99.8047\n31.2202\n9502.14\nFalse\n211.90\n111.21\n-4.88\nNone\n10119.36\nNone\nFalse\n0\n\n\n3\n4b1818\nSWR115Y\nSwitzerland\n2025-08-23 16:46:47\n2025-08-23 16:46:52\n8.5502\n47.4613\n381.00\nTrue\n0.90\n151.88\nNaN\nNone\nNaN\n3031\nFalse\n0\n\n\n4\naa8c39\nUAL253\nUnited States\n2025-08-23 16:46:52\n2025-08-23 16:46:52\n-106.5521\n31.8999\n10363.20\nFalse\n256.15\n289.96\n0.00\nNone\n11033.76\nNone\nFalse\n0\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n11550\na6620c\nN510GG\nUnited States\n2025-08-23 16:46:52\n2025-08-23 16:46:52\n-110.8177\n32.6659\n10668.00\nFalse\n163.09\n90.54\n0.00\nNone\n11376.66\nNone\nFalse\n0\n\n\n11551\n458666\nCAT749\nDenmark\n2025-08-23 16:46:51\n2025-08-23 16:46:51\n14.1975\n50.5878\n11285.22\nFalse\n259.58\n150.69\n0.33\nNone\n11353.80\n3535\nFalse\n0\n\n\n11552\na41b89\nDAL2042\nUnited States\n2025-08-23 16:46:52\n2025-08-23 16:46:52\n-79.1115\n34.4794\n10668.00\nFalse\n264.00\n40.02\n0.00\nNone\n11277.60\nNone\nFalse\n0\n\n\n11553\n458665\nCAT313\nDenmark\n2025-08-23 16:46:52\n2025-08-23 16:46:52\n7.7813\n50.2206\n11887.20\nFalse\n249.14\n192.40\n0.33\nNone\n12115.80\n0746\nFalse\n0\n\n\n11554\nac90e8\nN909DB\nUnited States\n2025-08-23 16:46:52\n2025-08-23 16:46:52\n-104.5317\n38.9545\n3474.72\nFalse\n44.29\n210.74\n2.93\nNone\n3688.08\nNone\nFalse\n0\n\n\n\n\n11555 rows × 17 columns",
-    "crumbs": [
-      "Data Exploring",
-      "OpenSky flights geo"
     ]
   },
   {
@@ -564,42 +529,6 @@
     ]
   },
   {
-    "objectID": "docs/android/apk_disassembly.html",
-    "href": "docs/android/apk_disassembly.html",
-    "title": "Android APK disassembly",
-    "section": "",
-    "text": "Download apk file like talkingtomcamp\nMake a new directory to unpack the apk into (many files directly in root of unpacked data) and cd into this directory\nUnzip apk `unzip .apk\n\ncd ~/src/my-software-dev/data\nmkdir talkingtomcamp\ncd talkingtomcamp\nunzip ../com.outfit7.talkingtomcamp_1.6.6.381-23_minAPI16\\(armeabi-v7a\\)\\(nodpi\\)_apkmirror.com.apk"
-  },
-  {
-    "objectID": "docs/android/apk_disassembly.html#disassembly-steps",
-    "href": "docs/android/apk_disassembly.html#disassembly-steps",
-    "title": "Android APK disassembly",
-    "section": "",
-    "text": "Download apk file like talkingtomcamp\nMake a new directory to unpack the apk into (many files directly in root of unpacked data) and cd into this directory\nUnzip apk `unzip .apk\n\ncd ~/src/my-software-dev/data\nmkdir talkingtomcamp\ncd talkingtomcamp\nunzip ../com.outfit7.talkingtomcamp_1.6.6.381-23_minAPI16\\(armeabi-v7a\\)\\(nodpi\\)_apkmirror.com.apk"
-  },
-  {
-    "objectID": "docs/3dprint/samples.html",
-    "href": "docs/3dprint/samples.html",
-    "title": "Help for printed models",
-    "section": "",
-    "text": "3D prints for studying skeleton\n\n\n\n\n\n\n\n\n\nFigure 1: skeleton kit card built\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: hand assembly\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: T-Rex kit card built\n\n\n\n\n\n\n\n\n\n\n\nFigure 4: skull\n\n\n\n\n\n\n\nFinished builds\n\n\n\n\nFigure 1: skeleton-kit-card-tinkercad\nFigure 2: articulated-hand\nFigure 3: t-rex-skeleton-kit-card\nFigure 4: Natural Skull size",
-    "crumbs": [
-      "Data Resources",
-      "Skeleton samples"
-    ]
-  },
-  {
-    "objectID": "docs/3dprint/samples.html#skeleton",
-    "href": "docs/3dprint/samples.html#skeleton",
-    "title": "Help for printed models",
-    "section": "",
-    "text": "3D prints for studying skeleton\n\n\n\n\n\n\n\n\n\nFigure 1: skeleton kit card built\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: hand assembly\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: T-Rex kit card built\n\n\n\n\n\n\n\n\n\n\n\nFigure 4: skull\n\n\n\n\n\n\n\nFinished builds\n\n\n\n\nFigure 1: skeleton-kit-card-tinkercad\nFigure 2: articulated-hand\nFigure 3: t-rex-skeleton-kit-card\nFigure 4: Natural Skull size",
-    "crumbs": [
-      "Data Resources",
-      "Skeleton samples"
-    ]
-  },
-  {
     "objectID": "docs/about.html",
     "href": "docs/about.html",
     "title": "About",
@@ -611,46 +540,69 @@
     ]
   },
   {
-    "objectID": "docs/index.html",
-    "href": "docs/index.html",
-    "title": "My Software Dev",
+    "objectID": "docs/resources/ais.html",
+    "href": "docs/resources/ais.html",
+    "title": "AIS",
     "section": "",
-    "text": "Notes related to software development, and other thinkering.",
+    "text": "A selection of ships from Norway\nhttp://kystverket.no/Maritime-tjenester/Meldings--og-informasjonstjenester/AIS/Brukartilgang-til-AIS-Norge/\nTCP listening on 153.44.253.27:5631 (ca be viewed in Firefox)\nMessages seen (2017-06-01T21:34:00)\n\n1: Position Report class A\n2: Position Report class A\n3: Position Report class A\n4: Base station report\n5: Static Voyage data (requires assembling fragments)\n6: Binary Addressed Message\n8: Binary Broadcast Message\n18: Standard Class B CS Position Report\n19: Extended Class B CS Position Report\n21: Aid-to-Navigation Report\n24: Static Data Report\n\n\n\nAIS message decoder online\nhttp://www.maritec.co.za/tools/aisvdmvdodecoding/\n\n\n\nhttp://nmeachecksum.eqth.net/\n\n\n\nRaw NMEA message example\n !BSVDM,1,1,,B,37fOa&gt;50010lTAPT`;ktv0hr0000,0*1F\n\n\nDecoded with libais to python dictionary\n {\n    \"slot_increment\": 0,\n    \"sync_state\": 0,\n    \"true_heading\": 24,\n    \"sog\": 0.10000000149011612,\n    \"slots_to_allocate\": 0,\n    \"rot\": 0.0,\n    \"nav_status\": 5,\n    \"repeat_indicator\": 0,\n    \"raim\": false,\n    \"id\": 3,\n    \"spare\": 0,\n    \"keep_flag\": false,\n    \"cog\": 332.0,\n    \"timestamp\": 29,\n    \"y\": 64.0118637084961,\n    \"x\": 11.483386993408203,\n    \"position_accuracy\": 0,\n    \"rot_over_range\": false,\n    \"mmsi\": 518515000,\n    \"special_manoeuvre\": 0\n}\n\n\n\n {\n    \"slot_increment\": 0,\n    \"slots_to_allocate\": 0,\n    \"scaled\": true,\n    \"course\": 332.0,\n    \"second\": 29,\n    \"speed\": 0.10000000149011612,\n    \"sync_state\": 0,\n    \"lon\": 11.483386993408203,\n    \"device\": \"stdin\",\n    \"type\": 3,\n    \"accuracy\": false,\n    \"status\": 5,\n    \"maneuver\": 0,\n    \"repeat\": 0,\n    \"mmsi\": 518515000,\n    \"raim\": false,\n    \"spare\": 0,\n    \"keep_flag\": false,\n    \"lat\": 64.0118637084961,\n    \"class\": \"AIS\",\n    \"turn\": 0.0,\n    \"status_text\": \"Moored\",\n    \"heading\": 24\n}\nimo,mmsi,name,flag,type\n9116462,1073727001,\"AEGEANQUE EN\",,\"Passengers Ship\" 9116462,1072678425,\"AEGEQNQUE EN\",,\"Passengers Ship\" 9700940,1028641360,\"IVQ!PC=NDA  O0  O0\",,Cargo 9116462,1073727001,\"AEGEANQUE EN\",,\"Passengers Ship\"\n\n\n\n\nhttps://raw.githubusercontent.com/warrantgroup/IMO-Vessel-Codes/master/data/imo-vessel-codes.csv\nhttp://www.kystinfo.no/proxies/xWmsProxy.ashx?uuid=2bbc8acf-9386-46e7-83ab-425c72da546d&key=20170419102234&LAYERS=open_policy_AIS&QUERY_LAYERS=open_policy_AIS&STYLES=&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&BBOX=240068.587391%2C6582965.279002%2C257001.954591%2C6589484.625374&FEATURE_COUNT=10&HEIGHT=308&WIDTH=800&FORMAT=image%2Fpng&INFO_FORMAT=application%2Fjson&SRS=EPSG%3A32633&X=425&Y=199\n\n[{\n    MMSI: \"255801580\",\n    Country: \"Madeira\",\n    Active: \"true\",\n    Ship_name: \"AUTOPRESTIGE\",\n    Call_sign: \"CQQG\",\n    IMO_number: \"9190157\",\n    Ship_type: \"Cargo ship\",\n    Cargo: \"Unknown\",\n    Destination: \"CUXHAUEN\",\n    To_Country: \"GERMANY\",\n    To_Port: \"CUXHAVEN\",\n    ETA: \"2017-04-29T04:00:00.000Z\",\n    Length: \"128.0\",\n    Breadth: \"19.0\",\n    Maximum_actual_draught: \"4.9\",\n    Positioning_device: \"GPS\",\n    Transponder: \"ClassA\",\n    From_Country: \"NORWAY\",\n    From_Port: \"DRAMMEN\",\n    Latitude: \"59° 19.8906\"\",\n    Longitude: \"010° 35.2360\"\",\n    Time_stamp: \"2017-04-27T19:04:20.000Z\",\n    Sun_Altitude: \"-00,7\",\n    SOG: \"20.3\",\n    COG: \"170\",\n    Heading: \"170\",\n    ROT: \"-0.0\",\n    Position_Source_name: \"LSS 1\",\n    Distance_to_closest_vessel: \"4127\",\n    Time_when_closest: \"2017-04-27T19:04:20.000Z\",\n    Nav_Status: \"under way, using engine\",\n    Pos_Accuracy: \"&lt; 10m\",\n    RAIM: \"Not in use\",\n    Time_sailed: \"1h 55m \",\n    Source_type: \"AIS\",\n    Source_name: \"LSS 1\",\n    Call_sign_country_IV: \"CallSign country: Portugal != MMSI country: Madeira\",\n    Ship_info_Direkte: \"http://www.ship-info.com/prog/aiskip3.asp?usn=kyer&ircs=CQQG&imo=9190157&mmsi=255801580&pw=746AC14DEF3FF3CDBFDAFD89927299AA\",\n    Ship_info_Callsign: \"http://www.ship-info.com/prog/redskip.asp?id=CQQG\",\n    Ship_info_IMO: \"http://www.ship-info.com/prog/redskip.asp?id=9190157\",\n    Ship_spotting_pictures: \"http://www.shipspotting.com/search.php?action=results&query=9190157\",\n    Llyods: \"http://www.shipfinder.org/authenticated/result.aspx?LR/IMO%20Number=9190157\",\n    Inmarsat: \"http://www.inmarsat.com/Services/Maritime/Ships_Directory/default.aspx?ShipName=AUTOPRESTIGE\",\n    Google: \"http://www.google.com/search?&q=AUTOPRESTIGE\",\n    SIReNaC: \"http://195.25.216.218/sirenac/ShipFolder?P_SHIP_IMO=9190157\",\n    DNV: \"http://exchange.dnv.com/exchange/main.aspx?extool=vessel&Imono=9190157\",\n    ITU_MMSI: \"255801580\",\n    ITU_Call_Sign: \"CQQG\",\n    NIS_IMO: \"9190157\",\n    NIS_Call_Sign: \"CQQG\",\n    Fiskeridirektoratet2: \"CQQG\",\n    ABS_IMO: \"9190157\",\n    Tokyo_MOU: \"9190157\"\n}]\n\n\n\nSearch by IMO name\nhttp://vesselregister.dnvgl.com/vesselregister/api/vessel?term=9190157&includeHistoricalNames=false&includeNonClass=true&chunkSize=20\n{\n  \"Vessels\": [\n    {\n      \"Name\": \"AUTOPRESTIGE\",\n      \"HistoricalNames\": [],\n      \"Id\": \"20998\",\n      \"ImoNo\": \"9190157\",\n      \"OfficialNo\": \"\",\n      \"Flag\": \"\",\n      \"Register\": \"Madeira\",\n      \"VesselType\": \"Vehicle Carrier\",\n      \"MainClass\": null,\n      \"HomePort\": \"MADEIRA\",\n      \"OwnerName\": \"United European Car Carriers AS\",\n      \"OwnerId\": \"5416192\",\n      \"ManagerName\": \"United European Car Carriers AS\",\n      \"ManagerId\": \"5416192\",\n      \"NonClassServices\": \"OTHERCLASS,ERS\",\n      \"NonClassServiceVesselId\": \"20998\",\n      \"CallSign\": \"CQQG\",\n      \"HitFields\": \"ImoNumber\",\n      \"HitFieldsDescription\": \"[ImoNumber] = \\\"9190157\\\"\",\n      \"FlagCode\": \"PMD\",\n      \"RegisterCode\": \"PMD\",\n      \"DataSystem\": \"NPS\"\n    }\n  ],\n  \"DnvDetailsUrl\": \"http://vesselregister.dnvgl.com/vesselregister/vesseldetails.html?vesselid=\",\n  \"GlDetailsUrl\": \"https://app.gl-group.com/register/index.jsp?STyp=400&RegNo=\",\n  \"TotalCount\": 1,\n  \"LimitedCount\": 1000,\n  \"MaxHitsReached\": false,\n  \"GlLastUpdated\": \"&lt;gllastupdated&gt;\",\n  \"DnvLastUpdated\": \"&lt;dnvlastupdated&gt;\"\n}\n\n\n\nUsing\nhttp://vesselregister.dnvgl.com/vesselregister/vesseldetails.html?vesselid=20998\n\n\n\nhtml\nhttp://www.ship-info.com/prog/aiskip3.asp?usn=kyer&ircs=CQQG&imo=9190157&mmsi=255801580\n\n\n\n\n!BSVDM,2,1,4,A,53nNb802&lt;tAthi04000HD@`DH`u8@0000000000t4@N7740Ht:iQA2QKDhAE,0*46\n!BSVDM,2,2,4,A,TSiF@000000,2*61\ndecoded using http://www.aggsoft.com/ais-decoder.htm\nName    Value   Description\nPacket Type BSVDM\nCHANNEL A\nMessage Type    5   Ship Static And Voyage Related Data\nRepeat Indicator\nDefault\nUser ID 258452000\nAIS Version\nStation compliant with AIS Edition 0\nIMO Number  9236767\nCall Sign   LLPA\nName    FEDJEFJORD\nShip Type   60  Passenger, all ships of this type\nDimension: reference for pos. A 34\nDimension: reference for pos. B 30\nDimension: reference for pos. C 7\nDimension: reference for pos. D 7\nVessel length   64\nVessel beam 14\nElectronic Position Fixing Device Type  1   GPS\nETA 1596    Month not available (default), Day not available (default), Hour not available (default), Minute not available (default)\nEta Datetime    5-5-18\nMaximum Present Static Draught  4.3\nDestination FEDJE-SAEVROEY\nDTE\nAvailable\n\n\nhttps://api.vesselfinder.com/docs/",
     "crumbs": [
-      "Home"
+      "Data Resources",
+      "AIS"
     ]
   },
   {
-    "objectID": "docs/resources/eiendomspriser.html",
-    "href": "docs/resources/eiendomspriser.html",
-    "title": "Eiendomspriser",
+    "objectID": "docs/resources/ais.html#online-tools",
+    "href": "docs/resources/ais.html#online-tools",
+    "title": "AIS",
     "section": "",
-    "text": "http://siste.eiendomspriser.no/\nOverview of Norwegian property transfers with names of sellers and byers and price.\nAlso see\nhttp://people.skolelinux.org/pere/blog/Kartverkets_lansering_av_tjenesten_Se_Eiendom_har_potensiale__hvis_bruksvilk_rene_ikke_blokkerer.html\n\n\nFor a specific position\nhttp://siste.eiendomspriser.no/service/getpropertiesinbounds?nelat=59.659921194583966&nelon=9.642013013362885&swlat=59.65928711030292&swlon=9.637721478939056&sort=01&fromDate=&toDate=&_=1468666442519\nFor a specific property\nhttp://siste.eiendomspriser.no/service/getPropertyInfo?id=0604074460001000000000000&_=1468666442508\nSearch for a number in a street in a town\nhttp://siste.eiendomspriser.no/service/search?query=Stensgata%2B18%252c%2B0358%2BOslo&sort=&fromDate=&toDate=&placeFilter=&municipalities=&_=1468681551094\nSearch for entire street\nhttp://siste.eiendomspriser.no/service/search?query=Stensgata%2B0358%2BOslo&sort=&fromDate=&toDate=&placeFilter=&municipalities=&_=1468681551094\nBuilding id “BuildingId”: “0125000590120000000000000”\n0125 = Komunenr\n00059 = Gaardsnummer\n0120 = Bruksnummer\nReturn JSON\n{\n    \"Id\": \"PS15227140\",\n    \"BuildingId\": \"0301002160187000000100000\",\n    \"SalesCount\": 5,\n    \"Type\": \"Bolig\",\n    \"SaleType\": \"Fritt salg\",\n    \"Title\": \"Stensgata 18, 0358 Oslo\",\n    \"Price\": 3615000,\n    \"PriceF\": \"3 615 000\",\n    \"Text\": \"Stensgata 18 (Gnr 216, bnr 187, seksjon 10) er solgt for kr 3.615.000 fra Carina Midgaard til Paul Arne Hordvik (27.05.2016)\",\n    \"SubTexts\": null,\n    \"SoldDate\": \"27.05.2016\",\n    \"SortableDate\": \"2016-05-27T00:00:00\",\n    \"Address\": \"Stensgata 18\",\n    \"PostCode\": \"0358\",\n    \"PostArea\": \"Oslo\",\n    \"Coordinate\": {\n    \"Lat\": 59.9302177677736,\n    \"Lon\": 10.7322758980336\n    }\n}",
+    "text": "AIS message decoder online\nhttp://www.maritec.co.za/tools/aisvdmvdodecoding/",
     "crumbs": [
       "Data Resources",
-      "Eiendomspriser"
+      "AIS"
     ]
   },
   {
-    "objectID": "docs/resources/eiendomspriser.html#eiendomspriser",
-    "href": "docs/resources/eiendomspriser.html#eiendomspriser",
-    "title": "Eiendomspriser",
+    "objectID": "docs/resources/ais.html#nmea-checksum-calculator-online",
+    "href": "docs/resources/ais.html#nmea-checksum-calculator-online",
+    "title": "AIS",
     "section": "",
-    "text": "http://siste.eiendomspriser.no/\nOverview of Norwegian property transfers with names of sellers and byers and price.\nAlso see\nhttp://people.skolelinux.org/pere/blog/Kartverkets_lansering_av_tjenesten_Se_Eiendom_har_potensiale__hvis_bruksvilk_rene_ikke_blokkerer.html\n\n\nFor a specific position\nhttp://siste.eiendomspriser.no/service/getpropertiesinbounds?nelat=59.659921194583966&nelon=9.642013013362885&swlat=59.65928711030292&swlon=9.637721478939056&sort=01&fromDate=&toDate=&_=1468666442519\nFor a specific property\nhttp://siste.eiendomspriser.no/service/getPropertyInfo?id=0604074460001000000000000&_=1468666442508\nSearch for a number in a street in a town\nhttp://siste.eiendomspriser.no/service/search?query=Stensgata%2B18%252c%2B0358%2BOslo&sort=&fromDate=&toDate=&placeFilter=&municipalities=&_=1468681551094\nSearch for entire street\nhttp://siste.eiendomspriser.no/service/search?query=Stensgata%2B0358%2BOslo&sort=&fromDate=&toDate=&placeFilter=&municipalities=&_=1468681551094\nBuilding id “BuildingId”: “0125000590120000000000000”\n0125 = Komunenr\n00059 = Gaardsnummer\n0120 = Bruksnummer\nReturn JSON\n{\n    \"Id\": \"PS15227140\",\n    \"BuildingId\": \"0301002160187000000100000\",\n    \"SalesCount\": 5,\n    \"Type\": \"Bolig\",\n    \"SaleType\": \"Fritt salg\",\n    \"Title\": \"Stensgata 18, 0358 Oslo\",\n    \"Price\": 3615000,\n    \"PriceF\": \"3 615 000\",\n    \"Text\": \"Stensgata 18 (Gnr 216, bnr 187, seksjon 10) er solgt for kr 3.615.000 fra Carina Midgaard til Paul Arne Hordvik (27.05.2016)\",\n    \"SubTexts\": null,\n    \"SoldDate\": \"27.05.2016\",\n    \"SortableDate\": \"2016-05-27T00:00:00\",\n    \"Address\": \"Stensgata 18\",\n    \"PostCode\": \"0358\",\n    \"PostArea\": \"Oslo\",\n    \"Coordinate\": {\n    \"Lat\": 59.9302177677736,\n    \"Lon\": 10.7322758980336\n    }\n}",
+    "text": "http://nmeachecksum.eqth.net/",
     "crumbs": [
       "Data Resources",
-      "Eiendomspriser"
+      "AIS"
     ]
   },
   {
-    "objectID": "docs/resources/eiendomspriser.html#matrikkel",
-    "href": "docs/resources/eiendomspriser.html#matrikkel",
-    "title": "Eiendomspriser",
-    "section": "Matrikkel",
-    "text": "Matrikkel\nIn HTML\nTo get area of property etc.\nhttp://www.seeiendom.no/services/Matrikkel.svc/GetDetailPage?type=property&knr=0125&gnr=59&bnr=117&fnr=0&snr=0&customer=kartverket&_ga=1.226581981.1735460164.1468682571\n\nNode API\nhttps://github.com/zrrrzzt/seeiendom\n\n\nStreet adresses\nhttp://www.skatteetaten.no/no/Bedrift-og-organisasjon/Rapportering-til-Skatteetaten/Likningsoppgaver/Boligselskap/Oversikt-over-gatenavn/",
+    "objectID": "docs/resources/ais.html#below-1000-ships-2017-04-27t171100",
+    "href": "docs/resources/ais.html#below-1000-ships-2017-04-27t171100",
+    "title": "AIS",
+    "section": "",
+    "text": "Raw NMEA message example\n !BSVDM,1,1,,B,37fOa&gt;50010lTAPT`;ktv0hr0000,0*1F\n\n\nDecoded with libais to python dictionary\n {\n    \"slot_increment\": 0,\n    \"sync_state\": 0,\n    \"true_heading\": 24,\n    \"sog\": 0.10000000149011612,\n    \"slots_to_allocate\": 0,\n    \"rot\": 0.0,\n    \"nav_status\": 5,\n    \"repeat_indicator\": 0,\n    \"raim\": false,\n    \"id\": 3,\n    \"spare\": 0,\n    \"keep_flag\": false,\n    \"cog\": 332.0,\n    \"timestamp\": 29,\n    \"y\": 64.0118637084961,\n    \"x\": 11.483386993408203,\n    \"position_accuracy\": 0,\n    \"rot_over_range\": false,\n    \"mmsi\": 518515000,\n    \"special_manoeuvre\": 0\n}\n\n\n\n {\n    \"slot_increment\": 0,\n    \"slots_to_allocate\": 0,\n    \"scaled\": true,\n    \"course\": 332.0,\n    \"second\": 29,\n    \"speed\": 0.10000000149011612,\n    \"sync_state\": 0,\n    \"lon\": 11.483386993408203,\n    \"device\": \"stdin\",\n    \"type\": 3,\n    \"accuracy\": false,\n    \"status\": 5,\n    \"maneuver\": 0,\n    \"repeat\": 0,\n    \"mmsi\": 518515000,\n    \"raim\": false,\n    \"spare\": 0,\n    \"keep_flag\": false,\n    \"lat\": 64.0118637084961,\n    \"class\": \"AIS\",\n    \"turn\": 0.0,\n    \"status_text\": \"Moored\",\n    \"heading\": 24\n}\nimo,mmsi,name,flag,type\n9116462,1073727001,\"AEGEANQUE EN\",,\"Passengers Ship\" 9116462,1072678425,\"AEGEQNQUE EN\",,\"Passengers Ship\" 9700940,1028641360,\"IVQ!PC=NDA  O0  O0\",,Cargo 9116462,1073727001,\"AEGEANQUE EN\",,\"Passengers Ship\"\n\n\n\n\nhttps://raw.githubusercontent.com/warrantgroup/IMO-Vessel-Codes/master/data/imo-vessel-codes.csv\nhttp://www.kystinfo.no/proxies/xWmsProxy.ashx?uuid=2bbc8acf-9386-46e7-83ab-425c72da546d&key=20170419102234&LAYERS=open_policy_AIS&QUERY_LAYERS=open_policy_AIS&STYLES=&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&BBOX=240068.587391%2C6582965.279002%2C257001.954591%2C6589484.625374&FEATURE_COUNT=10&HEIGHT=308&WIDTH=800&FORMAT=image%2Fpng&INFO_FORMAT=application%2Fjson&SRS=EPSG%3A32633&X=425&Y=199\n\n[{\n    MMSI: \"255801580\",\n    Country: \"Madeira\",\n    Active: \"true\",\n    Ship_name: \"AUTOPRESTIGE\",\n    Call_sign: \"CQQG\",\n    IMO_number: \"9190157\",\n    Ship_type: \"Cargo ship\",\n    Cargo: \"Unknown\",\n    Destination: \"CUXHAUEN\",\n    To_Country: \"GERMANY\",\n    To_Port: \"CUXHAVEN\",\n    ETA: \"2017-04-29T04:00:00.000Z\",\n    Length: \"128.0\",\n    Breadth: \"19.0\",\n    Maximum_actual_draught: \"4.9\",\n    Positioning_device: \"GPS\",\n    Transponder: \"ClassA\",\n    From_Country: \"NORWAY\",\n    From_Port: \"DRAMMEN\",\n    Latitude: \"59° 19.8906\"\",\n    Longitude: \"010° 35.2360\"\",\n    Time_stamp: \"2017-04-27T19:04:20.000Z\",\n    Sun_Altitude: \"-00,7\",\n    SOG: \"20.3\",\n    COG: \"170\",\n    Heading: \"170\",\n    ROT: \"-0.0\",\n    Position_Source_name: \"LSS 1\",\n    Distance_to_closest_vessel: \"4127\",\n    Time_when_closest: \"2017-04-27T19:04:20.000Z\",\n    Nav_Status: \"under way, using engine\",\n    Pos_Accuracy: \"&lt; 10m\",\n    RAIM: \"Not in use\",\n    Time_sailed: \"1h 55m \",\n    Source_type: \"AIS\",\n    Source_name: \"LSS 1\",\n    Call_sign_country_IV: \"CallSign country: Portugal != MMSI country: Madeira\",\n    Ship_info_Direkte: \"http://www.ship-info.com/prog/aiskip3.asp?usn=kyer&ircs=CQQG&imo=9190157&mmsi=255801580&pw=746AC14DEF3FF3CDBFDAFD89927299AA\",\n    Ship_info_Callsign: \"http://www.ship-info.com/prog/redskip.asp?id=CQQG\",\n    Ship_info_IMO: \"http://www.ship-info.com/prog/redskip.asp?id=9190157\",\n    Ship_spotting_pictures: \"http://www.shipspotting.com/search.php?action=results&query=9190157\",\n    Llyods: \"http://www.shipfinder.org/authenticated/result.aspx?LR/IMO%20Number=9190157\",\n    Inmarsat: \"http://www.inmarsat.com/Services/Maritime/Ships_Directory/default.aspx?ShipName=AUTOPRESTIGE\",\n    Google: \"http://www.google.com/search?&q=AUTOPRESTIGE\",\n    SIReNaC: \"http://195.25.216.218/sirenac/ShipFolder?P_SHIP_IMO=9190157\",\n    DNV: \"http://exchange.dnv.com/exchange/main.aspx?extool=vessel&Imono=9190157\",\n    ITU_MMSI: \"255801580\",\n    ITU_Call_Sign: \"CQQG\",\n    NIS_IMO: \"9190157\",\n    NIS_Call_Sign: \"CQQG\",\n    Fiskeridirektoratet2: \"CQQG\",\n    ABS_IMO: \"9190157\",\n    Tokyo_MOU: \"9190157\"\n}]\n\n\n\nSearch by IMO name\nhttp://vesselregister.dnvgl.com/vesselregister/api/vessel?term=9190157&includeHistoricalNames=false&includeNonClass=true&chunkSize=20\n{\n  \"Vessels\": [\n    {\n      \"Name\": \"AUTOPRESTIGE\",\n      \"HistoricalNames\": [],\n      \"Id\": \"20998\",\n      \"ImoNo\": \"9190157\",\n      \"OfficialNo\": \"\",\n      \"Flag\": \"\",\n      \"Register\": \"Madeira\",\n      \"VesselType\": \"Vehicle Carrier\",\n      \"MainClass\": null,\n      \"HomePort\": \"MADEIRA\",\n      \"OwnerName\": \"United European Car Carriers AS\",\n      \"OwnerId\": \"5416192\",\n      \"ManagerName\": \"United European Car Carriers AS\",\n      \"ManagerId\": \"5416192\",\n      \"NonClassServices\": \"OTHERCLASS,ERS\",\n      \"NonClassServiceVesselId\": \"20998\",\n      \"CallSign\": \"CQQG\",\n      \"HitFields\": \"ImoNumber\",\n      \"HitFieldsDescription\": \"[ImoNumber] = \\\"9190157\\\"\",\n      \"FlagCode\": \"PMD\",\n      \"RegisterCode\": \"PMD\",\n      \"DataSystem\": \"NPS\"\n    }\n  ],\n  \"DnvDetailsUrl\": \"http://vesselregister.dnvgl.com/vesselregister/vesseldetails.html?vesselid=\",\n  \"GlDetailsUrl\": \"https://app.gl-group.com/register/index.jsp?STyp=400&RegNo=\",\n  \"TotalCount\": 1,\n  \"LimitedCount\": 1000,\n  \"MaxHitsReached\": false,\n  \"GlLastUpdated\": \"&lt;gllastupdated&gt;\",\n  \"DnvLastUpdated\": \"&lt;dnvlastupdated&gt;\"\n}\n\n\n\nUsing\nhttp://vesselregister.dnvgl.com/vesselregister/vesseldetails.html?vesselid=20998\n\n\n\nhtml\nhttp://www.ship-info.com/prog/aiskip3.asp?usn=kyer&ircs=CQQG&imo=9190157&mmsi=255801580",
     "crumbs": [
       "Data Resources",
-      "Eiendomspriser"
+      "AIS"
+    ]
+  },
+  {
+    "objectID": "docs/resources/ais.html#ais-type-5",
+    "href": "docs/resources/ais.html#ais-type-5",
+    "title": "AIS",
+    "section": "",
+    "text": "!BSVDM,2,1,4,A,53nNb802&lt;tAthi04000HD@`DH`u8@0000000000t4@N7740Ht:iQA2QKDhAE,0*46\n!BSVDM,2,2,4,A,TSiF@000000,2*61\ndecoded using http://www.aggsoft.com/ais-decoder.htm\nName    Value   Description\nPacket Type BSVDM\nCHANNEL A\nMessage Type    5   Ship Static And Voyage Related Data\nRepeat Indicator\nDefault\nUser ID 258452000\nAIS Version\nStation compliant with AIS Edition 0\nIMO Number  9236767\nCall Sign   LLPA\nName    FEDJEFJORD\nShip Type   60  Passenger, all ships of this type\nDimension: reference for pos. A 34\nDimension: reference for pos. B 30\nDimension: reference for pos. C 7\nDimension: reference for pos. D 7\nVessel length   64\nVessel beam 14\nElectronic Position Fixing Device Type  1   GPS\nETA 1596    Month not available (default), Day not available (default), Hour not available (default), Minute not available (default)\nEta Datetime    5-5-18\nMaximum Present Static Draught  4.3\nDestination FEDJE-SAEVROEY\nDTE\nAvailable\n\n\nhttps://api.vesselfinder.com/docs/",
+    "crumbs": [
+      "Data Resources",
+      "AIS"
+    ]
+  },
+  {
+    "objectID": "docs/resources/trafiklabs_se.html",
+    "href": "docs/resources/trafiklabs_se.html",
+    "title": "TrafikLabs.se",
+    "section": "",
+    "text": "TrafikLabs.se\nhttps://www.trafiklab.se/api",
+    "crumbs": [
+      "Data Resources",
+      "Trafiklab.se"
     ]
   },
   {
@@ -709,47 +661,113 @@
     ]
   },
   {
-    "objectID": "docs/resources/arduino.html#dof-sensor",
-    "href": "docs/resources/arduino.html#dof-sensor",
-    "title": "Arduino",
-    "section": "10DOF Sensor",
-    "text": "10DOF Sensor\nBought at DealExtreme\n\nL3GD20H 3-axis gyroscope: ±250, ±500, or ±2000 degree-per-second scale\nLSM303 3-axis compass: ±1.3 to ±8.1 gauss magnetic field scale\nLSM303 3-axis accelerometer: ±2g/±4g/±8g/±16g selectable scale\nBMP180 barometric pressure/temperature: -40 to 85 °C, 300 - 1100hPa range, 0.17m\nBMP180 Barometric Pressure Sensor\n\n\nDatasheet\nI2C Addresses\n0x19     LSM303 Accelerometer\n0x1E     LSM303 Compass\n0x6B    L3GD20H 3-axis gyroscope\n0x77    BMP180  Barometric Pressure Sensor",
-    "crumbs": [
-      "Data Resources",
-      "Arduino"
-    ]
-  },
-  {
-    "objectID": "docs/resources/aksjeeiere.html",
-    "href": "docs/resources/aksjeeiere.html",
-    "title": "Aksjeeiere",
+    "objectID": "docs/resources/eiendomspriser.html",
+    "href": "docs/resources/eiendomspriser.html",
+    "title": "Eiendomspriser",
     "section": "",
-    "text": "https://www.nored.no/Redaktoernyheter/Her-finner-du-aksjonaerregisteret",
+    "text": "http://siste.eiendomspriser.no/\nOverview of Norwegian property transfers with names of sellers and byers and price.\nAlso see\nhttp://people.skolelinux.org/pere/blog/Kartverkets_lansering_av_tjenesten_Se_Eiendom_har_potensiale__hvis_bruksvilk_rene_ikke_blokkerer.html\n\n\nFor a specific position\nhttp://siste.eiendomspriser.no/service/getpropertiesinbounds?nelat=59.659921194583966&nelon=9.642013013362885&swlat=59.65928711030292&swlon=9.637721478939056&sort=01&fromDate=&toDate=&_=1468666442519\nFor a specific property\nhttp://siste.eiendomspriser.no/service/getPropertyInfo?id=0604074460001000000000000&_=1468666442508\nSearch for a number in a street in a town\nhttp://siste.eiendomspriser.no/service/search?query=Stensgata%2B18%252c%2B0358%2BOslo&sort=&fromDate=&toDate=&placeFilter=&municipalities=&_=1468681551094\nSearch for entire street\nhttp://siste.eiendomspriser.no/service/search?query=Stensgata%2B0358%2BOslo&sort=&fromDate=&toDate=&placeFilter=&municipalities=&_=1468681551094\nBuilding id “BuildingId”: “0125000590120000000000000”\n0125 = Komunenr\n00059 = Gaardsnummer\n0120 = Bruksnummer\nReturn JSON\n{\n    \"Id\": \"PS15227140\",\n    \"BuildingId\": \"0301002160187000000100000\",\n    \"SalesCount\": 5,\n    \"Type\": \"Bolig\",\n    \"SaleType\": \"Fritt salg\",\n    \"Title\": \"Stensgata 18, 0358 Oslo\",\n    \"Price\": 3615000,\n    \"PriceF\": \"3 615 000\",\n    \"Text\": \"Stensgata 18 (Gnr 216, bnr 187, seksjon 10) er solgt for kr 3.615.000 fra Carina Midgaard til Paul Arne Hordvik (27.05.2016)\",\n    \"SubTexts\": null,\n    \"SoldDate\": \"27.05.2016\",\n    \"SortableDate\": \"2016-05-27T00:00:00\",\n    \"Address\": \"Stensgata 18\",\n    \"PostCode\": \"0358\",\n    \"PostArea\": \"Oslo\",\n    \"Coordinate\": {\n    \"Lat\": 59.9302177677736,\n    \"Lon\": 10.7322758980336\n    }\n}",
     "crumbs": [
       "Data Resources",
-      "Aksjeeiere"
+      "Eiendomspriser"
     ]
   },
   {
-    "objectID": "docs/resources/aksjeeiere.html#link-til-ods-fil",
-    "href": "docs/resources/aksjeeiere.html#link-til-ods-fil",
-    "title": "Aksjeeiere",
+    "objectID": "docs/resources/eiendomspriser.html#eiendomspriser",
+    "href": "docs/resources/eiendomspriser.html#eiendomspriser",
+    "title": "Eiendomspriser",
     "section": "",
-    "text": "https://www.nored.no/Redaktoernyheter/Her-finner-du-aksjonaerregisteret",
+    "text": "http://siste.eiendomspriser.no/\nOverview of Norwegian property transfers with names of sellers and byers and price.\nAlso see\nhttp://people.skolelinux.org/pere/blog/Kartverkets_lansering_av_tjenesten_Se_Eiendom_har_potensiale__hvis_bruksvilk_rene_ikke_blokkerer.html\n\n\nFor a specific position\nhttp://siste.eiendomspriser.no/service/getpropertiesinbounds?nelat=59.659921194583966&nelon=9.642013013362885&swlat=59.65928711030292&swlon=9.637721478939056&sort=01&fromDate=&toDate=&_=1468666442519\nFor a specific property\nhttp://siste.eiendomspriser.no/service/getPropertyInfo?id=0604074460001000000000000&_=1468666442508\nSearch for a number in a street in a town\nhttp://siste.eiendomspriser.no/service/search?query=Stensgata%2B18%252c%2B0358%2BOslo&sort=&fromDate=&toDate=&placeFilter=&municipalities=&_=1468681551094\nSearch for entire street\nhttp://siste.eiendomspriser.no/service/search?query=Stensgata%2B0358%2BOslo&sort=&fromDate=&toDate=&placeFilter=&municipalities=&_=1468681551094\nBuilding id “BuildingId”: “0125000590120000000000000”\n0125 = Komunenr\n00059 = Gaardsnummer\n0120 = Bruksnummer\nReturn JSON\n{\n    \"Id\": \"PS15227140\",\n    \"BuildingId\": \"0301002160187000000100000\",\n    \"SalesCount\": 5,\n    \"Type\": \"Bolig\",\n    \"SaleType\": \"Fritt salg\",\n    \"Title\": \"Stensgata 18, 0358 Oslo\",\n    \"Price\": 3615000,\n    \"PriceF\": \"3 615 000\",\n    \"Text\": \"Stensgata 18 (Gnr 216, bnr 187, seksjon 10) er solgt for kr 3.615.000 fra Carina Midgaard til Paul Arne Hordvik (27.05.2016)\",\n    \"SubTexts\": null,\n    \"SoldDate\": \"27.05.2016\",\n    \"SortableDate\": \"2016-05-27T00:00:00\",\n    \"Address\": \"Stensgata 18\",\n    \"PostCode\": \"0358\",\n    \"PostArea\": \"Oslo\",\n    \"Coordinate\": {\n    \"Lat\": 59.9302177677736,\n    \"Lon\": 10.7322758980336\n    }\n}",
     "crumbs": [
       "Data Resources",
-      "Aksjeeiere"
+      "Eiendomspriser"
     ]
   },
   {
-    "objectID": "docs/resources/aksjeeiere.html#direkte-lenker",
-    "href": "docs/resources/aksjeeiere.html#direkte-lenker",
-    "title": "Aksjeeiere",
-    "section": "Direkte lenker",
-    "text": "Direkte lenker\nRecord beskrivelse (fra 2014)\nhttps://www.nored.no/download/file/11710\n\n2018\nhttps://www.nored.no/download/file/14396\n\n\n2017\nTBD url on nored.no goes to 2018.\n\n\n2016\nAksjonærregister 2016 - korrigert.xlsx\nhttps://www.nored.no/download/file/13722\n\n\n2015\nAksjonærregisteret 2015 csv.zip\nhttps://www.nored.no/download/file/12860\n\n\n2014\nAksjonærlist (Excel)\nhttp://www.nored.no/content/download/13238/116766/version/1/file/Aksjon%C3%A6rlist",
+    "objectID": "docs/resources/eiendomspriser.html#matrikkel",
+    "href": "docs/resources/eiendomspriser.html#matrikkel",
+    "title": "Eiendomspriser",
+    "section": "Matrikkel",
+    "text": "Matrikkel\nIn HTML\nTo get area of property etc.\nhttp://www.seeiendom.no/services/Matrikkel.svc/GetDetailPage?type=property&knr=0125&gnr=59&bnr=117&fnr=0&snr=0&customer=kartverket&_ga=1.226581981.1735460164.1468682571\n\nNode API\nhttps://github.com/zrrrzzt/seeiendom\n\n\nStreet adresses\nhttp://www.skatteetaten.no/no/Bedrift-og-organisasjon/Rapportering-til-Skatteetaten/Likningsoppgaver/Boligselskap/Oversikt-over-gatenavn/",
     "crumbs": [
       "Data Resources",
-      "Aksjeeiere"
+      "Eiendomspriser"
+    ]
+  },
+  {
+    "objectID": "docs/resources/statensvegvesen.html",
+    "href": "docs/resources/statensvegvesen.html",
+    "title": "Statens Vegvesen",
+    "section": "",
+    "text": "Replaced with DatexII service which requires username and password etc.\nSee http://www.vegvesen.no/Om+Statens+vegvesen/Om+organisasjonen/For+utviklere+API/Datex\nhttp://www.reisetider.no/reisetid/static.html?method=tjenester\nhttp://www.reisetider.no/xml/strekninger.xml\nhttp://www.reisetider.no/xml/strekninger.xml?geometri\nhttp://www.reisetider.no/xml/reisetider.xml\n\n\n\nhttp://www.vegdata.no/\n\n\nhttps://www.vegvesen.no/nvdb/api/ Description of REST API to Nasjonal VegDataBase (NVDB)\n\n\n\nhttps://www.vegvesen.no/vegkart\n\n\n\n\nhttps://trafikkdata.atlas.vegvesen.no/#/om-api\n\nOpen API\nGraphQL based\n\n\nKart\nDetaljer om dataregistreringen\n\n\n\n\n\n\nhttp://www.vegvesen.no/system/mobilapi?registreringsnummer=DL25944\n\n\n\n\nhttps://www.vegvesen.no/trafikkinformasjon/Reiseinformasjon/Trafikkmeldinger/Webkamera/nyhetsarkiv/linker-til-videostr%C3%B8mmene-fra-webkameraene\n\nSandvika Nord http://kamera.vegvesen.no/public/0229030_1/manifest.m3u8\nSandvika http://kamera.vegvesen.no/public/0229031_1/manifest.m3u8\nAsker http://kamera.vegvesen.no/public/0229032_1/manifest.m3u8",
+    "crumbs": [
+      "Data Resources",
+      "Statens Vegvesen"
+    ]
+  },
+  {
+    "objectID": "docs/resources/statensvegvesen.html#reisetider",
+    "href": "docs/resources/statensvegvesen.html#reisetider",
+    "title": "Statens Vegvesen",
+    "section": "",
+    "text": "Replaced with DatexII service which requires username and password etc.\nSee http://www.vegvesen.no/Om+Statens+vegvesen/Om+organisasjonen/For+utviklere+API/Datex\nhttp://www.reisetider.no/reisetid/static.html?method=tjenester\nhttp://www.reisetider.no/xml/strekninger.xml\nhttp://www.reisetider.no/xml/strekninger.xml?geometri\nhttp://www.reisetider.no/xml/reisetider.xml",
+    "crumbs": [
+      "Data Resources",
+      "Statens Vegvesen"
+    ]
+  },
+  {
+    "objectID": "docs/resources/statensvegvesen.html#nasjonal-vegdatabase",
+    "href": "docs/resources/statensvegvesen.html#nasjonal-vegdatabase",
+    "title": "Statens Vegvesen",
+    "section": "",
+    "text": "http://www.vegdata.no/\n\n\nhttps://www.vegvesen.no/nvdb/api/ Description of REST API to Nasjonal VegDataBase (NVDB)\n\n\n\nhttps://www.vegvesen.no/vegkart",
+    "crumbs": [
+      "Data Resources",
+      "Statens Vegvesen"
+    ]
+  },
+  {
+    "objectID": "docs/resources/statensvegvesen.html#trafikkdata",
+    "href": "docs/resources/statensvegvesen.html#trafikkdata",
+    "title": "Statens Vegvesen",
+    "section": "",
+    "text": "https://trafikkdata.atlas.vegvesen.no/#/om-api\n\nOpen API\nGraphQL based\n\n\nKart\nDetaljer om dataregistreringen",
+    "crumbs": [
+      "Data Resources",
+      "Statens Vegvesen"
+    ]
+  },
+  {
+    "objectID": "docs/resources/statensvegvesen.html#motorvognregister",
+    "href": "docs/resources/statensvegvesen.html#motorvognregister",
+    "title": "Statens Vegvesen",
+    "section": "",
+    "text": "http://www.vegvesen.no/system/mobilapi?registreringsnummer=DL25944",
+    "crumbs": [
+      "Data Resources",
+      "Statens Vegvesen"
+    ]
+  },
+  {
+    "objectID": "docs/resources/statensvegvesen.html#webcameras-with-live-video",
+    "href": "docs/resources/statensvegvesen.html#webcameras-with-live-video",
+    "title": "Statens Vegvesen",
+    "section": "",
+    "text": "https://www.vegvesen.no/trafikkinformasjon/Reiseinformasjon/Trafikkmeldinger/Webkamera/nyhetsarkiv/linker-til-videostr%C3%B8mmene-fra-webkameraene\n\nSandvika Nord http://kamera.vegvesen.no/public/0229030_1/manifest.m3u8\nSandvika http://kamera.vegvesen.no/public/0229031_1/manifest.m3u8\nAsker http://kamera.vegvesen.no/public/0229032_1/manifest.m3u8",
+    "crumbs": [
+      "Data Resources",
+      "Statens Vegvesen"
+    ]
+  },
+  {
+    "objectID": "docs/resources/frost.html",
+    "href": "docs/resources/frost.html",
+    "title": "FrostAPI",
+    "section": "",
+    "text": "FrostAPI\nHistorical meterological data\nhttps://frost.met.no/index2.html",
+    "crumbs": [
+      "Data Resources",
+      "Frost"
     ]
   },
   {
@@ -795,23 +813,5 @@
       "Data Resources",
       "NRK"
     ]
-  },
-  {
-    "objectID": "docs/resources/nordpool.html",
-    "href": "docs/resources/nordpool.html",
-    "title": "NordPool",
-    "section": "",
-    "text": "NordPool\nDownload historical Electrical Spot prices in CSV\nhttps://www.nordpoolgroup.com/historical-market-data/",
-    "crumbs": [
-      "Data Resources",
-      "Nordpool"
-    ]
-  },
-  {
-    "objectID": "docs/resources/index.html",
-    "href": "docs/resources/index.html",
-    "title": "My Software Dev",
-    "section": "",
-    "text": "My Software Dev\nConverted from Google Sites, mainly written 2011-2016.\nTesting out how Quarto performs for writing documentation also integrating writing some code that shows output."
   }
 ]
