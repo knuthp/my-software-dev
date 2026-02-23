@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Arduino – My Software Dev</title>
+<title>Sporet ESRI data – My Software Dev</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -82,7 +117,9 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/resources/adsb.html">Data Resources</a></li><li class="breadcrumb-item"><a href="../../docs/resources/arduino.html">Arduino</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      My Software Dev
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -194,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/resources/arduino.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../docs/resources/arduino.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Arduino</span></a>
   </div>
 </li>
@@ -305,23 +342,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#arduino-single-board-computer" id="toc-arduino-single-board-computer" class="nav-link active" data-scroll-target="#arduino-single-board-computer">Arduino Single Board computer</a></li>
-  <li><a href="#arduino" id="toc-arduino" class="nav-link" data-scroll-target="#arduino">Arduino</a>
+  <li><a href="#hytter" id="toc-hytter" class="nav-link active" data-scroll-target="#hytter">Hytter</a>
   <ul class="collapse">
-  <li><a href="#dof-sensor" id="toc-dof-sensor" class="nav-link" data-scroll-target="#dof-sensor">10DOF Sensor</a>
-  <ul class="collapse">
-  <li><a href="#datasheet" id="toc-datasheet" class="nav-link" data-scroll-target="#datasheet">Datasheet</a></li>
+  <li><a href="#områder" id="toc-områder" class="nav-link" data-scroll-target="#områder">Områder</a></li>
   </ul></li>
-  </ul></li>
+  <li><a href="#track-requests-and-what-differs" id="toc-track-requests-and-what-differs" class="nav-link" data-scroll-target="#track-requests-and-what-differs">Track requests and what differs</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/resources/adsb.html">Data Resources</a></li><li class="breadcrumb-item"><a href="../../docs/resources/arduino.html">Arduino</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Arduino</h1>
+<h1 class="title">Sporet ESRI data</h1>
 </div>
 
 
@@ -338,36 +372,193 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="arduino-single-board-computer" class="level1">
-<h1>Arduino Single Board computer</h1>
-</section>
-<section id="arduino" class="level1">
-<h1>Arduino</h1>
-<pre><code>BN: Arduino/Genuino Uno
-VID: 2A03
-PID: 0043
-SN: 9543334383335150E002Devices</code></pre>
-<section id="dof-sensor" class="level2">
-<h2 class="anchored" data-anchor-id="dof-sensor">10DOF Sensor</h2>
-<p>Bought at DealExtreme</p>
-<ul>
-<li>L3GD20H 3-axis gyroscope: ±250, ±500, or ±2000 degree-per-second scale</li>
-<li>LSM303 3-axis compass: ±1.3 to ±8.1 gauss magnetic field scale</li>
-<li>LSM303 3-axis accelerometer: ±2g/±4g/±8g/±16g selectable scale</li>
-<li>BMP180 barometric pressure/temperature: -40 to 85 °C, 300 - 1100hPa range, 0.17m</li>
-<li>BMP180 Barometric Pressure Sensor</li>
-</ul>
-<section id="datasheet" class="level3">
-<h3 class="anchored" data-anchor-id="datasheet">Datasheet</h3>
-<pre><code>I2C Addresses
-0x19     LSM303 Accelerometer
-0x1E     LSM303 Compass
-0x6B    L3GD20H 3-axis gyroscope
-0x77    BMP180  Barometric Pressure Sensor</code></pre>
+<div id="3a040788" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><code>https://maps.sporet.no/arcgis/rest/services/Proxy/Sporet/FeatureServer/2/query?f=json</code></p>
+<p>This last part got cut off &amp;geometry=%7B%22xmin%22%3A225030.61127150018%2C%22ymin%22%3A6643295.002319505%2C%22xmax%22%3A229922.5810817502%2C%22ymax%22%3A6648186.972129756%7D&amp;orderByFields=vehicleid+ASC&amp;outFields=*&amp;outSR=25833&amp;resultType=tile&amp;returnExceededLimitFeatures=false&amp;spatialRel=esriSpatialRelIntersects&amp;where=is_visible+%3D+1&amp;geometryType=esriGeometryEnvelope&amp;inSR=25833&amp;returnAdvancedSymbols=true</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"attributes"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"course"</span><span class="fu">:</span> <span class="dv">358</span><span class="fu">,</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"is_visible"</span><span class="fu">:</span> <span class="dv">0</span><span class="fu">,</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"lastseen"</span><span class="fu">:</span> <span class="dv">1771772667000</span><span class="fu">,</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"name"</span><span class="fu">:</span> <span class="st">"Alta kommune PB100-1"</span><span class="fu">,</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"orgid"</span><span class="fu">:</span> <span class="dv">10278</span><span class="fu">,</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"renderer_value"</span><span class="fu">:</span> <span class="st">"stopped_groomer"</span><span class="fu">,</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"speed"</span><span class="fu">:</span> <span class="dv">0</span><span class="fu">,</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"vehicleid"</span><span class="fu">:</span> <span class="dv">10232</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>            <span class="fu">},</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"geometry"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"x"</span><span class="fu">:</span> <span class="fl">819328.38</span><span class="fu">,</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"y"</span><span class="fu">:</span> <span class="fl">7782854.06</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>            <span class="fu">}</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>        <span class="fu">}</span><span class="er">,</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>https “https://maps.sporet.no/arcgis/rest/services/Proxy/Sporet/FeatureServer/2/query?f=json&amp;where=1=1&amp;outFields=*&amp;outSR=4326”</p>
+<p><code>https://maps.sporet.no/arcgis/rest/services/Proxy/Sporet/FeatureServer/0/query?f=json&amp;geometry=%7B%22xmin%22%3A225030.61127150018%2C%22ymin%22%3A6643295.002319505%2C%22xmax%22%3A229922.5810817502%2C%22ymax%22%3A6648186.972129756%7D&amp;maxAllowableOffset=9.55462853564454&amp;orderByFields=id%20ASC&amp;outFields=has_skating%2Cid%2Cparentsegmentid%2Cprepsymbol&amp;outSR=25833&amp;resultType=tile&amp;returnExceededLimitFeatures=false&amp;spatialRel=esriSpatialRelIntersects&amp;where=1%3D1&amp;geometryType=esriGeometryEnvelope&amp;inSR=25833&amp;returnAdvancedSymbols=true</code></p>
+<p>And similar for this <code>https://maps.sporet.no/arcgis/rest/services/Proxy/Sporet/FeatureServer/0/query?f=json&amp;geometry=%7B%22xmin%22%3A229922.5810817502%2C%22ymin%22%3A6643295.002319505%2C%22xmax%22%3A234814.5508920002%2C%22ymax%22%3A6648186.972129756%7D&amp;maxAllowableOffset=9.55462853564454&amp;orderByFields=id%20ASC&amp;outFields=has_skating%2Cid%2Cparentsegmentid%2Cprepsymbol&amp;outSR=25833&amp;resultType=tile&amp;returnExceededLimitFeatures=false&amp;spatialRel=esriSpatialRelIntersects&amp;where=1%3D1&amp;geometryType=esriGeometryEnvelope&amp;inSR=25833&amp;returnAdvancedSymbols=true</code></p>
+<p>Got 49 of these</p>
+<pre><code>{
+    "0": {
+        "attributes": {
+            "id": 2831191,
+            "prepsymbol": 50,
+            "parentsegmentid": 134717,
+            "has_skating": 0
+        },
+        "geometry": {
+            "paths": [
+                [
+                    [
+                        225906.62,
+                        6644182.14
+                    ],
+                    [
+                        225974.83,
+                        6644197.5
+                    ],
+                    [
+                        226059.85,
+                        6644301.01
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+    "1": {
+        "attributes": {
+            "id": 2831192,
+            "prepsymbol": 50,
+            "parentsegmentid": 134717,
+            "has_skating": 0
+        },
+        "geometry": {
+            "paths": [
+                [
+                    [
+                        226059.85,
+                        6644301.01
+                    ],
+                    [
+                        226061.37,
+                        6644302.87
+                    ],
+                    [
+                        226093.62,
+                        6644434.61
+                    ],
+                    [
+                        226094.34,
+                        6644500.45
+                    ]
+                ]
+            ]
+        }
+    }
+}
+}
+
+## Protobuf
+### Warnings
+https://maps.sporet.no/arcgis/rest/services/Markadatabase_v2/Sporet_Simple/MapServer/13/query?f=pbf&amp;cacheHint=true&amp;maxRecordCountFactor=4&amp;resultOffset=0&amp;resultRecordCount=5000&amp;where=1%3D1&amp;orderByFields=segmentid%2Cwarningtext%20ASC&amp;outFields=*&amp;outSR=25833&amp;spatialRel=esriSpatialRelIntersects&amp;returnAdvancedSymbols=true
 
 
+Just change format to json
+
+```json
+        {
+            "attributes": {
+                "ESRI_OID": 87,
+                "segmentid": 145754,
+                "warningtext": "For lite snø og mye overvann. kun kjørt forberedende arbeid. Preppes ikke med spor enda."
+            },
+            "geometry": {
+                "x": 515422.4321999997,
+                "y": 8686541.1501
+            }
+        },
+</code></pre>
+<section id="hytter" class="level2">
+<h2 class="anchored" data-anchor-id="hytter">Hytter</h2>
+<p><code>https "https://maps.sporet.no/arcgis/rest/services/Markadatabase_v2/Sporet_Simple/MapServer/2/query?f=json&amp;cacheHint=true&amp;maxRecordCountFactor=4&amp;resultOffset=0&amp;resultRecordCount=5000&amp;where=poitypeid%20IN%20(%27ACF%27%2C%27CAF%27%2C%27CAM%27)&amp;orderByFields=id%20ASC&amp;outFields=*&amp;outSR=25833&amp;spatialRel=esriSpatialRelIntersects&amp;returnAdvancedSymbols=true"</code></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"attributes"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"destinationid"</span><span class="fu">:</span> <span class="dv">10003</span><span class="fu">,</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"id"</span><span class="fu">:</span> <span class="dv">16940</span><span class="fu">,</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"name"</span><span class="fu">:</span> <span class="st">"Restaurant Fjellroa"</span><span class="fu">,</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"poitypeid"</span><span class="fu">:</span> <span class="st">"CAF"</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>            <span class="fu">},</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"geometry"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"x"</span><span class="fu">:</span> <span class="fl">348722.1486999998</span><span class="fu">,</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"y"</span><span class="fu">:</span> <span class="fl">6801492.674400002</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>            <span class="fu">}</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>        <span class="fu">}</span><span class="er">,</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"attributes"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"destinationid"</span><span class="fu">:</span> <span class="dv">10003</span><span class="fu">,</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"id"</span><span class="fu">:</span> <span class="dv">16941</span><span class="fu">,</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"name"</span><span class="fu">:</span> <span class="st">"Restaurant Pilegrimen"</span><span class="fu">,</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"poitypeid"</span><span class="fu">:</span> <span class="st">"CAF"</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>            <span class="fu">},</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"geometry"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"x"</span><span class="fu">:</span> <span class="fl">347763.4855000004</span><span class="fu">,</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"y"</span><span class="fu">:</span> <span class="fl">6802026.517900001</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>            <span class="fu">}</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>        <span class="fu">}</span><span class="er">,</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="områder" class="level3">
+<h3 class="anchored" data-anchor-id="områder">Områder</h3>
+<p><code>https://maps.sporet.no/arcgis/rest/services/Markadatabase_v2/Sporet_Simple/MapServer/11/query?f=json&amp;cacheHint=true&amp;maxRecordCountFactor=4&amp;resultOffset=0&amp;resultRecordCount=5000&amp;where=1%3D1&amp;orderByFields=id%20ASC&amp;outFields=*&amp;outSR=25833&amp;spatialRel=esriSpatialRelIntersects&amp;returnAdvancedSymbols=true</code></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>            <span class="er">"attributes":</span> <span class="fu">{</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"id"</span><span class="fu">:</span> <span class="dv">13163</span><span class="fu">,</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"name"</span><span class="fu">:</span> <span class="st">"Galterud"</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>            <span class="fu">}</span><span class="er">,</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>            <span class="er">"geometry":</span> <span class="fu">{</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"x"</span><span class="fu">:</span> <span class="fl">325745.51939999964</span><span class="fu">,</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"y"</span><span class="fu">:</span> <span class="fl">6675840.518200001</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>            <span class="fu">}</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>        <span class="er">},</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"attributes"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"id"</span><span class="fu">:</span> <span class="dv">13196</span><span class="fu">,</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"name"</span><span class="fu">:</span> <span class="st">"Åmot i Modum kommune"</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>            <span class="fu">},</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"geometry"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"x"</span><span class="fu">:</span> <span class="fl">215821.95610000007</span><span class="fu">,</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>                <span class="dt">"y"</span><span class="fu">:</span> <span class="fl">6650288.331700001</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>            <span class="fu">}</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>        <span class="fu">}</span><span class="er">,</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>
+<section id="track-requests-and-what-differs" class="level2">
+<h2 class="anchored" data-anchor-id="track-requests-and-what-differs">Track requests and what differs</h2>
+<pre><code>f=json
+geometry=%7B%22xmin%22%3A225030.61127150018%2C%22ymin%22%3A6643295.002319505%2C%22xmax%22%3A229922.5810817502%2C%22ymax%22%3A6648186.972129756%7D
+maxAllowableOffset=9.55462853564454
+orderByFields=id%20ASC
+outFields=has_skating%2Cid%2Cparentsegmentid%2Cprepsymbol
+outSR=25833
+resultType=tile
+returnExceededLimitFeatures=false
+spatialRel=esriSpatialRelIntersects
+where=1%3D1
+geometryType=esriGeometryEnvelope
+inSR=25833
+returnAdvancedSymbols=true</code></pre>
+<pre><code>f=json
+geometry=%7B%22xmin%22%3A229922.5810817502%2C%22ymin%22%3A6643295.002319505%2C%22xmax%22%3A234814.5508920002%2C%22ymax%22%3A6648186.972129756%7D
+maxAllowableOffset=9.55462853564454
+orderByFields=id%20ASC
+outFields=has_skating%2Cid%2Cparentsegmentid%2Cprepsymbol
+outSR=25833
+resultType=tile
+returnExceededLimitFeatures=false
+spatialRel=esriSpatialRelIntersects
+where=1%3D1
+geometryType=esriGeometryEnvelope
+inSR=25833
+returnAdvancedSymbols=true</code></pre>
+
+
 </section>
 
 </main> <!-- /main -->
