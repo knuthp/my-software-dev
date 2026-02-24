@@ -13,11 +13,14 @@ dependencies = [
     "geopandas>=1.0.1",
     "great-tables>=0.17.0",
     "ipykernel>=6.29.5",
+    "lonboard[all]>=0.14.0",
     "mapclassify>=2.8.1",
     "matplotlib>=3.10.3",
     "nbclient>=0.10.2",
     "nbformat>=5.10.4",
     "numpy>=2.2.5",
+    "polars>=1.32.3",
+    "polars-lts-cpu>=1.32.3",
     "pyyaml>=6.0.2",
 ]
 
