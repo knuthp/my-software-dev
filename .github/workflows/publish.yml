@@ -32,6 +32,10 @@ jobs:
       - name: Install the project
         run: uv sync --locked --all-extras --dev
 
+      - name: Install marimo Quarto extension (GitHub)
+        run: |
+          quarto add marimo-team/quarto-marimo
+
       - name: Render and Publish
         run: |
           # configure user
