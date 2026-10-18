@@ -34,7 +34,7 @@ jobs:
 
       - name: Install marimo Quarto extension (GitHub)
         run: |
-          quarto add marimo-team/quarto-marimo
+          quarto add --no-prompt marimo-team/quarto-marimo
 
       - name: Render and Publish
         run: |
