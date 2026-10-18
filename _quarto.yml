@@ -25,6 +25,8 @@ website:
             text: Trafikkdata Norge
           - href: docs/notebooks/quarto_jupyter.ipynb
             text: Quarto Jupyter Notebook
+          - href: docs/notebooks/marimo.qmd
+            text: Marimo
       - section: Data Resources
         text: Data Resources
         contents:
